@@ -1,0 +1,12 @@
+# Site settings
+title: DanHolloran
+email: dtholloran@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  My adventures on and off of the internetz.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://danholloran.github.io" # the base hostname & protocol for your site
+twitter_username: dholloran
+github_username:  dholloran
+
+# Build settings
+markdown: kramdown
