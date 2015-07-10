@@ -10,3 +10,7 @@ github_username:  dholloran
 
 # Build settings
 markdown: kramdown
+
+# Gems
+gems:
+- jekyll-sitemap
