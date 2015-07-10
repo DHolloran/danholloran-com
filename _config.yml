@@ -8,6 +8,16 @@ url: "http://danholloran.github.io" # the base hostname & protocol for your site
 twitter_username: dholloran
 github_username:  dholloran
 
+# Handling Reading
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - README.md
+
 # Build settings
 markdown: kramdown
 
