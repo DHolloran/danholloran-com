@@ -18,6 +18,8 @@ exclude:
   - package.json
   - README.md
 
+# Outputting
+permalink: pretty
 # Build settings
 markdown: kramdown
 
