@@ -20,6 +20,8 @@ exclude:
 
 # Outputting
 permalink: pretty
+timezone: America/Chicago
+
 # Build settings
 markdown: kramdown
 
