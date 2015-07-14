@@ -22,6 +22,7 @@ exclude:
 permalink: pretty
 timezone: America/Chicago
 paginate: 5
+highlighter: pygments
 
 # Build settings
 markdown: kramdown
