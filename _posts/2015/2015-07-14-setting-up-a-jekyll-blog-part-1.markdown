@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Setting Up a Jeykll Blog - Part 1
+title: Setting Up a Jekyll Blog - Part 1
 date: "2015-07-14 20:21"
+redirect_from:
+  - /2015/07/14/setting-up-a-jeykll-blog-part-1/
 ---
 
 I found Jeykll fairly easy to setup not quite 5 minute setup easy but not to bad. Honestly I spent most of the time reading the documentation which is simple and excelent. I did want to go through the steps of how to setup your own Jeykll blog. I am going to assume some level of comfortability with the command line and non-Windows OS.
