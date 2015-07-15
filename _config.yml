@@ -29,7 +29,8 @@ markdown: kramdown
 
 # Gems
 gems:
-- jekyll-sitemap
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Front matter defaults
 defaults:
