@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Setup Vhosts in MAMP"
-date: "2015-07-15 20:58"
+title: Setup Vhosts in MAMP
+date: "2015-07-16 19:37"
 ---
+
 Setting up Vhosts in MAMP is really easy. VHost is short for Virtual Host which is basically just a way to access multiple "sites" on a server. Instead of changing MAMP to point at the site you want and then accessing it through `http://localhost/` you can access it from a custom domain. So lets get started.
 
 The first thing you will need to do is create a new file in `/Applications/MAMP/conf/apache/` and name it `vhosts.conf`. We will come back to this file in just a second so you can go ahead and keep it open. Next up you will want to include `vhosts.conf` in `/Applications/MAMP/conf/apache/http.conf`. I usually just add it at the end of the file.
