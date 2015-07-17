@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Setting Up a Jekyll Blog - Part 2"
-date: "2015-07-14 19:37"
+title: Setting Up a Jekyll Blog - Part 2
+date: "2015-07-17 15:38"
 ---
 
 ### Adding Your First Post.
