@@ -65,3 +65,5 @@ markdown: kramdown
 
 ### Wrapping up
 Ok we now have a Jeykll blog setup and ready to go!  That was not to hard was it? Next up we will add our first post and some [Front Matter](http://jekyllrb.com/docs/frontmatter/) which is where Jeykll becomes really powerful.
+
+[Setting Up a Jekyll Blog - Part 2 >]({{ site.url }}/2015/07/17/setting-up-a-jekyll-blog-part-2/)
