@@ -1,3 +1,4 @@
+task :default => :check_links
 desc "Check all external links"
 task :check_links do
   require 'link_checker'
