@@ -1,0 +1,48 @@
+// ==================================
+// WPBA Inline Newsletter Signup
+// ==================================
+.wpba-inline-newsletter-signup {
+	border: 1px solid #111;
+	border-radius: 10px;
+	padding: 15px 15px 0;
+	margin: 20px 0;
+	background-color: #fafafa;
+} // .wpba-inline-newsletter-signup
+
+#mc_embed_signup {
+	clear: left;
+	// font: 14px Helvetica, Arial, sans-serif;
+
+	form {
+		padding: 0;
+	} // form
+
+	h2 {
+		margin: 0;
+		color: #111;
+	} // h2
+
+	.mc-field-group {
+		width: 46%;
+		margin-right: 4%;
+		float: left;
+		clear: none;
+
+		@include media-query(500px) {
+			width: 100%;
+		} // @include media-query
+
+		&.input-group {
+			ul {
+				li {
+					float: left;
+					margin-left: 5px;
+
+					&:first-child {
+						margin-left: 0;
+					} // &:first-child
+				} // li
+			} // ul
+		} // &.input-group
+	} // .mc-field-group
+} // #mc_embed_signup
