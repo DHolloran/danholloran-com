@@ -14,8 +14,11 @@ var scssSrc        = assetsSrc + '/scss/**/*.scss';
 var cssDistSrc     = distSrc + '/css';
 var mapsSrc        = '../maps/';
 var mapsDistSrc    = distSrc + '/maps/';
-var imageUploadSrc = '/_uploads/**/*.[png,gif,jpg,jpeg]';
-var imageAssetSrc  = assetsSrc + '/img/**/*.[png,gif,jpg,jpeg]';
+var imageUploadSrc = './_uploads/**/*';
+var imageAssetSrc  = assetsSrc + '/img/**/*';
+var imageUploadDistSrc = distSrc + '/uploads/';
+var imageAssetDistSrc = distSrc + '/img/';
+
 // Clean task.
 gulp.task( 'clean', function( cb ) {
   del( [
@@ -23,6 +26,34 @@ gulp.task( 'clean', function( cb ) {
   ], cb );
 } );
 
+// Image uploads task.
+gulp.task( 'images:uploads', function() {
+  return gulp.src( imageUploadSrc )
+    .pipe( $.changed( imageUploadDistSrc ) )
+    .pipe( $.imagemin( {
+        optimizationLevel : 3,
+        progressive       : true,
+        interlaced        : true
+    } ) )
+    .pipe( gulp.dest( imageUploadDistSrc ) )
+    .pipe( $.notify( 'Image uploads task complete!' ) );
+} );
+
+// Image assets task.
+gulp.task( 'images:assets', function() {
+  return gulp.src( imageAssetSrc )
+    .pipe( $.changed( imageAssetDistSrc ) )
+    .pipe( $.imagemin( {
+        optimizationLevel : 3,
+        progressive       : true,
+        interlaced        : true
+    } ) )
+    .pipe( gulp.dest( imageAssetDistSrc ) )
+    .pipe( $.notify( 'Images assets task complete!' ) );
+} );
+
+// Images task
+gulp.task( 'images', [ 'images:uploads', 'images:assets' ] );
 
 // Styles Task
 gulp.task( 'styles', function() {
