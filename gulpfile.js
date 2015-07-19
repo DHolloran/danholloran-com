@@ -3,6 +3,7 @@ var gulp        = require( 'gulp' );
 var del         = require( 'del' );
 var browserSync = require( 'browser-sync' );
 var cp          = require( 'child_process' );
+var request     = require( 'request' );
 var $           = require( 'gulp-load-plugins' )( {
   pattern : [ 'gulp-*', 'gulp.*', 'postcss-*' ]
 } );
@@ -21,6 +22,9 @@ var imageAssetSrc      = assetsSrc + '/img/**/*';
 var imageUploadDistSrc = distSrc + '/uploads/';
 var imageAssetDistSrc  = distSrc + '/img/';
 var htmlDistSrc        = '_site/**/*.html';
+var siteURL            = 'http://danholloran.me';
+var sitemapURL         = siteURL + '/sitemap.xml';
+
 // Jekyll build drafts
 gulp.task( 'jekyll:build:drafts', function( done ) {
     browserSync.notify( 'Building Jeykll (--drafts)' );
@@ -119,6 +123,13 @@ gulp.task( 'clean:build', [ 'clean' ], function() {
 
 // Deploy build.
 gulp.task( 'deploy:build', [ 'clean:build', 'rake' ] );
+
+// Gulp seo task.
+gulp.task( 'seo', [ 'build' ], function( cb ) {
+    request( 'http://www.google.com/webmasters/tools/ping?sitemap=' + sitemapURL );
+    request( 'http://www.bing.com/webmaster/ping.aspx?siteMap=' + sitemapURL );
+    cb();
+} );
 
 // Rake task.
 gulp.task( 'rake', $.shell.task( [ 'rake' ] ) );
