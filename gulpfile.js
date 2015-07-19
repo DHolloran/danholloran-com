@@ -83,7 +83,7 @@ gulp.task( 'styles', function() {
 gulp.task( 'build', [ 'images', 'styles' ] );
 
 // Watch Task.
-gulp.task( 'watch', function() {
+gulp.task( 'watch', [ 'build' ], function() {
   $.livereload.listen();
   gulp.watch( scssSrc, [ 'styles' ] );
 } );
