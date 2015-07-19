@@ -79,6 +79,9 @@ gulp.task( 'styles', function() {
     .pipe( $.notify( 'Styles task complete!' ) );
 } );
 
+// Build task.
+gulp.task( 'build', [ 'images', 'styles' ] );
+
 // Watch Task.
 gulp.task( 'watch', function() {
   $.livereload.listen();
