@@ -2,6 +2,7 @@
 var gulp        = require( 'gulp' );
 var del         = require( 'del' );
 var browserSync = require( 'browser-sync' );
+var cp          = require( 'child_process' );
 var $           = require( 'gulp-load-plugins' )( {
   pattern : [ 'gulp-*', 'gulp.*', 'postcss-*' ]
 } );
@@ -57,7 +58,7 @@ gulp.task( 'clean', function( cb ) {
 
 // Image uploads task.
 gulp.task( 'images:uploads', function() {
-  return gulp.src( imageUploadSrc )
+  gulp.src( imageUploadSrc )
     .pipe( $.changed( imageUploadDistSrc ) )
     .pipe( $.imagemin( {
         optimizationLevel : 3,
@@ -109,7 +110,18 @@ gulp.task( 'styles', function() {
 } );
 
 // Build task.
-gulp.task( 'build', [ 'images', 'styles' ] );
+gulp.task( 'build', [ 'images', 'styles', 'jekyll:build:drafts' ] );
+
+// Clean build
+gulp.task( 'clean:build', [ 'clean' ], function() {
+  gulp.start( 'build' );
+} );
+
+// Deploy build.
+gulp.task( 'deploy:build', [ 'clean:build', 'rake' ] );
+
+// Rake task.
+gulp.task( 'rake', $.shell.task( [ 'rake' ] ) );
 
 // Watch Task.
 gulp.task( 'watch', [ 'build' ], function() {
