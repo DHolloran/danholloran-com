@@ -1,5 +1,6 @@
 // Require all the things!!!!
 var gulp = require( 'gulp' );
+var del = require( 'del' );
 var $    = require( 'gulp-load-plugins' )( {
   pattern : [ 'gulp-*', 'gulp.*', 'postcss-*' ]
 } );
@@ -15,6 +16,13 @@ var mapsSrc        = '../maps/';
 var mapsDistSrc    = distSrc + '/maps/';
 var imageUploadSrc = '/_uploads/**/*.[png,gif,jpg,jpeg]';
 var imageAssetSrc  = assetsSrc + '/img/**/*.[png,gif,jpg,jpeg]';
+// Clean task.
+gulp.task( 'clean', function( cb ) {
+  del( [
+    distSrc + '/**/*',
+  ], cb );
+} );
+
 
 // Styles Task
 gulp.task( 'styles', function() {
