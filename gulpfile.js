@@ -59,7 +59,7 @@ gulp.task( 'images', [ 'images:uploads', 'images:assets' ] );
 gulp.task( 'styles', function() {
   // PostCSS Processors.
   var processors = [
-        require( 'autoprefixer-core' )(),
+        require( 'autoprefixer-core' )( 'last 1 version' ),
         require( 'css-mqpacker' )(),
         $.postcssSingleCharset,
         $.postcssImport,
