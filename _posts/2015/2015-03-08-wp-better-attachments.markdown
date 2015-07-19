@@ -44,7 +44,7 @@ wpba_get_attachments(array(
 
 ### WPBA Attachment List
 
-![WPBA Attachment List](/content/images/2015/03/screenshot-6-1.png)
+![WPBA Attachment List](/dist/uploads/screenshot-6.png)
 
 #### Shortcode
 
@@ -100,23 +100,23 @@ wpba_attachment_list( array(
 
 ### WPBA Post Editor Button
 
-![WPBA Post Editor Button](/content/images/2015/03/screenshot-1-1.png)
+![WPBA Post Editor Button](/dist/uploads/screenshot-1.png)
 
 ### WPBA Meta Box
 
-![WPBA Meta Box](/content/images/2015/03/screenshot-2.png)
+![WPBA Meta Box](/dist/uploads/screenshot-2.png)
 
 ### WPBA Unattach Media Library Link
 
-![WPBA Unattach Media Library Link](/content/images/2015/03/screenshot-3.png)
+![WPBA Unattach Media Library Link](/dist/uploads/screenshot-3.png)
 
 ### WPBA Attachment Editor
 
-![WPBA Attachment Editor](/content/images/2015/03/screenshot-4.png)
+![WPBA Attachment Editor](/dist/uploads/screenshot-4.png)
 
 ### WPBA Crop Editor
 
-![WPBA Crop Editor](/content/images/2015/03/screenshot-5.png)
+![WPBA Crop Editor](/dist/uploads/screenshot-5.png)
 
 ## Getting Started
 
