@@ -50,12 +50,14 @@ The main difference between the default Jekyll and Github Pages is that with Git
 So I am still learning about front matter my self. However I just view it as meta you add to the post. I come from the WordPress world and it would be the equivalent of custom meta. Without the having to add form fields, save, sanitize, retrieve, and display the data. You can find more information about [Front Matter](http://jekyllrb.com/docs/frontmatter/) in the docs. The built in types of Front Matter are layout, permalink, published, category, categories and tags. You are free to add anything you want so you can use it in your templates. You can even set defaults in your `_config.yaml` so you do not have to repeat yourself. An example of what I include in mine right now is below and you can find more in the [documentation](http://jekyllrb.com/docs/configuration/#front-matter-defaults)
 {% highlight yaml %}
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-      author: "Dan Holloran"
+	-
+		scope:
+			path: "" # an empty string here means all files in the project
+		values:
+			layout: "default"
+			author: "Dan Holloran"
 {% endhighlight %}
 
 So now we can get started sharing all of our knowledge with the world one post at a time. Up next I will be diving more into editing the different templates in Jeykll. Jeykll uses a templating language called [Liquid](http://liquidmarkup.org/) developed at [Shopify](http://www.shopify.com/). If you have used any other templating language such as [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), [Twig](http://twig.sensiolabs.org/), etc. it should be fairly easy to pickup.
+
+[Setting Up a Jekyll Blog - Part 3 >]({{ site.url }}/2015/07/29/setting-up-a-jekyll-blog-part-3/)
