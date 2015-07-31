@@ -1,0 +1,60 @@
+// ========================================
+// Font Stacks
+// ========================================
+$font-serif: 'Source Serif Pro', serif;
+$font-sans-serif: 'Source Sans Pro', sans-serif;
+
+// ========================================
+// Font Size
+// ========================================
+$base-font-size: 16px;
+$small-font-size: $base-font-size * .875;
+$base-line-height: 1.5;
+
+// ========================================
+// Font Weights
+// ========================================
+$font-normal: 400;
+$font-bold: 700;
+
+// ========================================
+// Font Serif Mixins
+// ========================================
+@mixin font-serif($font-style: normal) {
+	font-weight: $font-normal;
+	font-family: $font-serif;
+	font-style: $font-style;
+} // @mixin font-serif()
+
+@mixin font-serif-italic($font-style: italic) {
+	font-weight: $font-normal;
+	font-family: $font-serif;
+	font-style: $font-style;
+} // @mixin font-serif-italic()
+
+@mixin font-serif-bold($font-style: normal) {
+	font-weight: $font-bold;
+	font-family: $font-serif;
+	font-style: $font-style;
+} // @mixin font-serif-bold()
+
+// ========================================
+// Font Sans-serif Mixins
+// ========================================
+@mixin font-sans-serif($font-style: normal) {
+	font-weight: $font-normal;
+	font-family: $font-sans-serif;
+	font-style: $font-style;
+} // @mixin font-sans-serif()
+
+@mixin font-sans-serif-italic($font-style: italic) {
+	font-weight: $font-normal;
+	font-family: $font-sans-serif;
+	font-style: $font-style;
+} // @mixin font-sans-serif-italic()
+
+@mixin font-sans-serif-bold($font-style: normal) {
+	font-weight: $font-bold;
+	font-family: $font-sans-serif;
+	font-style: $font-style;
+} // @mixin font-sans-serif-bold()

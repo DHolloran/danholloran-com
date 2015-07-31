@@ -1,0 +1,5 @@
+body {
+	@include font-serif;
+	color: $text-color;
+	line-height: $base-line-height;
+}
