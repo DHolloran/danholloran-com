@@ -1,34 +1,35 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  {% if page.wpbaInlineForm %}
-  <!-- Mailchimp WPBA inline form styles -->
-  <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-  {% endif %}
+	{% if page.wpbaInlineForm %}
+	{% comment %} Mailchimp WPBA inline form styles {% endcomment %}
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+	{% endif %}
 
-  <!-- Google Webmaster Tools Verification -->
-  <meta name="google-site-verification" content="oRfD7ytcUnEJjwB1tVsPR0yHJGUyxNPPhMotjom5vK8" />
+	{% comment %} Google Webmaster Tools Verification {% endcomment %}
+	<meta name="google-site-verification" content="oRfD7ytcUnEJjwB1tVsPR0yHJGUyxNPPhMotjom5vK8" />
 
-  <link rel="stylesheet" href="{{ "/dist/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ "/dist/css/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- Start Open Graph -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <!-- End Open Graph -->
+	{% comment %} Start Open Graph {% endcomment %}
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	{% comment %} End Open Graph {% endcomment %}
 
-  <!-- Start Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@dholloran" />
-  <meta name="twitter:creator" content="@dholloran" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <!-- End Twitter Card -->
+	{% comment %} Start Twitter Card {% endcomment %}
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@dholloran" />
+	<meta name="twitter:creator" content="@dholloran" />
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	{% comment %} End Twitter Card {% endcomment %}
 </head>
