@@ -2,6 +2,9 @@
 #
 # Some things may need to change on a project per project basis ONLY if a plugin requires it.
 # Try to change the severity to warning, exclude the file, or move it to _shame.scss
+
+exclude: '_assets/scss/libs/**/**'
+
 linters:
 
   IdSelector:
