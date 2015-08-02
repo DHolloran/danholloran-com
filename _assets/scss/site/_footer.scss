@@ -24,6 +24,8 @@
 	@include list-inline;
 
 	a {
+		@include flip-icon;
+
 		@include link-interact {
 			text-decoration: none;
 			color: $font-color;
@@ -34,7 +36,7 @@
 		} // @include link-interact
 	} // a
 
-	.con--twitter,
+	.icon--twitter,
 	.icon--linkedin {
 		top: -2px;
 		position: relative;

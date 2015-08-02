@@ -51,3 +51,16 @@
 		} // &:first-child
 	} // &>li
 } // @mixin list-inline
+
+@mixin flip-icon {
+	.icon {
+		transition: all .25s ease-out;
+		perspective: 1000;
+	} // .icon
+
+	@include link-interact {
+		.icon {
+			transform: rotateY(360deg);
+		} // .icon
+	} // @include link-interact
+} // @mixin flip-icon
