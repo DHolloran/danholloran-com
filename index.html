@@ -9,7 +9,6 @@ layout: default
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
@@ -17,6 +16,11 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+				<div class="post-meta">
+					<img src="{{ post.avatar.small }}" with="36" height="36" class="post-author-avatar" alt="{{ post.author }} avatar">
+					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span><br>
+					<span class="post-author">{{ post.author }}</span>
+				</div>
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
