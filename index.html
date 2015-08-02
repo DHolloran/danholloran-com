@@ -4,48 +4,27 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+	<h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
-      </li>
-    {% endfor %}
-  </ul>
+	<ul id="post_list" class="post-list">
+		{% for post in paginator.posts %}
+			<li>
 				<div class="post-meta">
 					<img src="{{ post.avatar.small }}" with="36" height="36" class="post-author-avatar" alt="{{ post.author }} avatar">
 					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span><br>
 					<span class="post-author">{{ post.author }}</span>
 				</div>
+				<h2 class="post-title">
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h2>
+				{{ post.excerpt | strip_html | strip_newlines }}
+			</li>
+		{% endfor %}
+	</ul>
 
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
 
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
-
+	{% if paginator.total_pages > 1 %}
+	<a href="{{paginator.next_page_path | prepend: site.url }}" class='js-load-more load-more'>Load More Posts</a>
+	{% endif %}
 </div>
