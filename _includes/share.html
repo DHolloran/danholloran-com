@@ -1,0 +1,17 @@
+<ul class="share-list">
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url  | uri_escape}}{{page.url  | uri_escape}}" title="Share on Facebook" target="_blank">Share on Facebook</a>
+	</li>
+	<li>
+		<a href="https://twitter.com/home?status={{page.title | uri_escape }}&url={{site.url  | uri_escape}}{{page.url  | uri_escape}}&via=dholloran" title="Share on Twitter" target="_blank">Share on Twitter</a>
+	</li>
+	<li>
+		<a href="https://plus.google.com/share?url=url.com" title="Share on Google+" target="_blank">Share on Google+</a>
+	</li>
+	<li>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=url.com&title=Post%20Title&summary=Post%20Excerpt&source=http://danholloran.com" title="Share on LinkedIn" target="_blank">Share on LinkedIn</a>
+	</li>
+	<li>
+		<a href="https://bufferapp.com/add?id=14b2d6de0d159823&url={{site.url  | uri_escape}}{{page.url  | uri_escape}}&text={{page.title | uri_escape }}&via=dholloran{% if page.image.featured %}&picture={{page.image.featured}}{% endif %}&placement=button&utm_source=https%3A%2F%2Fbuffer.com%2Fextras%2Fbutton&utm_medium=buffer_button&utm_campaign=buffer&source=button" title="Buffer" target="_blank">Buffer</a>
+	</li>
+</ul>
