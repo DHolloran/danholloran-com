@@ -1,10 +1,8 @@
 // Require all the things!!!!
-var gulp        = require( 'gulp' );
-var del         = require( 'del' );
-var browserSync = require( 'browser-sync' );
-var cp          = require( 'child_process' );
-var request     = require( 'request' );
-var $           = require( 'gulp-load-plugins' )( {
+var gulp    = require( 'gulp' );
+var del     = require( 'del' );
+var request = require( 'request' );
+var $       = require( 'gulp-load-plugins' )( {
 	pattern : [ 'gulp-*', 'gulp.*', 'postcss-*' ]
 } );
 
