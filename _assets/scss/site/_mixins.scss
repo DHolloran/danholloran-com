@@ -1,12 +1,53 @@
 // Using media queries with like this:
-// @include media-query($on-palm) {
+// @include min-width($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
+@mixin min-width($device) {
+	@media screen and (min-width: $device) {
+		@content;
+	}
+}
+
+@mixin max-width($device) {
 	@media screen and (max-width: $device) {
 		@content;
 	}
 }
+
+@mixin min-max-width($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+
+@mixin link-interact {
+	&:hover,
+	&:active,
+	&:focus {
+		@content;
+	}
+} // @mixin link-interact
+
+@mixin list-unstyled {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+} // @mixin list-unstyled
+
+@mixin list-inline($spacing: ($spacing-unit/2)) {
+	@include list-unstyled;
+	@include clearfix;
+
+	& > li {
+		float: left;
+		margin-left: $spacing;
+
+		&:first-child {
+			margin-left: 0;
+		} // &:first-child
+	} // &>li
+} // @mixin list-inline

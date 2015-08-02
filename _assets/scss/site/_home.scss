@@ -1,0 +1,11 @@
+// ======================================
+// Home
+// ======================================
+.post-list {
+	padding: 0;
+	list-style: none;
+
+	& > li {
+		margin-bottom: $spacing-unit;
+	} // &>li
+} // .post-list

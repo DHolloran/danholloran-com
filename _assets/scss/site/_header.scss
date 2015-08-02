@@ -1,0 +1,31 @@
+// =======================================
+// Header
+// =======================================
+.site-header {
+	padding: 10px 0;
+	box-shadow: 0 0 1px rgba(0,0,0,.15);
+	background: $background-color;
+	text-align: center;
+
+	@include min-width(500px) {
+		position: sticky;
+		top: 0;
+		text-align: inherit;
+	} // @include min-width(500px)
+
+	.wrapper {
+		line-height: 1em;
+	} // .wrapper
+} // .site-header
+
+a.site-title {
+	@include font-sans-serif-bold;
+	color: $font-color;
+	font-size: $large-font-size;
+	line-height: 1em;
+
+	@include link-interact {
+		text-decoration: none;
+		color: $brand-color;
+	} // @include link-interact
+} // a.site-title

@@ -1,5 +1,131 @@
 body {
 	@include font-serif;
-	color: $text-color;
+	color: $font-color;
 	line-height: $base-line-height;
+	background: $background-color;
+} // body
+
+.wrapper {
+	@include outer-container;
+	padding: 0 ($spacing-unit/2);
+
+	@include min-width($max-width) {
+		padding: 0;
+	} // @include min-width
+} // .wrapper
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include font-sans-serif-bold;
 }
+
+// Set `margin-bottom` to maintain vertical rhythm
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+%vertical-rhythm {
+	margin-bottom: $spacing-unit / 2;
+}
+
+b,
+strong {
+	font-weight: $font-bold;
+}
+
+// Code formatting
+pre,
+code {
+	@include font-monospace;
+	font-size: 15px;
+	border: 1px solid #eef;
+	border-radius: 3px;
+	background-color: $grey-color-light;
+}
+
+code {
+	padding: 1px 5px;
+	word-wrap: break-word;
+}
+
+pre {
+	padding: 8px 12px;
+	overflow: scroll;
+
+	> code {
+		border: 0;
+		padding-right: 0;
+		padding-left: 0;
+		word-wrap: inherit;
+	}
+}
+
+// Links
+a {
+	color: $brand-color;
+	text-decoration: none;
+	transition: all .25s ease-out;
+
+	&:visited {
+		color: darken($brand-color, 15%);
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: font-color;
+		text-decoration: underline;
+	}
+}
+
+
+
+// Blockquotes
+blockquote {
+	color: $grey-color;
+	border-left: 4px solid $grey-color-light;
+	padding-left: $spacing-unit / 2;
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-style: italic;
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Icons
+.icon {
+	> svg {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+		transform: scale(1.5);
+
+		path {
+			transition: all .25s ease-out;
+			fill: $font-color;
+		} // path
+	} // > svg
+}
+
+// Page Heading
+.page-heading {
+	.home & {
+		font-size: $med-font-size;
+	} // .home &
+} // .page-heading

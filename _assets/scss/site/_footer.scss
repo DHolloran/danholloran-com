@@ -1,0 +1,42 @@
+.site-footer {
+	margin: ($spacing-unit * 2) 0 $spacing-unit;
+} // .site-footer
+
+// ====================================
+// Footer Columns
+// ====================================
+.footer-col {
+	@include span-columns(6);
+} // .footer-col-1
+
+.footer-col-2 {
+	text-align: right;
+
+	p {
+		margin: 0;
+	} // p
+} // .footer-col-2
+
+// ====================================
+// Social Media List
+// ====================================
+.social-media-list {
+	@include list-inline;
+
+	a {
+		@include link-interact {
+			text-decoration: none;
+			color: $font-color;
+
+			path {
+				fill: $brand-color;
+			} // path
+		} // @include link-interact
+	} // a
+
+	.con--twitter,
+	.icon--linkedin {
+		top: -2px;
+		position: relative;
+	} // .icon-twitter,.icon--linkedin
+} // .social-media-list

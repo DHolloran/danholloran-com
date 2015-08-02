@@ -23,14 +23,14 @@
 	} // h2
 
 	.mc-field-group {
-		width: 46%;
 		margin-right: 4%;
 		float: left;
 		clear: none;
+		width: 100%;
 
-		@include media-query(500px) {
-			width: 100%;
-		} // @include media-query
+		@include min-width(500px) {
+			width: 46%;
+		} // @include min-width
 
 		&.input-group {
 			ul {

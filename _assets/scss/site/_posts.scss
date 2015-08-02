@@ -1,0 +1,44 @@
+// ======================================
+// Post Content
+// ======================================
+.post-content {
+	margin-bottom: $spacing-unit;
+} // .post-content
+
+// ======================================
+// Post Title
+// ======================================
+.post-title {
+	line-height: 1em;
+
+	.home & {
+		margin-top: 0;
+	} // .home &
+} // .post-title
+
+// ======================================
+// Post Author
+// ======================================
+.post-meta {
+	@include clearfix;
+	@include font-sans-serif;
+	font-size: $small-font-size;
+	margin-bottom: ($spacing-unit/2) - 5;
+
+	.post & {
+		margin-bottom: $spacing-unit;
+	} // post &
+} // .post-meta
+
+.post-author-avatar {
+	border-radius: 50%;
+	float: left;
+	margin-right: ($spacing-unit/2) - 5;
+} // .post-author-avatar
+
+.post-date,
+.post-author {
+	display: block;
+	line-height: $base-font-size;
+	float: left;
+} // .post-date,.post-author

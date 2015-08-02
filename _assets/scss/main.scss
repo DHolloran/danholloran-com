@@ -18,5 +18,13 @@
 
 // Site
 @import 'site/base';
-@import 'site/syntax-highlighting';
+@import 'site/buttons';
+@import 'site/syntax-highlighting/autumn';
+@import 'site/header';
+@import 'site/home';
+@import 'site/posts';
+@import 'site/pagination';
+@import 'site/disqus';
+@import 'site/share-list';
 @import 'site/wpba-inline-newsletter-signup';
+@import 'site/footer';

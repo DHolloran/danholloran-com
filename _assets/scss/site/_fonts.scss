@@ -3,17 +3,17 @@
 // ========================================
 $font-serif: 'Source Serif Pro', serif;
 $font-sans-serif: 'Source Sans Pro', sans-serif;
+$font-monospace: 'Source Code Pro', monospace;
 
 // ========================================
-// Font Size
+// Font Properties
 // ========================================
 $base-font-size: 16px;
 $small-font-size: $base-font-size * .875;
+$med-font-size: 18px;
+$large-font-size: 24px;
 $base-line-height: 1.5;
-
-// ========================================
-// Font Weights
-// ========================================
+$font-color: #111;
 $font-normal: 400;
 $font-bold: 700;
 
@@ -58,3 +58,12 @@ $font-bold: 700;
 	font-family: $font-sans-serif;
 	font-style: $font-style;
 } // @mixin font-sans-serif-bold()
+
+// ========================================
+// Font Monospace Mixins
+// ========================================
+@mixin font-monospace($font-style: normal) {
+	font-weight: $font-normal;
+	font-family: $font-monospace;
+	font-style: $font-style;
+} // @mixin font-monospace()

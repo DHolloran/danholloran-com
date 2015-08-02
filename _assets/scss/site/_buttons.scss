@@ -1,0 +1,40 @@
+@mixin button($foreground: $background-color, $background:$brand-color) {
+	@include font-sans-serif-bold;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 1em;
+	padding: 10px 20px;
+	border-radius: 2px;
+	transition: all .25s ease-out;
+	background: $background;
+	color: $foreground;
+	border: 2px solid $background;
+	text-align: center;
+
+	&:visited {
+		color: $foreground;
+	} // &:visited
+
+	@include link-interact {
+		background: $foreground;
+		color: $background;
+		text-decoration: none;
+	} // @include link-interact
+}
+
+@mixin button-inverse($foreground: $brand-color, $background:$background-color) {
+	@include button($foreground, $background);
+	border-color: $foreground;
+} // @mixin button-inverse()
+
+@mixin button-ghost($foreground: $brand-color, $background:$background-color) {
+	@include button-inverse($foreground, $background);
+	background: transparent;
+	background-color: rgba($background, .35);
+	box-shadow: inset 4px 4px 6px rgba($background, .15), inset -4px -4px 6px rgba($background, .15);
+	text-shadow: 1px 0 rgba(0,0,0,.15);
+
+	@include link-interact {
+		box-shadow: none;
+	} // @include link-interact
+} // @mixin button-ghost()
