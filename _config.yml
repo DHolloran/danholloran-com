@@ -9,6 +9,7 @@ twitter_username: dholloran
 github_username:  dholloran
 linkedin_username: dholloran
 version: 1.0.1
+uploadurl: "/dist/uploads/"
 
 # Handling Reading
 exclude:
