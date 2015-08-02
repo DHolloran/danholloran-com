@@ -2,6 +2,9 @@
 layout: post
 title: Setting Up a Jekyll Blog - Part 1
 date: "2015-07-14 20:21"
+series:
+  url: "/2015/07/17/setting-up-a-jekyll-blog-part-2/"
+  label: "Setting Up a Jekyll Blog - Part 2"
 redirect_from:
   - /2015/07/14/setting-up-a-jeykll-blog-part-1/
 ---
@@ -65,5 +68,3 @@ markdown: kramdown
 
 ### Wrapping up
 Ok we now have a Jeykll blog setup and ready to go!  That was not to hard was it? Next up we will add our first post and some [Front Matter](http://jekyllrb.com/docs/frontmatter/) which is where Jeykll becomes really powerful.
-
-[Setting Up a Jekyll Blog - Part 2 >]({{ site.url }}/2015/07/17/setting-up-a-jekyll-blog-part-2/)

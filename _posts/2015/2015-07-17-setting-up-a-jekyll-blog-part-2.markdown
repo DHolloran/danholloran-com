@@ -2,6 +2,9 @@
 layout: post
 title: Setting Up a Jekyll Blog - Part 2
 date: "2015-07-17 15:38"
+series:
+  url: "/2015/07/29/setting-up-a-jekyll-blog-part-3/"
+  label: "Setting Up a Jekyll Blog - Part 3"
 ---
 
 ### Adding Your First Post.
@@ -59,5 +62,3 @@ defaults:
 {% endhighlight %}
 
 So now we can get started sharing all of our knowledge with the world one post at a time. Up next I will be diving more into editing the different templates in Jeykll. Jeykll uses a templating language called [Liquid](http://liquidmarkup.org/) developed at [Shopify](http://www.shopify.com/). If you have used any other templating language such as [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), [Twig](http://twig.sensiolabs.org/), etc. it should be fairly easy to pickup.
-
-[Setting Up a Jekyll Blog - Part 3 >]({{ site.url }}/2015/07/29/setting-up-a-jekyll-blog-part-3/)
