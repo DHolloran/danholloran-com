@@ -14,8 +14,11 @@
 	{% comment %} Google Webmaster Tools Verification {% endcomment %}
 	<meta name="google-site-verification" content="oRfD7ytcUnEJjwB1tVsPR0yHJGUyxNPPhMotjom5vK8" />
 
-	<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700|Source+Sans+Pro' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{ "/dist/css/main.css" | prepend: site.baseurl }}">
+	{% comment %} Style {% endcomment %}
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ "/dist/css/main.css" | prepend: site.baseurl }}?v={{ site.version }}">
+
+	{% comment %} SEO/RSS {% endcomment %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
