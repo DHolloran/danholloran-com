@@ -19,6 +19,30 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+	{% comment %} Favicon{% endcomment %}
+	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="{{site.url}}/favicon.ico">
+
+	{% comment %} Start Apple Icons {% endcomment %}
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/dist/img/icons/ios/icon-60.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/dist/img/icons/ios/icon-60@2x.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/dist/img/icons/ios/icon-60@3x.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/dist/img/icons/ios/icon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/dist/img/icons/ios/icon-72@2x.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/dist/img/icons/ios/icon-76.png">
+	<link rel="apple-touch-icon" sizes="156x156" href="{{ site.url }}/dist/img/icons/ios/icon-76@2x.png">
+	<link rel="apple-touch-icon" sizes="40x40" href="{{ site.url }}/dist/img/icons/ios/icon-small-40.png">
+	<link rel="apple-touch-icon" sizes="80x80" href="{{ site.url }}/dist/img/icons/ios/icon-small-40@2x.png">
+	<link rel="apple-touch-icon" sizes="40x40" href="{{ site.url }}/dist/img/icons/ios/icon-small-40@3x.png">
+	<link rel="apple-touch-icon" sizes="50x50" href="{{ site.url }}/dist/img/icons/ios/icon-small-50.png">
+	<link rel="apple-touch-icon" sizes="50x50" href="{{ site.url }}/dist/img/icons/ios/icon-small-50@2x.png">
+	{% comment %} End Apple Icons {% endcomment %}
+
+	{% comment %} Start MS Icons {% endcomment %}
+	<meta name="application-name" content="DanHolloran">
+	<meta name="msapplication-TileImage" content="{{ site.url }}/dist/img/icons/ms/favicon-144.png">
+	<meta name="msapplication-TileColor" content="#5ec4b7">
+	{% comment %} MS Icons {% endcomment %}
+
 	{% comment %} Start Open Graph {% endcomment %}
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
