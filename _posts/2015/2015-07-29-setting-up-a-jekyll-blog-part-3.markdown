@@ -11,20 +11,19 @@ Jekyll uses a templating language named [Liquid](http://liquidmarkup.org/) devel
 So far I have not done too much editing of the main template Jekyll comes with. I have edited the main blog roll a little and added pagination so I am going to go through a few snippets you can use on your own blog.
 
 You can add an excerpt to your blog roll on index.html easily.
-
-![](/dist/uploads/post-excerpt.png)
+{% gist DHolloran/e5ddb0f1a4986e574a7c %}
 
 The double curly braces on either end denote a Liquid tag that will be output to the screen. The `post.excerpt` comes fromt the global post object which gives you access to the current post. There is also a `site` object that gives you access to configuration details. The `strip_html`, `strip_newlines`, and `truncate:160` are Liquid functions that help to clean up the excerpt before outputting it to the screen.
 
 Liquid also has loops to make it easy to display your posts in a blog roll.
 
-![Liquid Loop Example](/dist/uploads/liquid-loop.png)
+{% gist DHolloran/6dcf1f012c35e3dbcf82 %}
 
 The curly brace ({) and percentage sign (%) denote a logical block such as a for loop. This basically goes through the posts until there are none left and then outputs a small snippet to the screen. This is a snippet taken directly from my home page right now. You can see that there is more data accessible from the `post` object. Such as `post.date` for the posts publish date and `post.title` for the post title.
 
 In Liquid you can also use if/else statements just like you would normally in server side languages.
 
-![Liquid If/Else Example](/dist/uploads/liquid-if-else.png)
+{% gist DHolloran/9550ea26f737e28746c4 %}
 
 These are only some of the possibilities with Liquid you can read more about what is possible in the [Liquid Docs](https://github.com/Shopify/liquid/wiki). You will definetly take a look at the [Liquid for Programmers](https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers) or [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) depending on your personal preference. You can always read both and you might be a unicorn...
 
