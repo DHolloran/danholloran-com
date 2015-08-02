@@ -19,6 +19,8 @@ exclude:
   - LICENSE
   - package.json
   - README.md
+  - bower.json
+  - rakefile.rb
 
 # Outputting
 permalink: pretty
