@@ -45,3 +45,6 @@ defaults:
     values:
       layout: "default"
       author: "Dan Holloran"
+      avatar:
+        small: "http://www.gravatar.com/avatar/beea2174d2076aa60e679c19f2aee1bf?s=36"
+        large: "http://www.gravatar.com/avatar/beea2174d2076aa60e679c19f2aee1bf?s=108"
