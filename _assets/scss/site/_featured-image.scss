@@ -1,0 +1,44 @@
+// =======================================
+// Featured Image
+// =======================================
+.featured-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	margin-bottom: $spacing-unit;
+	padding: 0;
+	height: 300px;
+
+	@include max-width(500px) {
+		padding: 0 ($spacing-unit/2);
+		background: none !important;
+		height: auto;
+		margin-bottom: 0;
+		line-height: 1em;
+	} // @include max-width()
+} // .featured-image
+
+.featured-image-caption {
+	@include min-width(500px) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: rgba($font-color, .6);
+		text-align: center;
+		line-height: 300px;
+	} // @include max-width()
+} // .featured-image-caption
+
+.post-title {
+	.featured-image & {
+		@include min-width(500px) {
+			margin: 0;
+			color: $background-color;
+			display: inline-block;
+		} // @include max-width()
+	} // .featured-image &
+} // .post-title
