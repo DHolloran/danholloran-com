@@ -2,9 +2,11 @@
 layout: post
 title: St. Louis WordCamp 2015 Notes
 date: '2015-03-15 13:16:54'
+image:
+  featured: 'photo-1418065460487-3e41a6c84dc5.jpeg'
 ---
 
-In all WordCamp 2015 was definetly interesting. I thought that the Cain and Obeland in the Morning! "show" was pretty funny.  I think my favorite talk of the day was Atomic Design Principles, I've read about it before and semi-practice it even though I could do something like that better.  I also like the podcasting panel as well it was rather informative and a nice change of pace usually I just attened the full on developer talks. 
+In all WordCamp 2015 was definetly interesting. I thought that the Cain and Obeland in the Morning! "show" was pretty funny.  I think my favorite talk of the day was Atomic Design Principles, I've read about it before and semi-practice it even though I could do something like that better.  I also like the podcasting panel as well it was rather informative and a nice change of pace usually I just attened the full on developer talks.
 
 Below I have my simple notes and schedule for posteritiy and will try to updated with the Speakers slides and WordPress.tv links as they become available.
 
@@ -13,10 +15,10 @@ Below I have my simple notes and schedule for posteritiy and will try to updated
 * <a href="https://twitter.com/wordcampstl" target="_blank">@wordcampstl</a>
 * <a href="https://twitter.com/hashtag/wcstl" target="_blank">#wcstl</a>
 * Saturday March 14, 2015
-### Registration 
+### Registration
 *[8:00am]*
 
-### CAIN & OBENLAND IN THE MORNING! 
+### CAIN & OBENLAND IN THE MORNING!
 *[9:00am | Michael Cain, Konstantin Obenland]*  
 Cain & Obenland in the morning! – a morning show-style WordCamp talk with three segments: two that will cover any number of WordPress topics – current WP happenings, theming, design, development, best practices, worst practices, future trends, you name it – and a special guest interview with a big name from the WordPress world.
 
@@ -81,7 +83,7 @@ And once you’re up and running, you can also use the WordPress template functi
 	* Molecules
 	* Organisms
 	* Templates
-	* Pages 
+	* Pages
 * Break pages into components
 * 4.1 `the_posts_pagination();` and `get_the_post_pagination();`
 * Use `include( locate_template() );` to keep variable scope instead of `get_template_part();`
@@ -95,7 +97,7 @@ And once you’re up and running, you can also use the WordPress template functi
 	* Bundle/minify patterns for production
 	* Base all patterns on real needs
 
-### Lunch 
+### Lunch
 *[1:00pm]*
 
 #### Notes
@@ -126,7 +128,7 @@ Be prepared! Whether you are responsible only for running a single site for your
 * File permissions
 * Coordinating with a web host system administrator
 * Responding to an apparent hack
-* 
+*
 The overall goal will be to make your site(s) less attractive to opportunistic exploits, and give you a better sense of how to respond before (and, if necessary, after) a security breach.
 
 #### Notes:
@@ -156,15 +158,15 @@ I think this would be a great talk for various attendees. Beginners could begin 
 *[Developer 1 | Room 250 |  4:15pm | Pippin WIlliamson]*
 
 #### Notes:
-* Filter get_post_meta for old meta keys 
+* Filter get_post_meta for old meta keys
 * Mentality of how to do it
 * Add deprecated funcitons file and through debug error
 
-### CLOSING REMARKS 
+### CLOSING REMARKS
 *[4:45pm]*  
 Phew, we made it to the end of the first day of WordCamp St. Louis! We’d like to highlight a few superstars and remind folks of what the heck is happening on Sunday.
 
 Then, on to the after party with a few pointers on travel/parking and where to go once you reach the City Museum.
 
-### AFTER PARTY AT CITY MUSEUM 
+### AFTER PARTY AT CITY MUSEUM
 *[7:00pm]*
