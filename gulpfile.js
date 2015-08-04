@@ -11,6 +11,7 @@ var distSrc            = './dist';
 var assetsSrc          = './_assets/';
 var jsSrc              = assetsSrc + '/js/**/*.js';
 var jsDistSrc          = distSrc + '/js/';
+var bowerDir           = assetsSrc + '/bower_components/';
 var scssSrc            = assetsSrc + '/scss/**/*.scss';
 var cssDistSrc         = distSrc + '/css';
 var mapsSrc            = '../maps/';
@@ -28,6 +29,23 @@ gulp.task( 'clean', function( cb ) {
 	del( [
 		distSrc + '/**/*',
 	], cb );
+} );
+
+// Scripts.
+gulp.task( 'scripts', function() {
+  var concatFiles = [
+				bowerDir + 'jquery/dist/jquery.js',
+				jsSrc,
+			]
+	;
+
+	return gulp.src( concatFiles )
+		.pipe( $.changed( jsDistSrc ) )
+		.pipe( $.sourcemaps.init() )
+    .pipe( $.concat( 'main.js' ) )
+		.pipe( $.uglify() )
+		.pipe( $.sourcemaps.write( mapsSrc ) )
+    .pipe( gulp.dest( jsDistSrc ) );
 } );
 
 // Image uploads task.
@@ -84,7 +102,7 @@ gulp.task( 'styles', function() {
 } );
 
 // Build task.
-gulp.task( 'build', [ 'images', 'styles' ] );
+gulp.task( 'build', [ 'images', 'styles', 'scripts' ] );
 
 // Gulp seo task.
 gulp.task( 'seo', [ 'build' ], function( cb ) {
@@ -95,6 +113,7 @@ gulp.task( 'seo', [ 'build' ], function( cb ) {
 
 // Watch Task.
 gulp.task( 'watch', [ 'build' ], function() {
+	gulp.watch( jsDistSrc, [ 'scripts' ] );
 	gulp.watch( scssSrc, [ 'styles' ] );
 	gulp.watch( [ imageUploadSrc ], [ 'images:uploads' ] );
 	gulp.watch( [ imageAssetSrc ], [ 'images:asset' ] );
