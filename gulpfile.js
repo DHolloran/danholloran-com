@@ -45,7 +45,8 @@ gulp.task( 'scripts', function() {
     .pipe( $.concat( 'main.js' ) )
 		.pipe( $.uglify() )
 		.pipe( $.sourcemaps.write( mapsSrc ) )
-    .pipe( gulp.dest( jsDistSrc ) );
+    .pipe( gulp.dest( jsDistSrc ) )
+		.pipe( $.notify( 'Scripts task complete!' ) );
 } );
 
 // Image uploads task.
