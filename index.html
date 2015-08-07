@@ -24,7 +24,12 @@ layout: default
 			</li>
 		{% endfor %}
 	</ul>
-	{% if paginator.total_pages > 1 and paginator.page != paginator.total_pages %}
-	<a href="{{paginator.next_page_path }}" class='js-load-more load-more' data-totalpages="{{ paginator.total_pages }}">Load More Posts</a>
-	{% endif %}
+	<div class="page-navigation">
+		{% if paginator.total_pages > 1 and paginator.page != 1 %}
+		<a href="{{paginator.previous_page_path }}" class='previous'>Previous</a>
+		{% endif %}
+		{% if paginator.total_pages > 1 and paginator.page != paginator.total_pages %}
+		<a href="{{paginator.next_page_path }}" class='next'>Next</a>
+		{% endif %}
+	</div>
 </div>
