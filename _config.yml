@@ -8,7 +8,7 @@ url: "http://danholloran.me" # the base hostname & protocol for your site
 twitter_username: dholloran
 github_username:  dholloran
 linkedin_username: dholloran
-version: 1.0.1
+version: 1.0.2
 uploadurl: "/dist/uploads/"
 
 # Handling Reading
