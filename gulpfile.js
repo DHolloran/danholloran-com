@@ -106,7 +106,7 @@ gulp.task( 'styles', function() {
 gulp.task( 'build', [ 'images', 'styles', 'scripts' ] );
 
 // Gulp seo task.
-gulp.task( 'seo', [ 'build' ], function( cb ) {
+gulp.task( 'seo', function( cb ) {
 		request( 'http://www.google.com/webmasters/tools/ping?sitemap=' + sitemapURL );
 		request( 'http://www.bing.com/webmaster/ping.aspx?siteMap=' + sitemapURL );
 		cb();
