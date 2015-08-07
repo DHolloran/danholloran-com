@@ -42,14 +42,21 @@
 	@include list-unstyled;
 	@include clearfix;
 
-	& > li {
-		float: left;
-		margin-left: $spacing;
+	> li {
+		margin-right: 0;
+		clear: both;
+		float: none;
 
-		&:first-child {
-			margin-left: 0;
-		} // &:first-child
-	} // &>li
+		@include min-width(500px) {
+			float: left;
+			margin-right: $spacing;
+			clear: none;
+		} // @include min-width
+
+		&:last-child {
+			margin-right: 0;
+		} // &:last-child
+	} // > li
 } // @mixin list-inline
 
 @mixin flip-icon {

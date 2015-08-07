@@ -5,6 +5,14 @@
 .social-media-list {
 	@include list-inline;
 
+	> li {
+		margin-bottom: ($spacing-unit/2);
+
+		@include min-width(800px) {
+			margin-bottom: ($spacing-unit);
+		} // @include bp-min(500px)
+	} // > li
+
 	a {
 		@include flip-icon;
 
@@ -23,15 +31,22 @@
 		top: -2px;
 		position: relative;
 	} // .icon-twitter,.icon--linkedin
+
+	.icon--buffer {
+		svg {
+			transform: scale(1);
+		} // svg
+	} // .icon--buffer
+
+	.icon--facebook {
+		svg {
+			margin-top: -2px;
+			transform: scale(1.25);
+		} // svg
+	} // .icon--facebook
 } // .social-media-list
 
 // ====================================
 // Share List
 // ====================================
-.share-list {
-	margin-bottom: ($spacing-unit/2);
-
-	@include min-width(500px) {
-		margin-bottom: ($spacing-unit);
-	} // @include bp-min(500px)
-} // .share-list
+// .share-list

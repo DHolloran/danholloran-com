@@ -16,8 +16,8 @@ layout: default
 	<article class="post-content">
 		{{ content }}
 	</article>
+	{% include share.html %}
 	{% include comments.html %}
-	<br>
 	<div class="page-navigation">
 		<a href="/" class="back-to-blog">&lt; Back to Blog</a>
 		{% if page.series.url && page.series.label %}

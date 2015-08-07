@@ -1,3 +1,10 @@
 // ============================================
 // Disqus
 // ============================================
+#disqus_thread {
+	margin-bottom: $spacing-unit;
+
+	@include min-width(500px) {
+		margin-bottom: ($spacing-unit * 2);
+	} // @include min-width()
+} // #disqus_thread
