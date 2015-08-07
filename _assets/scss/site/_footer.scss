@@ -16,29 +16,3 @@
 		margin: 0;
 	} // p
 } // .footer-col-2
-
-// ====================================
-// Social Media List
-// ====================================
-.social-media-list {
-	@include list-inline;
-
-	a {
-		@include flip-icon;
-
-		@include link-interact {
-			text-decoration: none;
-			color: $font-color;
-
-			path {
-				fill: $brand-color;
-			} // path
-		} // @include link-interact
-	} // a
-
-	.icon--twitter,
-	.icon--linkedin {
-		top: -2px;
-		position: relative;
-	} // .icon-twitter,.icon--linkedin
-} // .social-media-list

@@ -1,6 +1,37 @@
 // ====================================
+// Social/Share List
+// ====================================
+.share-list,
+.social-media-list {
+	@include list-inline;
+
+	a {
+		@include flip-icon;
+
+		@include link-interact {
+			text-decoration: none;
+			color: $font-color;
+
+			path {
+				fill: $brand-color;
+			} // path
+		} // @include link-interact
+	} // a
+
+	.icon--twitter,
+	.icon--linkedin {
+		top: -2px;
+		position: relative;
+	} // .icon-twitter,.icon--linkedin
+} // .social-media-list
+
+// ====================================
 // Share List
 // ====================================
 .share-list {
-	@include list-inline;
+	margin-bottom: ($spacing-unit/2);
+
+	@include min-width(500px) {
+		margin-bottom: ($spacing-unit);
+	} // @include bp-min(500px)
 } // .share-list
