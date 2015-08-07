@@ -22,8 +22,8 @@ layout: default
 		<a href="/" class="back-to-blog">&lt; Back to Blog</a>
 		{% if page.series.url && page.series.label %}
 		<a href="{{ page.series.url | uri_escape}}" class="next-post">{{ page.series.label }} &gt;</a>
-		{% else %}
-		<a href="{{ page.next.url }}" class="next-post">Next Post &gt;</a>
+		{% else if page.previous.url %}
+		<a href="{{ page.previous.url }}" class="next-post">Next Post &gt;</a>
 		{% endif %}
 	</div>
 </div>
