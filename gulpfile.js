@@ -113,7 +113,7 @@ gulp.task( 'seo', [ 'build' ], function( cb ) {
 
 // Watch Task.
 gulp.task( 'watch', [ 'build' ], function() {
-	gulp.watch( jsDistSrc, [ 'scripts' ] );
+	gulp.watch( jsSrc, [ 'scripts' ] );
 	gulp.watch( scssSrc, [ 'styles' ] );
 	gulp.watch( [ imageUploadSrc ], [ 'images:uploads' ] );
 	gulp.watch( [ imageAssetSrc ], [ 'images:asset' ] );
