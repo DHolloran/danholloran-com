@@ -2,14 +2,15 @@
 // Featured Image
 // =======================================
 .featured-image {
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
 	background-size: cover;
 	position: relative;
 	margin-bottom: $spacing-unit;
 	padding: 0;
-	height: 300px;
+	height: 400px;
+	background-attachment: fixed;
 
 	@include max-width(500px) {
 		padding: 0 ($spacing-unit/2);
@@ -29,7 +30,7 @@
 		bottom: 0;
 		background-color: rgba($font-color, .6);
 		text-align: center;
-		line-height: 300px;
+		line-height: 400px;
 	} // @include max-width()
 } // .featured-image-caption
 
