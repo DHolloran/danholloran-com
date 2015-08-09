@@ -27,6 +27,14 @@ In Liquid you can also use if/else statements just like you would normally in se
 
 {% gist DHolloran/9550ea26f737e28746c4 %}
 
+Liquid also has template includes much like PHP has `include`/`require`, Node has `require()`, etc. Liquid has its own version which is easy to use. You just need to add an HTML file into the `_includes` such as `_includes/share.html`. Then you can just include your partial HTML file into the current template with the following.
+
+{% gist DHolloran/d2667e1d158347b43c45 %}
+
+Liquid even has comments such as any good "programming" language should they are a little more to type than most languages but you probably will not use them as often. You can add a comment with the following.
+
+{% gist DHolloran/c931e3d7e3d9f6cbaf5a %}
+
 These are only some of the possibilities with Liquid you can read more about what is possible in the [Liquid Docs](https://github.com/Shopify/liquid/wiki). You will definetly take a look at the [Liquid for Programmers](https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers) or [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) depending on your personal preference. You can always read both and you might be a unicorn...
 
 Now that we have a basic understanding of liquid and how the templates work now its time to style our site. I will be using SCSS but you can drop in CSS, LESS, Stylus, etc. with a few small additions.
