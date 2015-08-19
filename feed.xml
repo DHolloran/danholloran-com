@@ -16,6 +16,8 @@ layout: null
 				<title>{{ post.title | xml_escape }}</title>
 				<description>
 					<![CDATA[
+					Originally posted on <a href="{{site.url}}">{{site.url}}</a> {{ post.date | date: "%b %-d, %Y" }}.
+					<br><br><br>
 					{{ post.excerpt | strip_html | strip_newlines | xml_escape }}
 					<br><br>
 					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Continue reading...</a>
