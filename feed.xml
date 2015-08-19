@@ -15,7 +15,11 @@ layout: null
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<description>
+					<![CDATA[
 					{{ post.excerpt | strip_html | strip_newlines | xml_escape }}
+					<br><br>
+					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Continue reading...</a>
+					]]>
 				</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
