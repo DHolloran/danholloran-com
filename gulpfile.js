@@ -8,10 +8,10 @@ var $       = require( 'gulp-load-plugins' )( {
 
 // Set Directories.
 var distSrc            = './dist';
-var assetsSrc          = './_assets/';
+var assetsSrc          = './_assets';
 var jsSrc              = assetsSrc + '/js/**/*.js';
 var jsDistSrc          = distSrc + '/js/';
-var bowerDir           = assetsSrc + '/bower_components/';
+var bowerDir           = assetsSrc + '/bower_components';
 var scssSrc            = assetsSrc + '/scss/**/*.scss';
 var cssDistSrc         = distSrc + '/css';
 var mapsSrc            = '../maps/';
@@ -23,6 +23,7 @@ var imageAssetDistSrc  = distSrc + '/img/';
 var htmlDistSrc        = '_site/**/*.html';
 var siteURL            = 'http://danholloran.me';
 var sitemapURL         = siteURL + '/sitemap.xml';
+var stylish            = require( 'jshint-stylish' );
 
 // Clean task.
 gulp.task( 'clean', function( cb ) {
@@ -33,19 +34,22 @@ gulp.task( 'clean', function( cb ) {
 
 // Scripts.
 gulp.task( 'scripts', function() {
-  var concatFiles = [
-				bowerDir + 'jquery/dist/jquery.js',
+	var concatFiles = [
+				bowerDir + '/jquery/dist/jquery.js',
 				jsSrc,
 			]
 	;
 
-	return gulp.src( concatFiles )
-		.pipe( $.changed( jsDistSrc ) )
+	gulp.src( jsSrc )
+	.pipe( $.jshint() )
+	.pipe( $.jshint.reporter( stylish ) );
+
+	gulp.src( concatFiles )
 		.pipe( $.sourcemaps.init() )
-    .pipe( $.concat( 'main.js' ) )
+		.pipe( $.concat( 'main.js' ) )
 		.pipe( $.uglify() )
 		.pipe( $.sourcemaps.write( mapsSrc ) )
-    .pipe( gulp.dest( jsDistSrc ) )
+		.pipe( gulp.dest( jsDistSrc ) )
 		.pipe( $.notify( 'Scripts task complete!' ) );
 } );
 

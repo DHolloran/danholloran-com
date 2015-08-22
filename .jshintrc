@@ -7,30 +7,29 @@
 	"plusplus": true,
 	"esnext": true,
 	"noarg": true,
-	"predef": ["Modernizr"],
+	"predef": [
+				"Modernizr"
+		],
 	"debug": true,
 	"eqnull": true,
 	"quotmark": true,
-	"strict": true,
 	"globals": {
 		"wp": true,
 		"window": true,
 		"$": true,
 		"module": true,
-		"ajaxurl": true,
-	}
+		"ajaxurl": true
+	},
 	"maxdepth": 3,
 	"latedef": true,
 	"curly": true,
-	"eqnull": true,
 	"eqeqeq": true,
 	"freeze": true,
 	"futurehostile": true,
 	"maxparams": 4,
 	"maxstatements": 4,
-	"nobsp": true,
 	"notypeof": true,
 	"shadow": "outer",
 	"undef": true,
-	"unused": true,
+	"unused": true
 }
