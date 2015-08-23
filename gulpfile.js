@@ -32,30 +32,37 @@ gulp.task( 'clean', function( cb ) {
 	], cb );
 } );
 
+// Lint Scripts.
+gulp.task( 'lint:scripts', function() {
+	return gulp.src( jsSrc )
+	.pipe( $.jshint() )
+	.pipe( $.jshint.reporter( stylish ) )
+	.pipe( $.notify( 'Lint Scripts task complete!' ) );
+} );
+
 // Scripts.
 gulp.task( 'scripts', function() {
 	var concatFiles = [
 				bowerDir + '/jquery/dist/jquery.js',
+				bowerDir + '/age/javascripts/jquery.age.js',
+				bowerDir + '/jquery-readingtime/jquery.readingtime.js',
 				jsSrc,
 			]
 	;
 
-	gulp.src( jsSrc )
-	.pipe( $.jshint() )
-	.pipe( $.jshint.reporter( stylish ) );
-
-	gulp.src( concatFiles )
+	return gulp.src( concatFiles )
 		.pipe( $.sourcemaps.init() )
 		.pipe( $.concat( 'main.js' ) )
 		.pipe( $.uglify() )
 		.pipe( $.sourcemaps.write( mapsSrc ) )
 		.pipe( gulp.dest( jsDistSrc ) )
+		.pipe( gulp.dest( './_site/dist/js/' ) )
 		.pipe( $.notify( 'Scripts task complete!' ) );
 } );
 
 // Image uploads task.
 gulp.task( 'images:uploads', function() {
-	gulp.src( imageUploadSrc )
+	return gulp.src( imageUploadSrc )
 		.pipe( $.changed( imageUploadDistSrc ) )
 		.pipe( $.imagemin( {
 				optimizationLevel : 3,
@@ -82,6 +89,14 @@ gulp.task( 'images:assets', function() {
 // Images task
 gulp.task( 'images', [ 'images:uploads', 'images:assets' ] );
 
+// Lint SCSS
+gulp.task( 'lint:styles', function() {
+	gulp.src( scssSrc )
+		.pipe( $.scssLint() )
+		.pipe( $.scssLint.failReporter( 'E' ) )
+		.pipe( $.notify( 'Lint Styles task complete!' ) );
+} );
+
 // Styles Task
 gulp.task( 'styles', function() {
 	// PostCSS Processors.
@@ -96,8 +111,6 @@ gulp.task( 'styles', function() {
 	gulp.src( scssSrc )
 		.pipe( $.changed( cssDistSrc ) )
 		.pipe( $.sourcemaps.init() )
-		.pipe( $.scssLint() )
-		.pipe( $.scssLint.failReporter( 'E' ) )
 		.pipe( $.sass().on( 'error', $.sass.logError ) )
 		.pipe( $.postcss( processors ) )
 		.pipe( $.cssnano() )
@@ -107,7 +120,10 @@ gulp.task( 'styles', function() {
 } );
 
 // Build task.
-gulp.task( 'build', [ 'images', 'styles', 'scripts' ] );
+gulp.task( 'lint', [ 'lint:scripts', 'lint:styles' ] );
+
+// Build task.
+gulp.task( 'build', [ 'images', 'styles', 'scripts', 'lint' ] );
 
 // Gulp seo task.
 gulp.task( 'seo', function( cb ) {
@@ -117,7 +133,7 @@ gulp.task( 'seo', function( cb ) {
 } );
 
 // Watch Task.
-gulp.task( 'watch', [ 'build' ], function() {
+gulp.task( 'watch', [ 'images', 'styles', 'scripts' ], function() {
 	gulp.watch( jsSrc, [ 'scripts' ] );
 	gulp.watch( scssSrc, [ 'styles' ] );
 	gulp.watch( [ imageUploadSrc ], [ 'images:uploads' ] );
