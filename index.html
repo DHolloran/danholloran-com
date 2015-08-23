@@ -11,8 +11,8 @@ layout: default
 			<li>
 				<div class="post-meta">
 					<img src="{{ post.avatar.small }}" with="36" height="36" class="post-author-avatar" alt="{{ post.author }} avatar">
-					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span><br>
-					<span class="post-author">{{ post.author }}</span>
+					<span class="post-author">{{ post.author }}</span><br>
+					<time datetime="{{ post.date }}" class="post-date"></time>
 				</div>
 				<h2 class="post-title">
 					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
