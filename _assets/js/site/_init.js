@@ -27,6 +27,50 @@ jQuery( function( $ ) {
 		return false;
 	}; // _init.jqueryAge()
 
+	/**
+	 * Initializes the jQuery Reading Time plugin.
+	 *
+	 * @return  {Boolean}  false
+	 */
+	_init.jqueryReadingTime = function() {
+		// Make sure the jQuery Reading Time plugin exists.
+		if ( typeof $.fn.readingtime !== 'function' ) {
+			return;
+		} // if()
+
+		// Make sue we have some articles to work with.
+		var $articles = $( '.post-content' );
+		if ( $articles.length === 0 ) {
+			return false;
+		} // if()
+
+		$articles.each( function( index, el ) {
+			var $article = $( el ),
+					$etr     = $article.siblings( '.post-header' ).find( '.etr' ),
+					etr      = $article.readingtime()
+			;
+
+			// Make sure the etr element exists.
+			if ( $etr.length === 0 ) {
+				$etr = $article.siblings( '.etr' );
+				if ( $etr.length === 0 ) {
+					return;
+				} // if()
+			} // if()
+
+			// Get the message to append after the time.
+			var msg = $etr.data( 'msg' );
+			msg = ( typeof msg === 'undefined' ) ? '' : msg;
+
+			// Add the estimate time to read text.
+			var etrText = etr + ' ' + msg;
+			$etr.text( etrText.trim() );
+		} );
+
+		return false;
+	}; // _init.jqueryReadingTime()
+
 	// Initialize All The Things!!!!
 	_init.jqueryAge();
+	_init.jqueryReadingTime();
 }( jQuery ) );
