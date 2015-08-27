@@ -39,6 +39,17 @@ At the time of this writing 2.x.x is fine if not you can install Ruby via [RVM](
 $ sudo xcodebuild -license
 {% endhighlight %}
 
+### Git
+
+*Mac OS X should have shipped with Git by default but we might as well upgrade it.*
+
+1. Download [Git for Mac OS X](https://git-scm.com/download/mac).
+2. Install Git by clicking on the downloaded package and following the install prompts.
+3. Check if Git has been installed correctly.
+{% highlight bash %}
+$ git --version
+{% endhighlight %}
+
 ### Homebrew
 
 Install [Homebrew](http://brew.sh/).
