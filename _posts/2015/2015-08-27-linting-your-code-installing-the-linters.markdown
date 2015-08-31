@@ -15,6 +15,8 @@ SCSS-Lint handles linting your Sass/SCSS code if you use Stylus check out [Styli
 
 So lets get started!
 
+ *Everything with a $ should be ran in the terminal without the ($ ).*
+
 <br>
 
 ### Installing PHPCS
@@ -116,4 +118,4 @@ You can check out my [SCSS-Lint configuration](https://github.com/DHolloran/lint
 <br>
 
 ### Wrapping Up
-Well that was not too bad was it? No I didn't think so. As it stands now you could run each linter via the command line and see the issues. However, that is definitely not an efficient way to lint your code. Luckily for you there are plugins for [Atom](https://atom.io/) and [Sublime text 3](http://www.sublimetext.com/3) which are easy to get setup. I will detail soon how you can get started linting your code inline with both of those editors. You can also run them with your build tools such as [Grunt.js](http://gruntjs.com/) or [Gulp.js](http://gulpjs.com/) even though I personally prefer the inline linting of the editors.
+Well that was not too bad was it? No I didn't think so. As it stands now you could run each linter via the command line and see the issues. However, that is definitely not an efficient way to lint your code. Luckily for you there are plugins for [Atom](https://atom.io/) and [Sublime text 3](http://www.sublimetext.com/3) which are easy to get setup. You can lean how to [install the Sublime Text 3 linters here](/2015/08/30/installing-linters-sublime-text-3/). You can also run them with your build tools such as [Grunt.js](http://gruntjs.com/) or [Gulp.js](http://gulpjs.com/) even though I personally prefer the inline linting of the editors.
