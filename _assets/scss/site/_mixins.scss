@@ -62,11 +62,11 @@
 @mixin flip-icon {
 	.icon {
 		transition: all .25s ease-out;
-		perspective: 1000;
 	} // .icon
 
 	@include link-interact {
 		.icon {
+			perspective: 1000;
 			transform: rotateY(360deg);
 		} // .icon
 	} // @include link-interact
