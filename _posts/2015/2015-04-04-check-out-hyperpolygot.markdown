@@ -3,7 +3,7 @@ layout: post
 title: Check Out Hyperpolygot
 date: '2015-04-04 15:47:01'
 image:
-  featured: 'photo-1428452932365-4e7e1c4b0987'
+  featured: 'photo-1428452932365-4e7e1c4b0987.jpg'
 ---
 
 If you've been curious how one programming languages syntax matches with another then you should check out [Hyperpolygot](http://hyperpolyglot.org).  

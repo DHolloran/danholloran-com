@@ -6,7 +6,7 @@ series:
   url: "/2015/07/29/setting-up-a-jekyll-blog-part-3/"
   label: "Setting Up a Jekyll Blog - Part 3"
 image:
-  featured: 'photo-1429000263672-1b8b4008d2f7'
+  featured: 'photo-1429000263672-1b8b4008d2f7.jpg'
 ---
 
 ### Adding Your First Post.

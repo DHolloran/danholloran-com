@@ -6,7 +6,7 @@ wpbaInlineForm: true
 redirect_from:
   - /2015/03/30/wpba-thoughts-and-road-map/
 image:
-  featured: 'photo-1429152937938-07b5f2828cdd'
+  featured: 'photo-1429152937938-07b5f2828cdd.jpg'
 ---
 
 ### Update (7/18/2015) Survey Responses

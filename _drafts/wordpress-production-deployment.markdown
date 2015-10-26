@@ -2,6 +2,8 @@
 layout: post
 title: "WordPress Production Deployment"
 date: "2015-08-14 08:24"
+image:
+  featured: 'photo-1433959352364-9314c5b6eb0b.jpg'
 ---
 ### Ideas
 - Overcoming fear of commandline would fix a good chunk of this
