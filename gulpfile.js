@@ -15,12 +15,12 @@ var bowerDir           = assetsSrc + '/bower_components';
 var scssSrc            = assetsSrc + '/scss/**/*.scss';
 var cssDistSrc         = distSrc + '/css';
 var mapsSrc            = '../maps/';
-var mapsDistSrc        = distSrc + '/maps/';
+// var mapsDistSrc        = distSrc + '/maps/';
 var imageUploadSrc     = './_uploads/**/*';
 var imageAssetSrc      = assetsSrc + '/img/**/*';
 var imageUploadDistSrc = distSrc + '/uploads/';
 var imageAssetDistSrc  = distSrc + '/img/';
-var htmlDistSrc        = '_site/**/*.html';
+// var htmlDistSrc        = '_site/**/*.html';
 var siteURL            = 'http://danholloran.me';
 var sitemapURL         = siteURL + '/sitemap.xml';
 var stylish            = require( 'jshint-stylish' );
@@ -46,6 +46,7 @@ gulp.task( 'scripts', function() {
 				bowerDir + '/jquery/dist/jquery.js',
 				bowerDir + '/age/javascripts/jquery.age.js',
 				bowerDir + '/jquery-readingtime/jquery.readingtime.js',
+				bowerDir + '/smoothstate/src/jquery.smoothState.js',
 				jsSrc,
 			]
 	;

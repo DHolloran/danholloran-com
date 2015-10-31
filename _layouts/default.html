@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+	{% include head.html %}
 
-  <body>
+	<body>
 
-    {% include header.html %}
+		{% include header.html %}
 
-    <div class="page-content">
-      {% include featured-image.html %}
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+		<div id="page_content" class="page-content m-scene">
+			{% include featured-image.html %}
+			<div class="wrapper scene_element scene_element--fadein">
+				{{ content }}
+			</div>
+		</div>
 
-    {% include footer.html %}
+		{% include footer.html %}
 
-  </body>
+	</body>
 
 </html>
