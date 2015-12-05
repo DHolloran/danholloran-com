@@ -44,7 +44,6 @@ gulp.task( 'lint:scripts', function() {
 gulp.task( 'scripts', function() {
 	var concatFiles = [
 				bowerDir + '/jquery/dist/jquery.js',
-				bowerDir + '/age/javascripts/jquery.age.js',
 				bowerDir + '/jquery-readingtime/jquery.readingtime.js',
 				bowerDir + '/smoothstate/src/jquery.smoothState.js',
 				jsSrc,
