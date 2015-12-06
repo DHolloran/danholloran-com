@@ -12,7 +12,7 @@ layout: default
 				<div class="post-meta">
 					<img src="{{ post.avatar.small }}" with="36" height="36" class="post-author-avatar" alt="{{ post.author }} avatar">
 					<span class="post-author">{{ post.author }}</span><br>
-					<time datetime="{{ post.date }}" class="post-date"></time>
+					<time datetime="{{ post.date }}" class="post-date">{{ post.date | date_to_string }}</time>
 				</div>
 				<h2 class="post-title">
 					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
