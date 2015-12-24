@@ -69,7 +69,7 @@ jQuery( function( $ ) {
 
 		// Before content is retrieved.
 		config.onStart = {
-			duration: 250,
+			duration: 0,
 			render  : function() {
 				$content.addClass( 'is-exiting' );
 
