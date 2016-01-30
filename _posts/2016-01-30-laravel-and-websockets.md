@@ -169,13 +169,13 @@ If you do not already have Supervisor installed you can install it via `sudo apt
 
 Now we need to set the configuration file for `socket.js`	via `sudo nano /etc/supervisor/conf.d/socket.conf`.
 {% highlight bash %}
-# vms-socket.conf content
-[program:vms-socket]
+# socket.conf content
+[program:socket]
 command=node /path/to/install/socket.js # IMPOTANT: Update /path/to/install
 autostart=true
 autorestart=true
-stderr_logfile=/var/log/vms-socket.err.log
-stdout_logfile=/var/log/vms-socket.out.log
+stderr_logfile=/var/log/socket.err.log
+stdout_logfile=/var/log/socket.out.log
 {% endhighlight %}
 
 Then we will need to setup the configuration for Redis `sudo nano /etc/supervisor/conf.d/redis.conf`
