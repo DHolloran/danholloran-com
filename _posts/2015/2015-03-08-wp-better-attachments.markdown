@@ -46,7 +46,7 @@ wpba_get_attachments(array(
 
 ### WPBA Attachment List
 
-![WPBA Attachment List](/dist/uploads/screenshot-6.png)
+![WPBA Attachment List](http://danholloran.me/dist/uploads/screenshot-6.png)
 
 #### Shortcode
 
@@ -102,23 +102,23 @@ wpba_attachment_list( array(
 
 ### WPBA Post Editor Button
 
-![WPBA Post Editor Button](/dist/uploads/screenshot-1.png)
+![WPBA Post Editor Button](http://danholloran.me/dist/uploads/screenshot-1.png)
 
 ### WPBA Meta Box
 
-![WPBA Meta Box](/dist/uploads/screenshot-2.png)
+![WPBA Meta Box](http://danholloran.me/dist/uploads/screenshot-2.png)
 
 ### WPBA Unattach Media Library Link
 
-![WPBA Unattach Media Library Link](/dist/uploads/screenshot-3.png)
+![WPBA Unattach Media Library Link](http://danholloran.me/dist/uploads/screenshot-3.png)
 
 ### WPBA Attachment Editor
 
-![WPBA Attachment Editor](/dist/uploads/screenshot-4.png)
+![WPBA Attachment Editor](http://danholloran.me/dist/uploads/screenshot-4.png)
 
 ### WPBA Crop Editor
 
-![WPBA Crop Editor](/dist/uploads/screenshot-5.png)
+![WPBA Crop Editor](http://danholloran.me/dist/uploads/screenshot-5.png)
 
 ## Getting Started
 
