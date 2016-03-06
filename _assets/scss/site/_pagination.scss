@@ -44,6 +44,25 @@
 				} // @include min-width
 			} // &:last-child
 		} // previous,.back,.next
+
+		.previous,
+		.next {
+			@include min-max-width(300px, 499px) {
+				position: relative;
+				text-indent: -9999px;
+			} // @include min-width
+
+			&:after {
+				@include min-max-width(300px, 499px) {
+					position: absolute;
+					text-indent: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+				} // @include min-width
+			} // &:after
+		} // previous,.next
 	} // &.has-back
 
 	// == Previous =========================
