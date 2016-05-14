@@ -19,7 +19,6 @@
 	"dependencies": {
 		"normalize.css": "x.x.x",
 		"jquery": "x.x.x",
-		"age": "x.x.x",
-		"jquery-readingtime": "x.x.x"
+		"age": "x.x.x"
 	}
 }
