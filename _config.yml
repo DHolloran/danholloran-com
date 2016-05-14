@@ -23,9 +23,6 @@ exclude:
   - bower.json
   - rakefile.rb
 
-feed:
-  path: feed
-
 # Outputting
 permalink: pretty
 timezone: America/Chicago
