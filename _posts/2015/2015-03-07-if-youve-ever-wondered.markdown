@@ -6,5 +6,5 @@ image:
   featured: 'VhlQKh.jpg'
 ---
 
-**This is what I do all day long.**
-![](http://danholloran.me/dist/uploads/VhlQKh.jpg)
+**This is what I do all day long.**  
+![](/dist/uploads/VhlQKh.jpg)
