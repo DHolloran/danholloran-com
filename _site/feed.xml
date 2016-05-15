@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>DanHolloran</title>
+		<description>My adventures on and off of the internetz.
+</description>
+		<link>http://danholloran.me/</link>
+		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>Sun, 15 May 2016 07:54:57 -0500</pubDate>
+		<lastBuildDate>Sun, 15 May 2016 07:54:57 -0500</lastBuildDate>
+		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Laravel Forge, Digital Ocean and WebSockets</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Mar 5, 2016.
+					<br><br><br>
+					I recently posted an overview of how to setup Web Sockets using Laravel and Socket.io. I wanted to follow it up with a quick post on how to get the Web Sockets functioning correctly on a Digital Ocean server using Laravel Forge. I a going to assume that you have already gone through the setup process to provision a new server. Also that you have read the first post since the largest amount of work will lie there. I believe these steps should be identically for all hosting providers not Just Digital Ocean but do not quote me on that.
+					<br><br>
+					<a href="http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Laravel and WebSockets</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 30, 2016.
+					<br><br><br>
+					Working with WebSockets and Larvel is extremely easy! If you are new to Laravel it has an event system that you can use to dispatch events for other parts of your PHP code to use. As well as Laravel supports Redis and Pusher for dispatching events via WebSockets. Pusher is a fully hosted service that will handle the Node.js side of things for you. I hover will cover using Laravel events with Redis to broadcast events to Socket.io and using Supervisor to keep all the processes needed running by default. The current version of Laravel as of this writing is 5.2 which you should already have installed and I will be assuming you are using Laravel Homstead.
+					<br><br>
+					<a href="http://danholloran.me/2016/01/30/laravel-and-websockets/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/01/30/laravel-and-websockets/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/01/30/laravel-and-websockets/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Why Does ExpressionEngine Save Templates in the Database?</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 16, 2016.
+					<br><br><br>
+					This is a little bit of a rant and a large amount of it may be a result of my inexperience. This is in no way saying ExpressionEngine is bad and something like WordPress is better. I feel it is more a surprise from using CodeIgniter before and CodeIgniter is used to build ExpressionEngine. Maybe things have changed in the way CodeIgniter handles MVC. Also maybe this is just a situation of a large user base needing access to more tools in your views.
+					<br><br>
+					<a href="http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Quickly Install Applications on Your Mac With Homebrew and Cask</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 12, 2016.
+					<br><br><br>
+					I have been having some issues with my work Macbook and I needed to reinstall Mac OS X. I like to do a complete restore every so often any way since I like to hack and play with things so there is quite a bit of junk that accumulates. I figured this time I would document some of the helpful things you can do with a few tools and a little scripting. 
+					<br><br>
+					<a href="http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Why Would You Use a Fixed Header?</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 24, 2015.
+					<br><br><br>
+					It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.
+					<br><br>
+					<a href="http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Vue.js Component Messaging Continued</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 8, 2015.
+					<br><br><br>
+					So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”. 
+					<br><br>
+					<a href="http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Vue.js Component Messaging</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 7, 2015.
+					<br><br><br>
+					The other day I was working through how to abstract an alert list into its own component. Basically it is an ul where each alert is a li pretty simple. So using Vue.js, Browserify, and Vueify this is pretty simple but the problem was how do the other components add alerts. I may be missing something however, it does not seem like Vue.js. offers any sort of component to component event system. Well, at least outside of a parent child relationship which I did not want to go that route since multiple components may need to dispatch alerts.
+					<br><br>
+					<a href="http://danholloran.me/2015/12/07/vues-js-component-messaging/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Mon, 07 Dec 2015 18:16:00 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/07/vues-js-component-messaging/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/07/vues-js-component-messaging/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Experimenting With Laravel and Vue.js</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 5, 2015.
+					<br><br><br>
+					So I’ve been playing with Laravel and Vue.js which I have really started to like. It seems every time I have to write boring repetitive code there’s already something that handles it for you.
+					<br><br>
+					<a href="http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sat, 05 Dec 2015 21:49:22 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Setting Up Your Shell</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Sep 29, 2015.
+					<br><br><br>
+					So you want to setup your shell thats awesome! This will be primarily relevant to Mac OS X since if your on Linux you should already be comfortable with the shell and if your on Windows I’m sorry even though Windows 10 does look pretty cool. I will go through some basic configuration of iTerm 2 and get zshell setup.
+					<br><br>
+					<a href="http://danholloran.me/2015/09/29/setting-up-your-shell/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Tue, 29 Sep 2015 20:38:00 -0500</pubDate>
+				<link>http://danholloran.me/2015/09/29/setting-up-your-shell/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/09/29/setting-up-your-shell/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Don&#39;t Fear The Shell</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Sep 20, 2015.
+					<br><br><br>
+					So, I have noticed a rather alarming aversion to the command line (CLi) for developers. If you really think about it the CLi is not much different from a normal text editor. 
+					<br><br>
+					<a href="http://danholloran.me/2015/09/20/dont-fear-the-shell/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sun, 20 Sep 2015 19:36:00 -0500</pubDate>
+				<link>http://danholloran.me/2015/09/20/dont-fear-the-shell/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/09/20/dont-fear-the-shell/</guid>
+				
+				
+			</item>
+		
+	</channel>
+</rss>
