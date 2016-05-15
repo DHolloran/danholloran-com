@@ -132,7 +132,10 @@ gulp.task( 'styles', function() {
 gulp.task( 'lint', [ 'lint:scripts', 'lint:styles' ] );
 
 // Build task.
-gulp.task( 'build', [ 'images', 'styles', 'scripts', 'lint' ] );
+// gulp.task( 'build', [ 'images', 'styles', 'scripts', 'lint' ] );
+
+// Build production task.
+gulp.task( 'build', [ 'images', 'styles', 'scripts', 'jekyll:build' ] );
 
 // Build production task.
 gulp.task( 'build:production', [ 'images', 'styles', 'scripts', 'jekyll:build' ] );
