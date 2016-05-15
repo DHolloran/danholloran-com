@@ -5,6 +5,7 @@ var request = require( 'request' );
 var $       = require( 'gulp-load-plugins' )( {
 	pattern : [ 'gulp-*', 'gulp.*', 'postcss-*' ]
 } );
+var exec = require('child_process').exec;
 
 // Set Directories.
 var distSrc            = './dist';
@@ -31,6 +32,15 @@ gulp.task( 'clean', function( cb ) {
 		distSrc + '/**/*',
 	], cb );
 } );
+
+// Build Jekyll.
+gulp.task('jekyll:build', function (cb) {
+  exec('bundle exec jekyll build', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
 
 // Lint Scripts.
 gulp.task( 'lint:scripts', function() {
@@ -122,7 +132,10 @@ gulp.task( 'styles', function() {
 gulp.task( 'lint', [ 'lint:scripts', 'lint:styles' ] );
 
 // Build task.
-gulp.task( 'build', [ 'images', 'styles', 'scripts', 'lint' ] );
+// gulp.task( 'build', [ 'images', 'styles', 'scripts', 'lint' ] );
+
+// Build production task.
+gulp.task( 'build', [ 'images', 'styles', 'scripts', 'jekyll:build' ] );
 
 // Gulp seo task.
 gulp.task( 'seo', function( cb ) {
