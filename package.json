@@ -26,7 +26,8 @@
     "node-sass": "^3.4.2",
     "postcss-import": "^6.1.1",
     "postcss-single-charset": "^0.3.0",
-    "request": "^2.58.0"
+    "request": "^2.58.0",
+    "gulp-htmlmin": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
