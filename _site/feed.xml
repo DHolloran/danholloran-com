@@ -6,9 +6,27 @@
 </description>
 		<link>http://danholloran.me/</link>
 		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 15 May 2016 10:24:50 -0500</pubDate>
-		<lastBuildDate>Sun, 15 May 2016 10:24:50 -0500</lastBuildDate>
+		<pubDate>Mon, 16 May 2016 20:43:37 -0500</pubDate>
+		<lastBuildDate>Mon, 16 May 2016 20:43:37 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>St Louis WordCamp 2016</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> May 16, 2016.
+					<br><br><br>
+					WordCamp St. Louis was held this year again at Washington University St. Louis on May 14-15 2016. Over all it was a good time I always enjoy going to WordCamps. I figured I would post my notes here like I did last year just cause. I have added the slides that where available as of this posting you can checkout the full listing here. Some of the later notes on Saturday kind of trailed off because I decided to fix my blog after a few issues with Github Pages and Jekyll 3. One of the downfalls to Jekyll being so easy to write with being Markdown at its core and all makes it sometimes difficult to upgrade.
+					<br><br>
+					<a href="http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Mon, 16 May 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
@@ -168,24 +186,6 @@
 				<pubDate>Tue, 29 Sep 2015 20:38:00 -0500</pubDate>
 				<link>http://danholloran.me/2015/09/29/setting-up-your-shell/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/09/29/setting-up-your-shell/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Don&#39;t Fear The Shell</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Sep 20, 2015.
-					<br><br><br>
-					So, I have noticed a rather alarming aversion to the command line (CLi) for developers. If you really think about it the CLi is not much different from a normal text editor. 
-					<br><br>
-					<a href="http://danholloran.me/2015/09/20/dont-fear-the-shell/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Sun, 20 Sep 2015 19:36:00 -0500</pubDate>
-				<link>http://danholloran.me/2015/09/20/dont-fear-the-shell/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/09/20/dont-fear-the-shell/</guid>
 				
 				
 			</item>
