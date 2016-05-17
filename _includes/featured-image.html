@@ -1,7 +1,13 @@
+{% if paginator == nil %}
 {% if page.image.featured %}
-<div class="featured-image" style="background-image:url('{{ site.uploadurl }}{{page.image.featured}}')">
+{% capture featured_image_url %}{{ site.uploadurl }}{{page.image.featured}}{% endcapture %}
+{% else %}
+{% assign featured_image_url = 'https://source.unsplash.com/category/nature/2000x1000' %}
+{% endif %}
+
+<div class="featured-image" style="background-image:url('{{ featured_image_url  }}')">
 	<div class="featured-image-caption">
-		<h1 class="post-title">{{ page.title }}</h1>
+		<h1 class="page-title">{{ page.title }}</h1>
 	</div>
 </div>
 {% endif %}
