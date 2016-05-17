@@ -24,6 +24,7 @@
 .featured-image-caption {
 	@include min-width(500px) {
 		position: absolute;
+		color: #fff;
 		top: 0;
 		right: 0;
 		left: 0;
