@@ -6,9 +6,27 @@
 </description>
 		<link>http://danholloran.me/</link>
 		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Mon, 16 May 2016 20:43:37 -0500</pubDate>
-		<lastBuildDate>Mon, 16 May 2016 20:43:37 -0500</lastBuildDate>
+		<pubDate>Tue, 14 Jun 2016 20:50:25 -0500</pubDate>
+		<lastBuildDate>Tue, 14 Jun 2016 20:50:25 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Looking Into Statamic Flat File CMS</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 14, 2016.
+					<br><br><br>
+					I still have not built anything with Statamic but it seems really promising. Even at $200 a license I believe it would be worth it. Well at least if you are working on a site for a business. I would like to use it for my personal site with the static file caching mode so it would be much like the static site I have now with Jekyll. In that case $200 may be a little too much since as a developer I am fine compiling my blog and deploying it.
+					<br><br>
+					<a href="http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Tue, 14 Jun 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>St Louis WordCamp 2016</title>
@@ -168,24 +186,6 @@
 				<pubDate>Sat, 05 Dec 2015 21:49:22 -0600</pubDate>
 				<link>http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Setting Up Your Shell</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Sep 29, 2015.
-					<br><br><br>
-					So you want to setup your shell thats awesome! This will be primarily relevant to Mac OS X since if your on Linux you should already be comfortable with the shell and if your on Windows I’m sorry even though Windows 10 does look pretty cool. I will go through some basic configuration of iTerm 2 and get zshell setup.
-					<br><br>
-					<a href="http://danholloran.me/2015/09/29/setting-up-your-shell/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Tue, 29 Sep 2015 20:38:00 -0500</pubDate>
-				<link>http://danholloran.me/2015/09/29/setting-up-your-shell/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/09/29/setting-up-your-shell/</guid>
 				
 				
 			</item>
