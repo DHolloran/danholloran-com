@@ -2,7 +2,7 @@
 title: Launchcode Mentorship
 layout: post
 ---
-I am mentoring this month for Launchcode. it has been a pretty good experience so far it would have been a nice option when I was learning. Many people in the industry do not have a formal education background which is ok. I do not have a CS degree if I was younger when I decided to do this I would've. I did do a degree that was more based on web which I feel was helpful.
+I was mentoring this month for Launchcode. it has been a pretty good experience so far it would have been a nice option when I was learning. Many people in the industry do not have a formal education background which is ok. I do not have a CS degree if I was younger when I decided to do this I would've. I did do a degree that was more based on web which I feel was helpful.
 
 I think things like Launchcode and boot camp type programs can be a good idea. I honestly do not think that programming in general is hard. The actual process of writing the code is general easy.
 

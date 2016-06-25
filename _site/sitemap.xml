@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://danholloran.me/2016/06/25/launchcode-mentorship/</loc>
+<lastmod>2016-06-25T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</loc>
 <lastmod>2016-06-14T00:00:00-05:00</lastmod>
 </url>
@@ -193,5 +197,17 @@
 </url>
 <url>
 <loc>http://danholloran.me/</loc>
+</url>
+<url>
+<loc>http://danholloran.me/page2/</loc>
+</url>
+<url>
+<loc>http://danholloran.me/page3/</loc>
+</url>
+<url>
+<loc>http://danholloran.me/page4/</loc>
+</url>
+<url>
+<loc>http://danholloran.me/page5/</loc>
 </url>
 </urlset>

@@ -6,9 +6,27 @@
 </description>
 		<link>http://danholloran.me/</link>
 		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Tue, 14 Jun 2016 20:50:25 -0500</pubDate>
-		<lastBuildDate>Tue, 14 Jun 2016 20:50:25 -0500</lastBuildDate>
+		<pubDate>Sat, 25 Jun 2016 17:35:29 -0500</pubDate>
+		<lastBuildDate>Sat, 25 Jun 2016 17:35:29 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Launchcode Mentorship</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 25, 2016.
+					<br><br><br>
+					I was mentoring this month for Launchcode. it has been a pretty good experience so far it would have been a nice option when I was learning. Many people in the industry do not have a formal education background which is ok. I do not have a CS degree if I was younger when I decided to do this I would’ve. I did do a degree that was more based on web which I feel was helpful.
+					<br><br>
+					<a href="http://danholloran.me/2016/06/25/launchcode-mentorship/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sat, 25 Jun 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/06/25/launchcode-mentorship/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/06/25/launchcode-mentorship/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Looking Into Statamic Flat File CMS</title>
@@ -168,24 +186,6 @@
 				<pubDate>Mon, 07 Dec 2015 18:16:00 -0600</pubDate>
 				<link>http://danholloran.me/2015/12/07/vues-js-component-messaging/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/12/07/vues-js-component-messaging/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Experimenting With Laravel and Vue.js</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 5, 2015.
-					<br><br><br>
-					So I’ve been playing with Laravel and Vue.js which I have really started to like. It seems every time I have to write boring repetitive code there’s already something that handles it for you.
-					<br><br>
-					<a href="http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Sat, 05 Dec 2015 21:49:22 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/05/experimenting-with-laravel-and-vue-js/</guid>
 				
 				
 			</item>
