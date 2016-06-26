@@ -6,16 +6,14 @@
 </description>
 		<link>http://danholloran.me/</link>
 		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 26 Jun 2016 08:26:30 -0500</pubDate>
-		<lastBuildDate>Sun, 26 Jun 2016 08:26:30 -0500</lastBuildDate>
+		<pubDate>Sun, 26 Jun 2016 08:38:58 -0500</pubDate>
+		<lastBuildDate>Sun, 26 Jun 2016 08:38:58 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
-		
+
 			<item>
 				<title>Setting up Mailhog on MAMP</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 26, 2016.
-					<br><br><br>
 					<p><a href="https://github.com/mailhog/MailHog">Mailhog</a> is a tool that allows all of your outgoing mail to be intercepted. This is great for your development environment since you may need to test things incrementally. You really do not want your clients or users receiving your test emails.</p>
 
 <p>I know a lot of the cool kids are setting up Mailhog along with other develop items to <a href="https://www.vagrantup.com/">Vagrant</a> which I use sometimes as well. However we still use <a href="https://www.mamp.info/">MAMP</a> at work building mainly WordPress sites and I could not find a write up on how to get Mailhog setup on MAMP.</p>
@@ -46,16 +44,14 @@
 				<pubDate>Sun, 26 Jun 2016 00:00:00 -0500</pubDate>
 				<link>http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Launchcode Mentorship</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 25, 2016.
-					<br><br><br>
 					<p>I was mentoring this month for Launchcode. it has been a pretty good experience so far it would have been a nice option when I was learning. Many people in the industry do not have a formal education background which is ok. I do not have a CS degree if I was younger when I decided to do this I would’ve. I did do a degree that was more based on web which I feel was helpful.</p>
 
 <p>I think things like Launchcode and boot camp type programs can be a good idea. I honestly do not think that programming in general is hard. The actual process of writing the code is general easy.</p>
@@ -85,16 +81,14 @@
 				<pubDate>Sat, 25 Jun 2016 00:00:00 -0500</pubDate>
 				<link>http://danholloran.me/2016/06/25/launchcode-mentorship/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/06/25/launchcode-mentorship/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Looking Into Statamic Flat File CMS</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 14, 2016.
-					<br><br><br>
 					<p>I still have not built anything with <a href="https://statamic.com/">Statamic</a> but it seems really promising. Even at $200 a license I believe it would be worth it. Well at least if you are working on a site for a business. I would like to use it for my personal site with the static file caching mode so it would be much like the static site I have now with Jekyll. In that case $200 may be a little too much since as a developer I am fine compiling my blog and deploying it.</p>
 
 <p>Recently at work we have been doing some work with Laravel and Vue.js. We do primarily WordPress websites which tend to break down when iterating since they are notoriously hard to programmatically test. Also as great as the plugin system is it cannot compare to using composer with smaller packages. One of the biggest upsides is the ease of use on the back end. I would say the administrator area and the community have been the two biggest factors that has kept me coming back.</p>
@@ -134,16 +128,14 @@
 				<pubDate>Tue, 14 Jun 2016 00:00:00 -0500</pubDate>
 				<link>http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>St Louis WordCamp 2016</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> May 16, 2016.
-					<br><br><br>
 					<p>WordCamp St. Louis was held this year again at Washington University St. Louis on May 14-15 2016. Over all it was a good time I always enjoy going to WordCamps. I figured I would post my notes here <a href="http://danholloran.me/2015/03/15/st-louis-wordcamp-2015/">like I did last year</a> just cause. I have added the slides that where available as of this posting you can checkout the full listing <a href="https://2016.stlouis.wordcamp.org/2016/05/16/speaker-slides-round-up/">here</a>. Some of the later notes on Saturday kind of trailed off because I decided to fix my blog after a few issues with Github Pages and Jekyll 3. One of the downfalls to Jekyll being so easy to write with being Markdown at its core and all makes it sometimes difficult to upgrade.</p>
 
 <h2 id="saturday-may-14-2016">Saturday May 14, 2016</h2>
@@ -304,16 +296,14 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Mon, 16 May 2016 00:00:00 -0500</pubDate>
 				<link>http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Mar 5, 2016.
-					<br><br><br>
 					<p>I recently posted an overview of how to setup Web Sockets using <a href="/2016/01/30/laravel-and-websockets/">Laravel and Socket.io</a>. I wanted to follow it up with a quick post on how to get the Web Sockets functioning correctly on a <a href="https://www.digitalocean.com/">Digital Ocean</a> server using <a href="https://forge.laravel.com/">Laravel Forge</a>. I a going to assume that you have already gone through the setup process to provision a new server. Also that you have read the first post since the largest amount of work will lie there. I believe these steps should be identically for all hosting providers not Just Digital Ocean but do not quote me on that.</p>
 
 <p>First of all we need to setup some daemons for Redis and Socket.io which forge makes extremely simple. This will allow Redis and Socket.io to run continuously without you having to worry about it, First you need to navigate to Servers &gt; Your Server and then the “Daemons” tab. You will need to add <code>redis-server --port 3001</code> in the “Command” text field and click the “Start Daemon” button this will enable Redis. You will also need to add <code>node /home/forge/mysite.com/socket.js</code>, make sure to update <code>mysite.com</code> with the domain of you site, in the “Command” text field and click the “Start Daemon” button this will enable Socket.io.</p>
@@ -327,16 +317,14 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
 				<link>http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Laravel and WebSockets</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 30, 2016.
-					<br><br><br>
 					<p>Working with WebSockets and Larvel is extremely easy! If you are new to Laravel it has an event system that you can use to dispatch events for other parts of your PHP code to use. As well as Laravel supports Redis and <a href="https://pusher.com/">Pusher</a> for dispatching events via WebSockets. Pusher is a fully hosted service that will handle the Node.js side of things for you. I hover will cover using Laravel events with Redis to broadcast events to <a href="http://socket.io/">Socket.io</a> and using <a href="http://supervisord.org/">Supervisor</a> to keep all the processes needed running by default. The current version of Laravel as of this writing is 5.2 which you should already have installed and I will be assuming you are using Laravel Homstead.</p>
 
 <h2 id="dependencies-and-configuration">Dependencies and Configuration</h2>
@@ -531,16 +519,14 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
 				<link>http://danholloran.me/2016/01/30/laravel-and-websockets/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/01/30/laravel-and-websockets/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Why Does ExpressionEngine Save Templates in the Database?</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 16, 2016.
-					<br><br><br>
 					<p>This is a little bit of a rant and a large amount of it may be a result of my inexperience. This is in no way saying ExpressionEngine is bad and something like WordPress is better. I feel it is more a surprise from using CodeIgniter before and CodeIgniter is used to build ExpressionEngine. Maybe things have changed in the way CodeIgniter handles MVC. Also maybe this is just a situation of a large user base needing access to more tools in your views.</p>
 
 <p>I have been maintaining a few ExpressionEngine sites lately and one thing that seemed curious to me is saving templates in the database. I am not saying this is the wrong way to do things but just seems strange. I would want to make as few database calls as possible.</p>
@@ -562,16 +548,14 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
 				<link>http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Quickly Install Applications on Your Mac With Homebrew and Cask</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 12, 2016.
-					<br><br><br>
 					<p>I have been having some issues with my work Macbook and I needed to reinstall Mac OS X. I like to do a complete restore every so often any way since I like to hack and play with things so there is quite a bit of junk that accumulates. I figured this time I would document some of the helpful things you can do with a few tools and a little scripting. </p>
 
 <p>I figured I would cover <a href="http://brew.sh/">Homebrew</a> and <a href="http://caskroom.io/">Cask</a> to quickly install common applications first. Usually it allows me to install the majority of the applications outside of the Mac App Store. The applications in then Mac App Store can be quickly installed in my purchased applications sections.</p>
@@ -591,16 +575,14 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
 				<link>http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
 				<guid isPermaLink="true">http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Why Would You Use a Fixed Header?</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 24, 2015.
-					<br><br><br>
 					<p>It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.</p>
 
 <p>I understand why you would want to fix your sites header when you have a single page and you are using it to navigate on the same page. I do think this would be the only valid use case I could see. A fixed sidebar navigation would also be valid in this case on larger screens. However this does not happen often so why are there a lot of fixed headers.</p>
@@ -618,16 +600,14 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
 				<link>http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
-				
-				
+
+
 			</item>
-		
+
 			<item>
 				<title>Vue.js Component Messaging Continued</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 8, 2015.
-					<br><br><br>
 					<p>So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “<a href="/2015/12/07/vues-js-component-messaging/">Vue.js Component Messaging</a>”. </p>
 
 <p>I had suggested that firing an event off of a common element wether that is the body or the main Vue.js instance really does not matter. However I kind of got to thinking more about it and that would work but there may be a problem if there are multiple instances of the same component on the same page. In the example of an Alert component if for some reason there was one Alert component in the header and one in the footer an alert message would be added to both.</p>
@@ -635,13 +615,13 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 <p>I did have an idea I thought may solve that issue allow for something like an event component property. Wether you pass it the full value or maybe just a suffix. It could be <code>event-name</code> by default and if you pass it <code>event-name-2</code> then that event would fire while passing the same data as <code>event-name</code>. As a suffix maybe you could pass <code>my-custom-suffix</code> and then the event that would be fired would be something like <code>event-name/my-custom-suffix</code>.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html">// Full event
-<span class="nt">&lt;alert</span> 
+<span class="nt">&lt;alert</span>
 	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
 	<span class="na">:event=</span><span class="s">&quot;event-name-2&quot;</span>
 <span class="nt">&gt;&lt;/alert&gt;</span>
 
 // Event suffix
-<span class="nt">&lt;alert</span> 
+<span class="nt">&lt;alert</span>
 	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
 	<span class="na">:event-suffix=</span><span class="s">&quot;event-name-2&quot;</span>
 <span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
@@ -677,9 +657,9 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
 				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
-				
-				
+
+
 			</item>
-		
+
 	</channel>
 </rss>
