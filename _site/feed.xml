@@ -6,9 +6,27 @@
 </description>
 		<link>http://danholloran.me/</link>
 		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sat, 25 Jun 2016 20:20:20 -0500</pubDate>
-		<lastBuildDate>Sat, 25 Jun 2016 20:20:20 -0500</lastBuildDate>
+		<pubDate>Sun, 26 Jun 2016 08:26:30 -0500</pubDate>
+		<lastBuildDate>Sun, 26 Jun 2016 08:26:30 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Setting up Mailhog on MAMP</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 26, 2016.
+					<br><br><br>
+					Mailhog is a tool that allows all of your outgoing mail to be intercepted. This is great for your development environment since you may need to test things incrementally. You really do not want your clients or users receiving your test emails.
+					<br><br>
+					<a href="http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sun, 26 Jun 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Launchcode Mentorship</title>
@@ -168,24 +186,6 @@
 				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
 				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Vue.js Component Messaging</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 7, 2015.
-					<br><br><br>
-					The other day I was working through how to abstract an alert list into its own component. Basically it is an ul where each alert is a li pretty simple. So using Vue.js, Browserify, and Vueify this is pretty simple but the problem was how do the other components add alerts. I may be missing something however, it does not seem like Vue.js. offers any sort of component to component event system. Well, at least outside of a parent child relationship which I did not want to go that route since multiple components may need to dispatch alerts.
-					<br><br>
-					<a href="http://danholloran.me/2015/12/07/vues-js-component-messaging/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Mon, 07 Dec 2015 18:16:00 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/07/vues-js-component-messaging/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/07/vues-js-component-messaging/</guid>
 				
 				
 			</item>

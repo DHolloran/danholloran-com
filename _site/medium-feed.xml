@@ -6,9 +6,49 @@
 </description>
 		<link>http://danholloran.me/</link>
 		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sat, 25 Jun 2016 20:20:20 -0500</pubDate>
-		<lastBuildDate>Sat, 25 Jun 2016 20:20:20 -0500</lastBuildDate>
+		<pubDate>Sun, 26 Jun 2016 08:26:30 -0500</pubDate>
+		<lastBuildDate>Sun, 26 Jun 2016 08:26:30 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Setting up Mailhog on MAMP</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 26, 2016.
+					<br><br><br>
+					<p><a href="https://github.com/mailhog/MailHog">Mailhog</a> is a tool that allows all of your outgoing mail to be intercepted. This is great for your development environment since you may need to test things incrementally. You really do not want your clients or users receiving your test emails.</p>
+
+<p>I know a lot of the cool kids are setting up Mailhog along with other develop items to <a href="https://www.vagrantup.com/">Vagrant</a> which I use sometimes as well. However we still use <a href="https://www.mamp.info/">MAMP</a> at work building mainly WordPress sites and I could not find a write up on how to get Mailhog setup on MAMP.</p>
+
+<p>This setup could be adapted to almost any environment since Mailhog is written in <a href="https://golang.org/">Go</a> and is available on multiple platforms. I may end up needing to figure out how to set it up on <a href="https://laravel.com/docs/valet">Laravel Valet</a>. I am trying it out on a small scale and may switch full time to it eventually.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>So lets get started setting up Mailhog on MAMP. You can install Mailhog through <a href="http://brew.sh/">Homebrew</a>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew install mailhog</code></pre></div>
+
+<p>To start Mailhog when OSX boots up you can use <a href="https://github.com/Homebrew/homebrew-services">Homebrew Services</a>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew services start mailhog</code></pre></div>
+
+<p>You should now be able to access Mailhog on <a href="http://127.0.0.1:8025/">http://127.0.0.1:8025/</a></p>
+
+<p>Now you will need to edit the sendmail_path configure in your PHP.ini. Which you should be able to find at <code>/Applications/MAMP/bin/php/{PHP_VERSION}/conf/php.ini</code> where {PHP_VERSION} is what every PHP version MAMP is using.</p>
+
+<p>You will need to set the sendmail_path to <code>sendmail_path = /usr/local/Cellar/mailhog/{VERSION}/bin/MailHog sendmail test@test</code>. {VERSION} can be found by <code>$ls /usr/local/Cellar/mailhog/</code> then the folder in there will be the {VERSION} value. As of this writing 0.2.0 was the latests version.</p>
+
+<p>Restart MAMP to make sure our changes take effect and fire off a test email. Now if you visit <a href="http://127.0.0.1:8025/">http://127.0.0.1:8025/</a> you should see your test email. That is all there is, pretty simple right.</p>
+
+<p>For servers such as managed WordPress hosting like <a href="https://wpengine.com/">WP Engine</a> where you can not install Mailhog take a look at <a href="https://mailtrap.io/">Mailtrap</a>. It does everything Mailhog can do and more. Once you sign up for a Mailtrap account they give you simple example code to add to your project for many different languages and frameworks.</p>
+
+					]]>
+				</description>
+				<pubDate>Sun, 26 Jun 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Launchcode Mentorship</title>
@@ -637,98 +677,6 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
 				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
 				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Vue.js Component Messaging</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 7, 2015.
-					<br><br><br>
-					<p>The other day I was working through how to abstract an alert list into its own component. Basically it is an <code>ul</code> where each alert is a <code>li</code> pretty simple. So using Vue.js, <a href="http://browserify.org/">Browserify</a>, and <a href="https://github.com/vuejs/vueify">Vueify</a> this is pretty simple but the problem was how do the other components add alerts. I may be missing something however, it does not seem like Vue.js. offers any sort of component to component event system. Well, at least outside of a parent child relationship which I did not want to go that route since multiple components may need to dispatch alerts.</p>
-
-<p><strong>Note:</strong> This will be more of a high level exercise than a post you can directly copy code from. Many pieces will be missing for brevity and I will assume you have at least used Vue.js a little.</p>
-
-<p>So my solution currently is to send an event to the main Vue.js instance that controls all the components. This event is dispatched from the component that wants to add alert. Then I can pass the message along to the Alert component using <a href="http://vuejs.org/guide/components.html#Passing_Data_with_Props">component properties</a>. Finally I can handle anything I need to do when the value updates using <a href="http://vuejs.org/api/#computed">computed properties</a>. I honestly do not feel this is the correct approach but it works I will outline another idea below I may implement. I do believe that outlining the whole thought process may be helpful.</p>
-
-<p>So basically there is a List component that I want to be able to add alerts from without it having to know about the Alert component. So firing off an event seems like the way to do it right? The following is the important parts of the list component.</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// The message details.</span>
-<span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s1">&#39;This is the message value&#39;</span><span class="p">,</span> <span class="c1">// Value</span>
-	<span class="s1">&#39;success&#39;</span><span class="p">,</span> <span class="c1">// Status</span>
-	<span class="mi">4000</span> <span class="c1">// Timeout </span>
-<span class="p">};</span>
-
-<span class="c1">// This will be fired at some point when something happens in the list.</span>
-<span class="c1">// Such as an item was removed successfully.</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">$dispatch</span><span class="p">(</span><span class="s1">&#39;add-alert-message&#39;</span><span class="p">,</span> <span class="nx">message</span> <span class="p">);</span></code></pre></div>
-
-<p>The <code>this.$dispatch</code> sends an event up the parent chain you can learn more about component events <a href="http://vuejs.org/guide/components.html#Custom_Events">here</a>. However, there does not seem to be a way to subscribe to this event from another component. The next step happens in the main Vue.js instance where you can subscribe to the event and then apply it to a messages array on the Vue.js data object. You can also do something like check for duplicates at this level as well this could also be handled in the computed properties section as well. Which kind of feels weird since the Alert component should be in charge of what consists as a duplicate alert.</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// The main Vue.js Instance.</span>
-<span class="k">new</span> <span class="nx">Vue</span><span class="p">(</span> <span class="p">{</span>
-    <span class="nx">el</span>         <span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-    <span class="nx">data</span>       <span class="o">:</span> <span class="p">{</span> <span class="nx">messages</span> <span class="o">:</span> <span class="p">[]</span> <span class="p">},</span>
-    <span class="nx">events</span>     <span class="o">:</span> <span class="p">{</span>
-        <span class="s1">&#39;add-alert-message&#39;</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">message</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// Check for duplicates and anything else you need to do.</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span> <span class="p">);</span></code></pre></div>
-
-<p>So this works and all however you now have to let the alert component know about <code>this.messages</code> which you can do by passing messages to the alert component. The following snippet binds the Vue.js messages to the Alert component messages property. Using the <code>.sync</code> modifier will allow the values to sync from the Vue.js instance to the Alert component.</p>
-
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;alert</span> <span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span><span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
-
-<p>Then you will need to use computed properties on the alert component since you need to know when it is updated. So far I have not found a better way to handle this. I needed to be able to set a timeout so the messages would disappear after a short time. You could handle this in the main Vue.js instance but that would kind of defeat the point of a component.</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Alert component configuration.</span>
-<span class="p">{</span>
-    <span class="nx">methods</span> <span class="o">:</span> <span class="p">{</span>
-        <span class="nx">setAlertMessagesTimeout</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-            <span class="c1">// This will go through the alerts and set a timeout so the alerts can automatically be removed.</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="nx">props</span>   <span class="o">:</span> <span class="p">[</span><span class="s1">&#39;messages&#39;</span><span class="p">],</span>
-    <span class="nx">computed</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="nx">alertMessages</span> <span class="o">:</span> <span class="p">{</span>
-        <span class="nx">get</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">setAlertMessagesTimeout</span><span class="p">();</span>
-            <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">;</span>
-        <span class="p">},</span>
-        <span class="nx">set</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">alertMessages</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
-
-<p>No finally you can loop over the alerts and output them in the Alert components.</p>
-
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">v-for=</span><span class="s">&quot;message in alertMessages&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;alert alert-{message.status}&quot;</span><span class="nt">&gt;</span>{message.value}<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></div>
-
-<p>So it almost seems like there should be a better way… I have considered firing an event off of the body or whatever element that is used for the Vue.js instance. This way you could easily pass messages between components. You could have 2 helper functions one that handles firing the event so you will not have to worry about it and one that subscribes to the event. This would basically bypass the main Vue.js instance having to know about what the components are doing.</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// In component 1</span>
-<span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
-
-<span class="c1">// In component 2</span>
-<span class="nx">componentSubscribe</span><span class="p">(</span><span class="s1">&#39;event-name&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
-	<span class="c1">// Do whatever you need to do now.</span>
-<span class="p">});</span></code></pre></div>
-
-<p>Using some sort of abstraction like this would help you not have to remember what element you are firing the event on each time. I may refactor and flesh this thought out more as I learn. Maybe there is an even better way to handle it that I have not thought of. I also may have missed something in the documentation that solves this. Maybe I am trying to force a square peg into a round hole and there is a good reason why it is the way it is. I may never know…</p>
-
-					]]>
-				</description>
-				<pubDate>Mon, 07 Dec 2015 18:16:00 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/07/vues-js-component-messaging/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/07/vues-js-component-messaging/</guid>
 				
 				
 			</item>
