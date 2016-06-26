@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>DanHolloran</title>
+		<description>My adventures on and off of the internetz.
+</description>
+		<link>http://danholloran.me/</link>
+		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>Sat, 25 Jun 2016 20:20:20 -0500</pubDate>
+		<lastBuildDate>Sat, 25 Jun 2016 20:20:20 -0500</lastBuildDate>
+		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Launchcode Mentorship</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 25, 2016.
+					<br><br><br>
+					<p>I was mentoring this month for Launchcode. it has been a pretty good experience so far it would have been a nice option when I was learning. Many people in the industry do not have a formal education background which is ok. I do not have a CS degree if I was younger when I decided to do this I would’ve. I did do a degree that was more based on web which I feel was helpful.</p>
+
+<p>I think things like Launchcode and boot camp type programs can be a good idea. I honestly do not think that programming in general is hard. The actual process of writing the code is general easy.</p>
+
+<p>However, one of the hardest parts is having the drive to learn new things. I think you would get more of a real world view in a situation like Launchcode where it is semi-structured. This forces you to learn how to find solutions to problems. This is a large part of what my day is which I do not feel you would get from a traditional university. You have to figure out solutions in days/hours instead of a more week/month approach.</p>
+
+<p>This is why I feel my degree helped me it was a bachelors degree in 2 years. It forced me to learn quickly to be able to come up. For the final project you could tell the difference in who enjoyed what they where doing. There where features that went above and beyond what you learned.</p>
+
+<p>This will also weed out people who are not excited to develop. I can tell you from experience after days of trying to fix a problem or build a feature your not with it does chip away at your resolve.</p>
+
+<p>Let’s face it fixing bugs and boring features are not fun. However I do it for the feeling I get when I fix something difficult or build something cool. it usually makes it all worth while. If you do not have the resolve to work through the hard parts development is not a good fit.</p>
+
+<p>In these type of programs they are going to do anything they can to help you succeed. However, that is not enough if you do not put the work in. I feel this is a good thing since you will have to do more than just show up for work.</p>
+
+<p>I have seen multiple developers fail because of not understanding what it takes to succeed. You have to be passionate and you have to be willing to learn.  If you don’t understand a technology that’s ok find someone to help explain it to you, watch some videos, build something over and over until it clicks. Especially when you are just getting started expect to spend a decent amount of time outside of work just figuring out things.</p>
+
+<p>I think it’s cool that I have the chance to help someone have a chance to make a change for the better. I enjoy teaching and it’s nice to not have to do it while shipping. On the job training is tough especially for a smaller shop.</p>
+
+<p>Even with the experience I do have I still feel the pain of the first time. Sure each language or new technology I learn makes the next one easier. It still can be overwhelming at first but you just have to ship to learn. I love Shoptalk Show’s answer to becoming a better developer “Just build websites”.</p>
+
+<p>It’s nice when you get the structure from a program to point you in the right direction of what to build. It is also nice to have someone with more experience to help guide you. I’ve never really had any one to help guid me. The majority of what I know is from me putting the work in. I’ve broken a lot of things and spent hours on a missing semicolon. I like having the opportunity to pass some of the lessons onto someone else.</p>
+
+<p>This is Launchcode’s inaugural Mentorship program at least in this format. I think it’s going pretty good for being the first go at it. It makes me want to look into more ways to mentor and help new developers.</p>
+
+					]]>
+				</description>
+				<pubDate>Sat, 25 Jun 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/06/25/launchcode-mentorship/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/06/25/launchcode-mentorship/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Looking Into Statamic Flat File CMS</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 14, 2016.
+					<br><br><br>
+					<p>I still have not built anything with <a href="https://statamic.com/">Statamic</a> but it seems really promising. Even at $200 a license I believe it would be worth it. Well at least if you are working on a site for a business. I would like to use it for my personal site with the static file caching mode so it would be much like the static site I have now with Jekyll. In that case $200 may be a little too much since as a developer I am fine compiling my blog and deploying it.</p>
+
+<p>Recently at work we have been doing some work with Laravel and Vue.js. We do primarily WordPress websites which tend to break down when iterating since they are notoriously hard to programmatically test. Also as great as the plugin system is it cannot compare to using composer with smaller packages. One of the biggest upsides is the ease of use on the back end. I would say the administrator area and the community have been the two biggest factors that has kept me coming back.</p>
+
+<p>However, building more complex UIs it starts to break down. The built in templating system has not changed in a long time. I prefer the separation of data logic from view logic that a framework usually provides. The Rest API would help somewhat with this once fully implemented. However, routes would make things better.</p>
+
+<p>Also the database scheme by nature of how it has to be is fairly generic and has a large amount of large MySQL text fields with small amounts of data when using large amounts of custom meta. This seems to slow sites down as they scale in the amount of data. I would prefer to have a database schema that more represents the data model of the project. Also interacting with Eloquent feels more natural to me than WP_Query/WP DB.</p>
+
+<p>So I digress I had heard about <a href="https://statamic.com/">Statamic</a> on the <a href="http://spec.fm/podcasts/does-not-compute">Does Not Compute</a> podcast but for some reason I dismissed as being a tool like Jekyll that is just a static site generator. I think static site generators are awesome but it’s hard enough to get someone to type in a text box let alone use the command line.</p>
+
+<p>However it almost seems like the sweet site between framework, static site generators and a dynamic CMS. By default you have no database since everything is a file by default.</p>
+
+<p>This has an interesting up side/downside. The whole site can be version controlled if you like. The tough one on that is how to you handle user generated content. Since you can both edit all the data both in the admin and in a text editor where do you draw the line. I prefer to edit as much as I can from an editor but if someone changes an option on the production site this whole utopia collapses.</p>
+
+<p>It also to a point will be faster since you do not have a database. However at that point maybe it is not the right tool for the job or you can have a hybrid since you do have access to Laravel.</p>
+
+<p>That brings me to my next pro part is you have access to Laravel. This is a little bit weird at first how you interact with it. However everything is there if you need it.</p>
+
+<p>I also really like the administrator area. It almost seems like it is WordPress if they dropped backwards compatibility. They have content types which seem a lot more flexible than post types. You can actually build whole admin pages out of the 30 some odd field types and it feels much more built in than a post meta box.</p>
+
+<p>The whole administrator is built in Vue.js components so it is easy to extend. It just overall feels less cluttered it may just be that it is no where near as mature as WordPress I don’t know.</p>
+
+<p>You also have an indexed search built in. Instead of having to do a full MySQL text search when searching for something.</p>
+
+<p>It also has routes built in sometimes you do not want to make a page just to have a URL. I know WordPress has the rewrite API but it’s way more complex and restrictive to do basically the same thing.</p>
+
+<p>Oh did I mention they have a form builder built in. You can also add fields in a YAML which would come in handy with a larger form with the same types of fields. It’s so much easier adding repetitive things in a text editor. Instead of having to drag/drop and click through a bunch of text fields.</p>
+
+<p>It’s almost as if they took a list of my personal pain points and built a CMS around it. I was reading through the docs and list of features thinking all this stuff is supposed to be difficult. Apparently it is not supposed to be this way who would’ve thought that. I am sure I will find pain points other than what to version control.</p>
+
+<p>I would actually want to use it for everything instead of WordPress if I could. I at least want to use it when the project is more of an application that also requires CMS functionality. I know a few years ago WordPress was trying to be come an application platform which you do not hear anymore. It is really hard to build newer applications with a 12 year old code base that is totally against breaking changes.</p>
+
+<p>I still think WordPress deserves a place in my toolbox but it may have reached its limit or maybe just lost some of its shininess. However it is better to pick the tool that is the best for the job not the one you are most comfortable with.</p>
+
+					]]>
+				</description>
+				<pubDate>Tue, 14 Jun 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>St Louis WordCamp 2016</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> May 16, 2016.
+					<br><br><br>
+					<p>WordCamp St. Louis was held this year again at Washington University St. Louis on May 14-15 2016. Over all it was a good time I always enjoy going to WordCamps. I figured I would post my notes here <a href="http://danholloran.me/2015/03/15/st-louis-wordcamp-2015/">like I did last year</a> just cause. I have added the slides that where available as of this posting you can checkout the full listing <a href="https://2016.stlouis.wordcamp.org/2016/05/16/speaker-slides-round-up/">here</a>. Some of the later notes on Saturday kind of trailed off because I decided to fix my blog after a few issues with Github Pages and Jekyll 3. One of the downfalls to Jekyll being so easy to write with being Markdown at its core and all makes it sometimes difficult to upgrade.</p>
+
+<h2 id="saturday-may-14-2016">Saturday May 14, 2016</h2>
+
+<h3 id="plugin-development-101">Plugin development 101</h3>
+<ul>
+  <li><a href="http://whoischris.com/slides/plugin-dev-101.pdf">Slides</a></li>
+  <li><a href="https://github.com/ChrisWiegman/Primary-Vagrant">Primary Vagrant</a> - Apache VVV</li>
+  <li>Brand plugin it’s important</li>
+  <li>Escape all data</li>
+  <li><a href="http://www.thewpcrowd.com/">WP Crowd Podcast &amp; Blog</a></li>
+  <li>Network activation does not fire the uninstall hooks???</li>
+  <li>Check out <a href="http://ship.getherbert.com/">Ship</a> trigger Git to SVN</li>
+  <li>Check out <a href="https://wppusher.com/">WP Pusher</a></li>
+  <li><a href="http://www.appnotch.com/">AppNotch</a> - Make an application from a WordPress page</li>
+  <li>Check out Advanced WordPress Facebook group</li>
+</ul>
+
+<h3 id="optimizing-your-themes-for-responsive-images-in-wordpress">Optimizing Your Themes for Responsive Images in WordPress</h3>
+<ul>
+  <li>Use cases <a href="http://responsive.images.org">responsive.images.org</a></li>
+  <li>srcset &amp; &lt;picture&gt;</li>
+  <li>srcset X descriptors - 1x, 2x, 3x, etc. pixel density</li>
+  <li>srcset W descriptors - width defaults to full width of viewport</li>
+  <li><a href="https://scottjehl.github.io/picturefill/">Picturefill polyfill</a></li>
+  <li><a href="http://blog.cloudfour.com/responsive-images-101-definitions/">Responsive Images 101</a> (Cloud Four Blog)</li>
+  <li>Only works on same aspect ratio sizes (soft crops)</li>
+  <li><code>wp_calculate_image_sizes</code> filter size attributes (<a href="https://developer.wordpress.org/reference/functions/wp_calculate_image_sizes/">docs</a>)</li>
+  <li>2016 theme checkout as an example</li>
+  <li><a href="https://www.smashingmagazine.com/2015/12/responsive-images-in-wordpress-core/">Smashing Magazine - Responsive Images in WordPress</a></li>
+</ul>
+
+<h3 id="reactjs-powered-themes">React.js Powered Themes</h3>
+<ul>
+  <li><a href="https://github.com/kipraske/kraske-react-2016">https://github.com/kipraske/kraske-react-2016</a></li>
+  <li><a href="https://facebook.github.io/react-native/">React Native</a></li>
+  <li><a href="https://developer.wordpress.com/calypso/">WP Calypso</a></li>
+  <li>Virtual DOM &amp; 1 way data flow</li>
+  <li>Props components shouldn’t notify</li>
+  <li>State components can modify</li>
+  <li><a href="http://isomorphic.net/">Isomorphic JS</a> to render on the server</li>
+  <li>Routing <a href="https://www.npmjs.com/package/page">Page on NPM</a></li>
+  <li><a href="https://github.com/Automattic/Picard">Automattic Picard</a>
+### The Future of WordPress: Five Years Out</li>
+  <li>Your expectations are too high for 1 year and too low for 5 years</li>
+  <li>You need a life and hobbies it helps you find problems to solve</li>
+  <li>WordPress managed and owned by community</li>
+  <li>Everyone can contribute</li>
+</ul>
+
+<h3 id="wordpress-query-optimization-and-best-practices">WordPress Query Optimization and Best Practices</h3>
+<ul>
+  <li><code>update_post_meta =&gt; false</code> Primes the post meta cache</li>
+  <li>Only disable <code>update_post_meta</code> when you are sure that no post meta will be used</li>
+  <li><code>wp_cache_set</code> (<a href="https://codex.wordpress.org/Function_Reference/wp_cache_set">docs</a>) and <code>wp_cache_get</code>(<a href="https://codex.wordpress.org/Function_Reference/wp_cache_get">docs</a>) caching for a single request cycle</li>
+  <li><a href="https://codex.wordpress.org/Transients_API">Transients</a> can be used for persistent caching</li>
+</ul>
+
+<h3 id="code-review-keeping-things-secure-clean-and-performant">Code Review: Keeping Things Secure, Clean, and Performant</h3>
+<ul>
+  <li><a href="http://www.slideshare.net/ryanmarkel/ryan-markel-wordcamp-stl-2016-code-review">Slides</a></li>
+  <li>Why? Helps your code be safe, scalable, readable, and learning</li>
+  <li><a href="https://github.com/stevegrunwell/wp-enforcer">WP Enforcer</a></li>
+  <li><a href="https://vip.wordpress.com/documentation/vip/quickstart/">VIP Quickstart</a> - Vagrant</li>
+  <li>Use pull requests for code review</li>
+  <li>Diff reviews can work too</li>
+  <li>Make part of your culture</li>
+  <li><strong>NEVER</strong> skip code review</li>
+</ul>
+
+<h3 id="struck-by-lightning">Struck By Lightning</h3>
+<ul>
+  <li>G.R.I.P.I. (Goals.Roles.Information.Process.Interpersonal)</li>
+  <li>Favorite Tools:
+    <ul>
+      <li><a href="https://www.rescuetime.com/">Rescue Time</a></li>
+      <li>CLI grep history</li>
+      <li>dotfiles</li>
+      <li>Grunt</li>
+      <li><a href="https://qunitjs.com/">QUint</a></li>
+      <li><a href="https://github.com/defunkt/dotjs">DotJS</a></li>
+      <li><a href="http://phantomjs.org/">PhantomJS</a></li>
+      <li><a href="http://jshint.com/">JSHint</a>/<a href="http://eslint.org/">ESLint</a></li>
+      <li><a href="https://www.vagrantup.com/">Vagrant</a></li>
+      <li><a href="https://puppet.com/">Puppet</a></li>
+      <li><a href="https://wordpress.org/">WordPress</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="sunday-may-15-2016">Sunday May 15, 2016</h2>
+
+<h3 id="hardening-wordpress-again">Hardening WordPress, Again</h3>
+<ul>
+  <li>WordPress 4 major releases since March 2015 (St. Louis WordCamp 2015)</li>
+  <li><a href="https://panamapapers.icij.org/">Panama Papers</a> - <a href="https://revolution.themepunch.com/">Revolution Slider</a> vulnerability</li>
+  <li>ImageMagick vulnerability</li>
+  <li>Update your sites</li>
+  <li>BruteProtect -&gt; Jetpack Protect</li>
+  <li>98% vulnerabilities in WordPress security updates due to 3rd party code</li>
+  <li><a href="https://wordpress.org/about/security/">Automattic Security White Paper</a></li>
+  <li>Include maintenance on fixed bids</li>
+  <li>To help prevent attacks you tradeoff convenience for security</li>
+  <li>Security is not just on WordPress</li>
+  <li>DNS Proxies</li>
+  <li>Network Firewall</li>
+  <li>Server Firewall</li>
+  <li>Web App Firewall</li>
+  <li>Plugin firewall</li>
+  <li><a href="https://en.wikipedia.org/wiki/OSI_model">OSI model</a></li>
+  <li>Machine BFD (CPHulk)</li>
+  <li>Update permissions so only uploads are writeable unless you are upgrading WordPress</li>
+</ul>
+
+<h3 id="automating-wordpress-plugin-development-with-gulp">Automating WordPress Plugin Development with Gulp</h3>
+<ul>
+  <li><a href="http://www.slideshare.net/mikehale1/automating-wordpress-plugin-development-with-gulp">Slides</a>
+<a href="https://github.com/WebDevStudios/generator-plugin-wp">WebDevStudios - Generator Plugin WP</a>
+Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
+</ul>
+
+<h3 id="podcast-panel">Podcast Panel</h3>
+<ul>
+  <li>Building <a href="https://developers.google.com/speed/pagespeed/module/">Google PageSpeed</a> module for NGINX sucks…</li>
+  <li>It was a good panel but see previous note.</li>
+</ul>
+
+<h3 id="why-wordpress-works-this-way">Why WordPress Works this Way</h3>
+<ul>
+  <li>G.R.I.P.I. (Goals.Roles.Information.Process.Interpersonal)</li>
+  <li>Unified project philosophy</li>
+  <li>Philosophy driven development</li>
+  <li>Democratize publishing</li>
+  <li>WordPress should work out of the box</li>
+  <li>As little configuration as possible</li>
+  <li>Design for the majority of users</li>
+  <li>Solid array of basic features</li>
+  <li>Users shouldn’t have to know/care what version of PHP they are on. (I agree but they should be aware that it needs to be upgraded from time to time. Just like a cars oil you wouldn’t go 10 years without changing your oil…)</li>
+  <li>Decisions not options</li>
+  <li>Options are expensive</li>
+  <li><a href="https://en.wikipedia.org/wiki/Havoc_Pennington">Havoc Pennington</a> - Author/Writer</li>
+  <li>Options hard on QA and UI</li>
+  <li>Striving for simplicity</li>
+  <li>Accessibility</li>
+  <li>Deadlines are not arbitrary</li>
+  <li>Document flows</li>
+  <li>Don’t just study the code. Philosophy is important as well</li>
+  <li>Philosophy drives development</li>
+</ul>
+
+<h2 id="casual-amahangoutnetworkingclosing-notes">Casual AMA/Hangout/Networking/Closing Notes</h2>
+<ul>
+  <li>I still do not understand why <a href="http://my.studiopress.com/themes/genesis/">Genesis Framework</a> is helpful. If the biggest value is to add hooks to templates you could have edited on your own just does not make any sense. I guess if you view it from an implementor instead of a developers mind set it would make more sense.</li>
+</ul>
+
+					]]>
+				</description>
+				<pubDate>Mon, 16 May 2016 00:00:00 -0500</pubDate>
+				<link>http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Laravel Forge, Digital Ocean and WebSockets</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Mar 5, 2016.
+					<br><br><br>
+					<p>I recently posted an overview of how to setup Web Sockets using <a href="/2016/01/30/laravel-and-websockets/">Laravel and Socket.io</a>. I wanted to follow it up with a quick post on how to get the Web Sockets functioning correctly on a <a href="https://www.digitalocean.com/">Digital Ocean</a> server using <a href="https://forge.laravel.com/">Laravel Forge</a>. I a going to assume that you have already gone through the setup process to provision a new server. Also that you have read the first post since the largest amount of work will lie there. I believe these steps should be identically for all hosting providers not Just Digital Ocean but do not quote me on that.</p>
+
+<p>First of all we need to setup some daemons for Redis and Socket.io which forge makes extremely simple. This will allow Redis and Socket.io to run continuously without you having to worry about it, First you need to navigate to Servers &gt; Your Server and then the “Daemons” tab. You will need to add <code>redis-server --port 3001</code> in the “Command” text field and click the “Start Daemon” button this will enable Redis. You will also need to add <code>node /home/forge/mysite.com/socket.js</code>, make sure to update <code>mysite.com</code> with the domain of you site, in the “Command” text field and click the “Start Daemon” button this will enable Socket.io.</p>
+
+<p>You can check on your daemons at any time by clicking on the eye icon in the “Status” column. You will want to make sure that both Redis and Socket.io are running. If you have any issues it is best to SSH onto your server and try running the commands manually to see make sure they are successful. HJst make sure to delete the daemon before you SSH onto your server.</p>
+
+<p>Next we will want to move onto the “Network” tab were we can open port 3000 in the servers firewall so we can access Socket.io. You can set the “Name” to SocketIO, the “Port” to 3000 and I suggest adding the IP Address of your server but thats up to you. Then you just click the “Add Rule” button and you should be good to go. You can test the connection by navigating to http://mysite.com:3000 you should see the message “Cannot GET /”. If you see that everything should be working just fine.</p>
+
+					]]>
+				</description>
+				<pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Laravel and WebSockets</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 30, 2016.
+					<br><br><br>
+					<p>Working with WebSockets and Larvel is extremely easy! If you are new to Laravel it has an event system that you can use to dispatch events for other parts of your PHP code to use. As well as Laravel supports Redis and <a href="https://pusher.com/">Pusher</a> for dispatching events via WebSockets. Pusher is a fully hosted service that will handle the Node.js side of things for you. I hover will cover using Laravel events with Redis to broadcast events to <a href="http://socket.io/">Socket.io</a> and using <a href="http://supervisord.org/">Supervisor</a> to keep all the processes needed running by default. The current version of Laravel as of this writing is 5.2 which you should already have installed and I will be assuming you are using Laravel Homstead.</p>
+
+<h2 id="dependencies-and-configuration">Dependencies and Configuration</h2>
+<p>So lets get started with installing the required dependencies.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>composer require predis/predis
+<span class="nv">$ </span>npm install express ioredis socket.io --save</code></pre></div>
+
+<p>We will then need to update our <code>.env</code> with <code>BROADCAST_DRIVER=redis</code>.</p>
+
+<h2 id="event-class">Event Class</h2>
+<p>Now we will need to create a new event.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>php artisan make:event EventName</code></pre></div>
+
+<p>Go ahead open the new event <code>app/Events/EventName.php</code>.</p>
+
+<p>You need to make sure that your event <code>implements ShouldBroadcast</code> by default it does not.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="c1">// ...</span>
+<span class="k">class</span> <span class="nc">EventName</span> <span class="k">extends</span> <span class="nx">Event</span> <span class="k">implements</span> <span class="nx">ShouldBroadcast</span>
+<span class="c1">// ...</span></code></pre></div>
+
+<p>For this example we will use a <code>$data</code> property to pass information to socket.io however by default you will have access to any public property.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="c1">// ...</span>
+<span class="k">public</span> <span class="nv">$data</span><span class="p">;</span>
+<span class="c1">// ...</span>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$some_data</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">data</span> <span class="o">=</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;some_data&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// ...</span></code></pre></div>
+
+<p>Then you will need to set the channel you are going to broadcast the events on. We will use this later with Socket.io to listen for the events.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="c1">// ...</span>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">broadcastOn</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;event-example&#39;</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="c1">// ...</span></code></pre></div>
+
+<p>Our whole event class should now look like this.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">App\Events</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">App\Events\Event</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Queue\SerializesModels</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Contracts\Broadcasting\ShouldBroadcast</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">EventName</span> <span class="k">extends</span> <span class="nx">Event</span> <span class="k">implements</span> <span class="nx">ShouldBroadcast</span>
+<span class="p">{</span>
+    <span class="k">use</span> <span class="nx">SerializesModels</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="nv">$data</span><span class="p">;</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Create a new event instance.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @return void</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$some_data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">data</span> <span class="o">=</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;some_data&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Get the channels the event should be broadcast on.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @return array</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">broadcastOn</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;event-example&#39;</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<h2 id="socketio">Socket.io</h2>
+<p>Now we will need to make a <code>socket.js</code> file in the root of our Laravel installation and place the following into it.</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">)();</span>
+<span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">).</span><span class="nx">Server</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">io</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;socket.io&#39;</span><span class="p">)(</span><span class="nx">http</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">Redis</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ioredis&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">redis</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Redis</span><span class="p">();</span>
+<span class="nx">redis</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">&#39;event-example&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">});</span>
+<span class="nx">redis</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">channel</span><span class="p">,</span> <span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message Recieved: &#39;</span> <span class="o">+</span> <span class="nx">message</span><span class="p">);</span>
+    <span class="nx">message</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+    <span class="nx">io</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="nx">channel</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nx">message</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="nx">message</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">http</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Listening on Port 3000&#39;</span><span class="p">);</span>
+<span class="p">});</span></code></pre></div>
+
+<p>If you want to update the channel you will need to change <code>event-example</code> in <code>redis.subscribe('event-example', function(err, count) {
+});</code>.</p>
+
+<p>Now we are ready to run the <code>socket.js</code> file and Redis in <strong>separate tabs on your server</strong> run the following.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>node socket.js
+<span class="c"># You should see Listening on Port 3000</span>
+<span class="nv">$ </span>redis-server --port 3001
+<span class="c"># You should see a whole bunch of output</span></code></pre></div>
+
+<h2 id="event-listener">Event listener</h2>
+<p>Now for simplicity you can add the following to your main view template. This basically listens for an event on the <code>event-example</code> we have setup that as fired by the <code>EventName</code> class. You will want to move this into is own separate JS file.</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.socket.io/socket.io-1.4.5.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="kd">var</span> <span class="nx">socketURL</span> <span class="o">=</span> <span class="s1">&#39;http://192.168.10.10:3000&#39;</span><span class="p">;</span> <span class="c1">// 192.168.10.10 can be replaced with the IP address of your server.</span>
+
+<span class="c1">// If you are using Elixir/Browserify use commented out socket instead.</span>
+<span class="kd">var</span> <span class="nx">socket</span> <span class="o">=</span> <span class="nx">io</span><span class="p">(</span><span class="nx">socketURL</span><span class="p">);</span>
+<span class="c1">// var socket = require(&#39;socket.io-client&#39;)(socketURL);</span>
+
+<span class="c1">// The event name is created by the event channel (example-event) we set earlier</span>
+<span class="c1">// and the class name with the full namespace (App\Events\EventName).</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;event-example:App\\Events\\EventName&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">some_data</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
+
+<h2 id="event-testing">Event testing</h2>
+<p>For simplicity sake when testing we can just add a route to fire the event. In reality this will happen elsewhere possibly in a controller. The main thing to take away is <code>Event::fire(new EventName('Some data about the event.'));</code> will be how you can fire the event.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">Route::group([&#39;middleware&#39; =&gt; &#39;web&#39;], function () {</span>
+<span class="x">    Route::get(&#39;/fire&#39;, function () {</span>
+<span class="x">        Event::fire(new EventName(&#39;Event data&#39;));</span>
+
+<span class="x">        return &#39;Event Fired&#39;;</span>
+<span class="x">    });</span>
+<span class="x">});</span></code></pre></div>
+
+<p>Now if you open your site in one tab and go to <code>/fire</code> in the other. Then in the first tab you should see an alert with the text <code>Event data</code>. Now you have a fully functional setup with Laravel and WebSockets!</p>
+
+<h2 id="supervisor">Supervisor</h2>
+<p>So obviously we do not want to manually run <code>node socket.js</code> and <code>redis-server --port 3001</code> when we start our server. As well as make sure both commands are never closed out. So this is where <a href="http://supervisord.org/">Supervisor</a> comes into play. It will handle starting both services and making sure they stay up continuously.</p>
+
+<p><strong>The following instructions will happen on your server.</strong></p>
+
+<p>If you do not already have Supervisor installed you can install it via <code>sudo apt-get install supervisor</code>. Then you will need to restart Supervisor via <code>sudo service supervisor restart</code></p>
+
+<p>Now we need to set the configuration file for <code>socket.js</code>	via <code>sudo nano /etc/supervisor/conf.d/socket.conf</code>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># socket.conf content</span>
+<span class="o">[</span>program:socket<span class="o">]</span>
+<span class="nb">command</span><span class="o">=</span>node /path/to/install/socket.js <span class="c"># IMPOTANT: Update /path/to/install</span>
+<span class="nv">autostart</span><span class="o">=</span><span class="nb">true</span>
+<span class="nv">autorestart</span><span class="o">=</span><span class="nb">true</span>
+<span class="nv">stderr_logfile</span><span class="o">=</span>/var/log/socket.err.log
+<span class="nv">stdout_logfile</span><span class="o">=</span>/var/log/socket.out.log</code></pre></div>
+
+<p>Then we will need to setup the configuration for Redis <code>sudo nano /etc/supervisor/conf.d/redis.conf</code></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># redis.conf content</span>
+<span class="o">[</span>program:redis<span class="o">]</span>
+<span class="nb">command</span><span class="o">=</span>redis-server --port 3001
+<span class="nv">autostart</span><span class="o">=</span><span class="nb">true</span>
+<span class="nv">autorestart</span><span class="o">=</span><span class="nb">true</span>
+<span class="nv">stderr_logfile</span><span class="o">=</span>/var/log/redis.err.log
+<span class="nv">stdout_logfile</span><span class="o">=</span>/var/log/redis.out.log</code></pre></div>
+
+<p>Now we need to tell Supervisor about our new configuration.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo supervisorctl reread
+<span class="nv">$ </span>sudo supervisorctl update</code></pre></div>
+
+<p>You can verify everything went ok by the following</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tail /var/log/socket.out.log
+<span class="c"># You should see Listening on Port 3000</span>
+<span class="nv">$ </span>tail /var/log/redis.out.log
+<span class="c"># You should see a whole bunch of output</span></code></pre></div>
+
+<p>If something does not seem to work correctly you can check the error logs via the following.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tail /var/log/socket.err.log
+<span class="nv">$ </span>tail /var/log/redis.err.log</code></pre></div>
+
+<p>So thats all there basically is now go out and build something awesome!</p>
+
+					]]>
+				</description>
+				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/01/30/laravel-and-websockets/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/01/30/laravel-and-websockets/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Why Does ExpressionEngine Save Templates in the Database?</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 16, 2016.
+					<br><br><br>
+					<p>This is a little bit of a rant and a large amount of it may be a result of my inexperience. This is in no way saying ExpressionEngine is bad and something like WordPress is better. I feel it is more a surprise from using CodeIgniter before and CodeIgniter is used to build ExpressionEngine. Maybe things have changed in the way CodeIgniter handles MVC. Also maybe this is just a situation of a large user base needing access to more tools in your views.</p>
+
+<p>I have been maintaining a few ExpressionEngine sites lately and one thing that seemed curious to me is saving templates in the database. I am not saying this is the wrong way to do things but just seems strange. I would want to make as few database calls as possible.</p>
+
+<p>One reason I see is possibly the templates are not supposed to have any real logic in them. So its much like post content in WordPress which I think is fine. It rides that line between maintainer flexibility and page load speed among other things. In most templating engines I have seen they function much like this. You get access to some programming helpers without any real logic going on.</p>
+
+<p>This still makes it kind of curious that there is an option to save as a file as well. I am not sure which takes precedence but I would hope the file does. I would think you could just read in the file not sure if there is an issue with that? I would assume it already does this so why would you also save it to the database.</p>
+
+<p>Maybe save the diffs still when you edit so you can roll back the changes that could be helpful. However what happens when you use version control since you really should be. This will solve that exact use case in a little better way. Would you ignore your template files that just seems a little weird.</p>
+
+<p>I would agree that this may have some benefits not sure what they are though. One thing I do not agree with is the ability to execute queries from the templates. Sure in WordPress you can execute queries from a template but thats more because WordPress templating is frustratingly procedural but thats a story for another day.</p>
+
+<p>However I just feel that executing multiple queries mixed in with view code is weird. I personally would not feel comfortable allowing a user access to database queries. Editing HTML is one thing may make the page look a little funny but it can be fixed. You mess something up such as a query you may white screen the page or open yourself up to some sort of security issue.</p>
+
+<p>Maybe I am missing something or am just seeing bad development practices being used. There may actually be good reasons why ExpressionEngine saves views with database queries in the database.</p>
+
+					]]>
+				</description>
+				<pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Quickly Install Applications on Your Mac With Homebrew and Cask</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 12, 2016.
+					<br><br><br>
+					<p>I have been having some issues with my work Macbook and I needed to reinstall Mac OS X. I like to do a complete restore every so often any way since I like to hack and play with things so there is quite a bit of junk that accumulates. I figured this time I would document some of the helpful things you can do with a few tools and a little scripting. </p>
+
+<p>I figured I would cover <a href="http://brew.sh/">Homebrew</a> and <a href="http://caskroom.io/">Cask</a> to quickly install common applications first. Usually it allows me to install the majority of the applications outside of the Mac App Store. The applications in then Mac App Store can be quickly installed in my purchased applications sections.</p>
+
+<p>I suggest to go install at least Xcode and accept the developer agreement via the command line <code>$ sudo xcodebuild -license</code>. You may want to manually install whatever code editor you use since we will need to edit a few files. While your at it you could go ahead and install all of your Mac App Store applications thats what I would do. Then you will need to install Homebrew you can find the instructions on their <a href="http://brew.sh/">site</a>. Then you can install Cask via the instructions on their <a href="http://caskroom.io/">site</a>. Now we are ready to get installing.</p>
+
+<p>What I suggest to do once you have everything installed is to run <code>$ brew cask search &gt; cask-install.sh</code> on your desktop or somewhere else you want to create a file. This way you can easily go through the list of possible applications and choose which ones you want. Then with a little bit of editing we can just execute the file to install all of the applications you need. You could also save this file somewhere like Dropbox or if you want to version it with git on Github.</p>
+
+<p>If you only have a few applications you want to install you can search for individual applications with <code>$brew cask search &lt;application&gt;</code> it uses fuzzy searching so it will retrieve close matches. Then you can just install them individually with <code>brew cask install &lt;application&gt;</code>. You can also copy the results you want into a <code>cask-install.sh</code> just like above. This way you can save the applications to install and bulk install the applications.</p>
+
+<p>Once you have all the applications you want to install added to <code>cask-install.sh</code> you will need to add <code>brew cask install</code> before each application name and a semicolon <code>;</code> after each application name. I find that using an editor such as Sublime Text with multi-selection makes this a breeze. Then you will want to execute <code>chmod +x cask-install.sh</code> in the terminal this will allow you to execute the file. Then all you have to do is execute the installation via <code>./cask-install.sh</code>.</p>
+
+<p>Once the installation has completed all that is left to do is to configure each application. I tend to do this as I use them short of a handful that I use on a daily basis. Now you can store this file somewhere  and you can use it next time you need to install multiple applications.</p>
+
+					]]>
+				</description>
+				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
+				<guid isPermaLink="true">http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Why Would You Use a Fixed Header?</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 24, 2015.
+					<br><br><br>
+					<p>It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.</p>
+
+<p>I understand why you would want to fix your sites header when you have a single page and you are using it to navigate on the same page. I do think this would be the only valid use case I could see. A fixed sidebar navigation would also be valid in this case on larger screens. However this does not happen often so why are there a lot of fixed headers.</p>
+
+<p>I see this trend more on mobile sites than on desktop which begs the question why is your logo so important that it is taking up 10% of my screen space? I say your logo when I landed on the page and if you have a back to top arrow instead I can use that to get to your navigation. The weirdest place I have seen this is on news sites. So you are telling me half way through your article I should go to another page. I have a better idea how about I go to another site.</p>
+
+<p>I do somewhat agree with the sites that use a fixed header when you scroll up the page. Since if you are headed up the page there is a better chance that you are trying to get to the navigation. However, this is not a license to fix the header when you scroll up and down no matter what you do it just seems to misbehave. I think sometimes we forget that the two most important parts of the site are not the designers, developers, and owners. However, they are the content and the users that make the site great. So why would we cover our content and frustrate our users just because we think something looks cool.</p>
+
+<p>I am not sure where this trend comes from maybe trying to make it more like a mobile application. Well in that situation build a mobile application where the navigation is primarily constrained to views in your application. Sure they can link out to the web using web views and links to the devices browser. Most of the navigation in an application is from many smaller views instead of larger form content. So in this situation, a fixed navigation makes more sense since you are spending more time navigating around the application.</p>
+
+<p>This is a trend that I would like to see less of in the next year I doubt I will. If not, I hope to see more reasoning behind why we would cover up part of our content and frustrate our users. Decisions at the cost of usability even a small amount are the wrong decisions to make. Just remember there is an exception to every rule.</p>
+
+					]]>
+				</description>
+				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Vue.js Component Messaging Continued</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 8, 2015.
+					<br><br><br>
+					<p>So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “<a href="/2015/12/07/vues-js-component-messaging/">Vue.js Component Messaging</a>”. </p>
+
+<p>I had suggested that firing an event off of a common element wether that is the body or the main Vue.js instance really does not matter. However I kind of got to thinking more about it and that would work but there may be a problem if there are multiple instances of the same component on the same page. In the example of an Alert component if for some reason there was one Alert component in the header and one in the footer an alert message would be added to both.</p>
+
+<p>I did have an idea I thought may solve that issue allow for something like an event component property. Wether you pass it the full value or maybe just a suffix. It could be <code>event-name</code> by default and if you pass it <code>event-name-2</code> then that event would fire while passing the same data as <code>event-name</code>. As a suffix maybe you could pass <code>my-custom-suffix</code> and then the event that would be fired would be something like <code>event-name/my-custom-suffix</code>.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">// Full event
+<span class="nt">&lt;alert</span> 
+	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
+	<span class="na">:event=</span><span class="s">&quot;event-name-2&quot;</span>
+<span class="nt">&gt;&lt;/alert&gt;</span>
+
+// Event suffix
+<span class="nt">&lt;alert</span> 
+	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
+	<span class="na">:event-suffix=</span><span class="s">&quot;event-name-2&quot;</span>
+<span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
+
+<p>Then you could listen for the event following the example I used in the previous post using the proposed helper functions. Feel free to listen to these events however since there is nothing magical happening here.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// In component 1 (full event)</span>
+<span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name-2&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
+
+<span class="c1">// In component 2 (full event)</span>
+<span class="c1">// this.even = &#39;event-name-2&#39;</span>
+<span class="nx">componentSubscribe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// Do whatever you need to do now.</span>
+<span class="p">});</span>
+
+<span class="c1">// In component 1 (event suffix)</span>
+<span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name-2&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
+
+<span class="c1">// In component 2 (event suffix)</span>
+<span class="c1">// this.even = &#39;event-name-2&#39;</span>
+<span class="nx">componentSubscribe</span><span class="p">(</span><span class="s1">&#39;event-name/&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// Do whatever you need to do now.</span>
+<span class="p">});</span></code></pre></div>
+
+<p>So you may want to be a little more descriptive when naming your properties however, this basically outlines how it could work. Then in the case of the Alert I am using I wouldn’t need the property since there really shouldn’t be more than one on a page. However this use case may evolve and then I could use this strategy. </p>
+
+<p>After all this I still cannot shake the feeling I am missing something. That there is some where that this problem has been solved. Maybe it has been solved in another Javascript framework like Vue.js. Still I think this is a pretty solid solution and short of making sure you document the possibilities for the event names. That should be easy your a developer you document everything with amazing precision right…right?</p>
+
+<p>I could possibly envision a situation where your component has more than a few events and this may not scale really well. However, in that situation it may be more of an issue with how the component is built. This is definitely an interesting problem I have never encountered before.</p>
+
+					]]>
+				</description>
+				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Vue.js Component Messaging</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 7, 2015.
+					<br><br><br>
+					<p>The other day I was working through how to abstract an alert list into its own component. Basically it is an <code>ul</code> where each alert is a <code>li</code> pretty simple. So using Vue.js, <a href="http://browserify.org/">Browserify</a>, and <a href="https://github.com/vuejs/vueify">Vueify</a> this is pretty simple but the problem was how do the other components add alerts. I may be missing something however, it does not seem like Vue.js. offers any sort of component to component event system. Well, at least outside of a parent child relationship which I did not want to go that route since multiple components may need to dispatch alerts.</p>
+
+<p><strong>Note:</strong> This will be more of a high level exercise than a post you can directly copy code from. Many pieces will be missing for brevity and I will assume you have at least used Vue.js a little.</p>
+
+<p>So my solution currently is to send an event to the main Vue.js instance that controls all the components. This event is dispatched from the component that wants to add alert. Then I can pass the message along to the Alert component using <a href="http://vuejs.org/guide/components.html#Passing_Data_with_Props">component properties</a>. Finally I can handle anything I need to do when the value updates using <a href="http://vuejs.org/api/#computed">computed properties</a>. I honestly do not feel this is the correct approach but it works I will outline another idea below I may implement. I do believe that outlining the whole thought process may be helpful.</p>
+
+<p>So basically there is a List component that I want to be able to add alerts from without it having to know about the Alert component. So firing off an event seems like the way to do it right? The following is the important parts of the list component.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// The message details.</span>
+<span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s1">&#39;This is the message value&#39;</span><span class="p">,</span> <span class="c1">// Value</span>
+	<span class="s1">&#39;success&#39;</span><span class="p">,</span> <span class="c1">// Status</span>
+	<span class="mi">4000</span> <span class="c1">// Timeout </span>
+<span class="p">};</span>
+
+<span class="c1">// This will be fired at some point when something happens in the list.</span>
+<span class="c1">// Such as an item was removed successfully.</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">$dispatch</span><span class="p">(</span><span class="s1">&#39;add-alert-message&#39;</span><span class="p">,</span> <span class="nx">message</span> <span class="p">);</span></code></pre></div>
+
+<p>The <code>this.$dispatch</code> sends an event up the parent chain you can learn more about component events <a href="http://vuejs.org/guide/components.html#Custom_Events">here</a>. However, there does not seem to be a way to subscribe to this event from another component. The next step happens in the main Vue.js instance where you can subscribe to the event and then apply it to a messages array on the Vue.js data object. You can also do something like check for duplicates at this level as well this could also be handled in the computed properties section as well. Which kind of feels weird since the Alert component should be in charge of what consists as a duplicate alert.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// The main Vue.js Instance.</span>
+<span class="k">new</span> <span class="nx">Vue</span><span class="p">(</span> <span class="p">{</span>
+    <span class="nx">el</span>         <span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+    <span class="nx">data</span>       <span class="o">:</span> <span class="p">{</span> <span class="nx">messages</span> <span class="o">:</span> <span class="p">[]</span> <span class="p">},</span>
+    <span class="nx">events</span>     <span class="o">:</span> <span class="p">{</span>
+        <span class="s1">&#39;add-alert-message&#39;</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">message</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Check for duplicates and anything else you need to do.</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="p">);</span></code></pre></div>
+
+<p>So this works and all however you now have to let the alert component know about <code>this.messages</code> which you can do by passing messages to the alert component. The following snippet binds the Vue.js messages to the Alert component messages property. Using the <code>.sync</code> modifier will allow the values to sync from the Vue.js instance to the Alert component.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;alert</span> <span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span><span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
+
+<p>Then you will need to use computed properties on the alert component since you need to know when it is updated. So far I have not found a better way to handle this. I needed to be able to set a timeout so the messages would disappear after a short time. You could handle this in the main Vue.js instance but that would kind of defeat the point of a component.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Alert component configuration.</span>
+<span class="p">{</span>
+    <span class="nx">methods</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="nx">setAlertMessagesTimeout</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// This will go through the alerts and set a timeout so the alerts can automatically be removed.</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nx">props</span>   <span class="o">:</span> <span class="p">[</span><span class="s1">&#39;messages&#39;</span><span class="p">],</span>
+    <span class="nx">computed</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">alertMessages</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="nx">get</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">setAlertMessagesTimeout</span><span class="p">();</span>
+            <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">;</span>
+        <span class="p">},</span>
+        <span class="nx">set</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">alertMessages</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>No finally you can loop over the alerts and output them in the Alert components.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">v-for=</span><span class="s">&quot;message in alertMessages&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;alert alert-{message.status}&quot;</span><span class="nt">&gt;</span>{message.value}<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<p>So it almost seems like there should be a better way… I have considered firing an event off of the body or whatever element that is used for the Vue.js instance. This way you could easily pass messages between components. You could have 2 helper functions one that handles firing the event so you will not have to worry about it and one that subscribes to the event. This would basically bypass the main Vue.js instance having to know about what the components are doing.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// In component 1</span>
+<span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
+
+<span class="c1">// In component 2</span>
+<span class="nx">componentSubscribe</span><span class="p">(</span><span class="s1">&#39;event-name&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// Do whatever you need to do now.</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Using some sort of abstraction like this would help you not have to remember what element you are firing the event on each time. I may refactor and flesh this thought out more as I learn. Maybe there is an even better way to handle it that I have not thought of. I also may have missed something in the documentation that solves this. Maybe I am trying to force a square peg into a round hole and there is a good reason why it is the way it is. I may never know…</p>
+
+					]]>
+				</description>
+				<pubDate>Mon, 07 Dec 2015 18:16:00 -0600</pubDate>
+				<link>http://danholloran.me/2015/12/07/vues-js-component-messaging/</link>
+				<guid isPermaLink="true">http://danholloran.me/2015/12/07/vues-js-component-messaging/</guid>
+				
+				
+			</item>
+		
+	</channel>
+</rss>
