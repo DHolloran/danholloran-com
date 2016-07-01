@@ -22,7 +22,7 @@ var imageAssetSrc      = assetsSrc + '/img/**/*';
 var imageUploadDistSrc = distSrc + '/uploads/';
 var imageAssetDistSrc  = distSrc + '/img/';
 // var htmlDistSrc        = '_site/**/*.html';
-var siteURL            = 'http://danholloran.me';
+var siteURL            = '//danholloran.me';
 var sitemapURL         = siteURL + '/sitemap.xml';
 var stylish            = require( 'jshint-stylish' );
 

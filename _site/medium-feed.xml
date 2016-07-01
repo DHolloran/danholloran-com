@@ -4,12 +4,12 @@
 		<title>DanHolloran</title>
 		<description>My adventures on and off of the internetz.
 </description>
-		<link>http://danholloran.me/</link>
-		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 26 Jun 2016 08:38:58 -0500</pubDate>
-		<lastBuildDate>Sun, 26 Jun 2016 08:38:58 -0500</lastBuildDate>
+		<link>//danholloran.me/</link>
+		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>Fri, 01 Jul 2016 09:41:16 -0500</pubDate>
+		<lastBuildDate>Fri, 01 Jul 2016 09:41:16 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
-
+		
 			<item>
 				<title>Setting up Mailhog on MAMP</title>
 				<description>
@@ -42,12 +42,12 @@
 					]]>
 				</description>
 				<pubDate>Sun, 26 Jun 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
-
-
+				<link>//danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Launchcode Mentorship</title>
 				<description>
@@ -79,12 +79,12 @@
 					]]>
 				</description>
 				<pubDate>Sat, 25 Jun 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/06/25/launchcode-mentorship/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/06/25/launchcode-mentorship/</guid>
-
-
+				<link>//danholloran.me/2016/06/25/launchcode-mentorship/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/06/25/launchcode-mentorship/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Looking Into Statamic Flat File CMS</title>
 				<description>
@@ -126,12 +126,12 @@
 					]]>
 				</description>
 				<pubDate>Tue, 14 Jun 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
-
-
+				<link>//danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>St Louis WordCamp 2016</title>
 				<description>
@@ -294,12 +294,12 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Mon, 16 May 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
-
-
+				<link>//danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
@@ -315,12 +315,12 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
-
-
+				<link>//danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Laravel and WebSockets</title>
 				<description>
@@ -517,12 +517,12 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/01/30/laravel-and-websockets/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/01/30/laravel-and-websockets/</guid>
-
-
+				<link>//danholloran.me/2016/01/30/laravel-and-websockets/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/01/30/laravel-and-websockets/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Why Does ExpressionEngine Save Templates in the Database?</title>
 				<description>
@@ -546,12 +546,12 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
-
-
+				<link>//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Quickly Install Applications on Your Mac With Homebrew and Cask</title>
 				<description>
@@ -573,12 +573,12 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
-
-
+				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Why Would You Use a Fixed Header?</title>
 				<description>
@@ -598,12 +598,12 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
-
-
+				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
+				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
+				
+				
 			</item>
-
+		
 			<item>
 				<title>Vue.js Component Messaging Continued</title>
 				<description>
@@ -615,13 +615,13 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 <p>I did have an idea I thought may solve that issue allow for something like an event component property. Wether you pass it the full value or maybe just a suffix. It could be <code>event-name</code> by default and if you pass it <code>event-name-2</code> then that event would fire while passing the same data as <code>event-name</code>. As a suffix maybe you could pass <code>my-custom-suffix</code> and then the event that would be fired would be something like <code>event-name/my-custom-suffix</code>.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html">// Full event
-<span class="nt">&lt;alert</span>
+<span class="nt">&lt;alert</span> 
 	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
 	<span class="na">:event=</span><span class="s">&quot;event-name-2&quot;</span>
 <span class="nt">&gt;&lt;/alert&gt;</span>
 
 // Event suffix
-<span class="nt">&lt;alert</span>
+<span class="nt">&lt;alert</span> 
 	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
 	<span class="na">:event-suffix=</span><span class="s">&quot;event-name-2&quot;</span>
 <span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
@@ -655,11 +655,11 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 					]]>
 				</description>
 				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
-
-
+				<link>//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
+				<guid isPermaLink="true">//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
+				
+				
 			</item>
-
+		
 	</channel>
 </rss>

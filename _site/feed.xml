@@ -4,26 +4,26 @@
 		<title>DanHolloran</title>
 		<description>My adventures on and off of the internetz.
 </description>
-		<link>http://danholloran.me/</link>
-		<atom:link href="http://danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 26 Jun 2016 08:38:58 -0500</pubDate>
-		<lastBuildDate>Sun, 26 Jun 2016 08:38:58 -0500</lastBuildDate>
+		<link>//danholloran.me/</link>
+		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>Fri, 01 Jul 2016 09:41:16 -0500</pubDate>
+		<lastBuildDate>Fri, 01 Jul 2016 09:41:16 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
 		
 			<item>
 				<title>Setting up Mailhog on MAMP</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 26, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jun 26, 2016.
 					<br><br><br>
 					Mailhog is a tool that allows all of your outgoing mail to be intercepted. This is great for your development environment since you may need to test things incrementally. You really do not want your clients or users receiving your test emails.
 					<br><br>
-					<a href="http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/">Continue reading...</a>
+					<a href="//danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Sun, 26 Jun 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
+				<link>//danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</guid>
 				
 				
 			</item>
@@ -32,16 +32,16 @@
 				<title>Launchcode Mentorship</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 25, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jun 25, 2016.
 					<br><br><br>
 					I was mentoring this month for Launchcode. it has been a pretty good experience so far it would have been a nice option when I was learning. Many people in the industry do not have a formal education background which is ok. I do not have a CS degree if I was younger when I decided to do this I would’ve. I did do a degree that was more based on web which I feel was helpful.
 					<br><br>
-					<a href="http://danholloran.me/2016/06/25/launchcode-mentorship/">Continue reading...</a>
+					<a href="//danholloran.me/2016/06/25/launchcode-mentorship/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Sat, 25 Jun 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/06/25/launchcode-mentorship/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/06/25/launchcode-mentorship/</guid>
+				<link>//danholloran.me/2016/06/25/launchcode-mentorship/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/06/25/launchcode-mentorship/</guid>
 				
 				
 			</item>
@@ -50,16 +50,16 @@
 				<title>Looking Into Statamic Flat File CMS</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jun 14, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jun 14, 2016.
 					<br><br><br>
 					I still have not built anything with Statamic but it seems really promising. Even at $200 a license I believe it would be worth it. Well at least if you are working on a site for a business. I would like to use it for my personal site with the static file caching mode so it would be much like the static site I have now with Jekyll. In that case $200 may be a little too much since as a developer I am fine compiling my blog and deploying it.
 					<br><br>
-					<a href="http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/">Continue reading...</a>
+					<a href="//danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Tue, 14 Jun 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
+				<link>//danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/06/14/looking-into-statamic-flat-file-cms/</guid>
 				
 				
 			</item>
@@ -68,16 +68,16 @@
 				<title>St Louis WordCamp 2016</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> May 16, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> May 16, 2016.
 					<br><br><br>
 					WordCamp St. Louis was held this year again at Washington University St. Louis on May 14-15 2016. Over all it was a good time I always enjoy going to WordCamps. I figured I would post my notes here like I did last year just cause. I have added the slides that where available as of this posting you can checkout the full listing here. Some of the later notes on Saturday kind of trailed off because I decided to fix my blog after a few issues with Github Pages and Jekyll 3. One of the downfalls to Jekyll being so easy to write with being Markdown at its core and all makes it sometimes difficult to upgrade.
 					<br><br>
-					<a href="http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/">Continue reading...</a>
+					<a href="//danholloran.me/2016/05/16/st-louis-wordcamp-2016/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Mon, 16 May 2016 00:00:00 -0500</pubDate>
-				<link>http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
+				<link>//danholloran.me/2016/05/16/st-louis-wordcamp-2016/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/05/16/st-louis-wordcamp-2016/</guid>
 				
 				
 			</item>
@@ -86,16 +86,16 @@
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Mar 5, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Mar 5, 2016.
 					<br><br><br>
 					I recently posted an overview of how to setup Web Sockets using Laravel and Socket.io. I wanted to follow it up with a quick post on how to get the Web Sockets functioning correctly on a Digital Ocean server using Laravel Forge. I a going to assume that you have already gone through the setup process to provision a new server. Also that you have read the first post since the largest amount of work will lie there. I believe these steps should be identically for all hosting providers not Just Digital Ocean but do not quote me on that.
 					<br><br>
-					<a href="http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/">Continue reading...</a>
+					<a href="//danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
+				<link>//danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</guid>
 				
 				
 			</item>
@@ -104,16 +104,16 @@
 				<title>Laravel and WebSockets</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 30, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jan 30, 2016.
 					<br><br><br>
 					Working with WebSockets and Larvel is extremely easy! If you are new to Laravel it has an event system that you can use to dispatch events for other parts of your PHP code to use. As well as Laravel supports Redis and Pusher for dispatching events via WebSockets. Pusher is a fully hosted service that will handle the Node.js side of things for you. I hover will cover using Laravel events with Redis to broadcast events to Socket.io and using Supervisor to keep all the processes needed running by default. The current version of Laravel as of this writing is 5.2 which you should already have installed and I will be assuming you are using Laravel Homstead.
 					<br><br>
-					<a href="http://danholloran.me/2016/01/30/laravel-and-websockets/">Continue reading...</a>
+					<a href="//danholloran.me/2016/01/30/laravel-and-websockets/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/01/30/laravel-and-websockets/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/01/30/laravel-and-websockets/</guid>
+				<link>//danholloran.me/2016/01/30/laravel-and-websockets/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/01/30/laravel-and-websockets/</guid>
 				
 				
 			</item>
@@ -122,16 +122,16 @@
 				<title>Why Does ExpressionEngine Save Templates in the Database?</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 16, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jan 16, 2016.
 					<br><br><br>
 					This is a little bit of a rant and a large amount of it may be a result of my inexperience. This is in no way saying ExpressionEngine is bad and something like WordPress is better. I feel it is more a surprise from using CodeIgniter before and CodeIgniter is used to build ExpressionEngine. Maybe things have changed in the way CodeIgniter handles MVC. Also maybe this is just a situation of a large user base needing access to more tools in your views.
 					<br><br>
-					<a href="http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/">Continue reading...</a>
+					<a href="//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
+				<link>//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
 				
 				
 			</item>
@@ -140,16 +140,16 @@
 				<title>Quickly Install Applications on Your Mac With Homebrew and Cask</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Jan 12, 2016.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jan 12, 2016.
 					<br><br><br>
 					I have been having some issues with my work Macbook and I needed to reinstall Mac OS X. I like to do a complete restore every so often any way since I like to hack and play with things so there is quite a bit of junk that accumulates. I figured this time I would document some of the helpful things you can do with a few tools and a little scripting. 
 					<br><br>
-					<a href="http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/">Continue reading...</a>
+					<a href="//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
-				<guid isPermaLink="true">http://danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
+				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
 				
 				
 			</item>
@@ -158,16 +158,16 @@
 				<title>Why Would You Use a Fixed Header?</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 24, 2015.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Dec 24, 2015.
 					<br><br><br>
 					It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.
 					<br><br>
-					<a href="http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/">Continue reading...</a>
+					<a href="//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
+				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
+				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
 				
 				
 			</item>
@@ -176,16 +176,16 @@
 				<title>Vue.js Component Messaging Continued</title>
 				<description>
 					<![CDATA[
-					Originally posted on <a href="http://danholloran.me">http://danholloran.me</a> Dec 8, 2015.
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Dec 8, 2015.
 					<br><br><br>
 					So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”. 
 					<br><br>
-					<a href="http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/">Continue reading...</a>
+					<a href="//danholloran.me/2015/12/08/vues-js-component-messaging-continued/">Continue reading...</a>
 					]]>
 				</description>
 				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
-				<link>http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
-				<guid isPermaLink="true">http://danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
+				<link>//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
+				<guid isPermaLink="true">//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
 				
 				
 			</item>
