@@ -35,7 +35,8 @@
 	} // @include max-width()
 } // .featured-image-caption
 
-.post-title {
+.post-title,
+.page-title {
 	.featured-image & {
 		@include min-width(500px) {
 			margin: 0;
@@ -43,4 +44,5 @@
 			display: inline-block;
 		} // @include max-width()
 	} // .featured-image &
-} // .post-title
+} // .post-title,.page-title
+

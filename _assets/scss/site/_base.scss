@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
 	@include font-sans-serif-bold;
+	line-height: 1em;
 }
 
 // Set `margin-bottom` to maintain vertical rhythm
