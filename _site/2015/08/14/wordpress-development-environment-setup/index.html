@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Has WP_Query Abstracted To Much?</title>
-	<meta name="description" content="I was working on a project recently where I ran into a situation where WP_Query, well actually it was WP_User_Query, just would not work. So I feel back to r...">
+	<title>WordPress Development Environment Setup</title>
+	<meta name="description" content="Ideas  Overcomming fear of commandline would fix a good chunk of this  We have been looking into ways of streamlining  Why did I decide to write this up, exp...">
 
 	
 
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="/dist/css/main.css?v=1.0.2">
 
 	
-	<link rel="canonical" href="//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/">
+	<link rel="canonical" href="//danholloran.me/2015/08/14/wordpress-development-environment-setup/">
 	<link rel="alternate" type="application/rss+xml" title="DanHolloran" href="//danholloran.me/feed.xml" />
 
 	
@@ -47,12 +47,12 @@
 	
 
 	
-	<meta property="og:title" content="Has WP_Query Abstracted To Much?" />
-	<meta property="og:url" content="//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/" />
+	<meta property="og:title" content="WordPress Development Environment Setup" />
+	<meta property="og:url" content="//danholloran.me/2015/08/14/wordpress-development-environment-setup/" />
 	
-	<meta property="og:image" content="//danholloran.me/dist/uploads/photo-1432691301971-c8b920198bd7.jpg" />
+	<meta property="og:image" content="//danholloran.me/dist/img/logo.png" />
 	
-	<meta property="og:description" content="I was working on a project recently where I ran into a situation where WP_Query, well actually it was WP_User_Query, just would not work. So I feel back to r..." />
+	<meta property="og:description" content="Ideas  Overcomming fear of commandline would fix a good chunk of this  We have been looking into ways of streamlining  Why did I decide to write this up, exp..." />
 	<meta property="og:type" content="website" />
 	
 
@@ -60,11 +60,11 @@
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@dholloran" />
 	<meta name="twitter:creator" content="@dholloran" />
-	<meta name="twitter:title" content="Has WP_Query Abstracted To Much?" />
+	<meta name="twitter:title" content="WordPress Development Environment Setup" />
 	
-	<meta name="twitter:image" content="//danholloran.me/dist/uploads/photo-1432691301971-c8b920198bd7.jpg" />
+	<meta name="twitter:image" content="//danholloran.me/dist/img/logo.png" />
 	
-	<meta name="twitter:description" content="I was working on a project recently where I ran into a situation where WP_Query, well actually it was WP_User_Query, just would not work. So I feel back to r..." />
+	<meta name="twitter:description" content="Ideas  Overcomming fear of commandline would fix a good chunk of this  We have been looking into ways of streamlining  Why did I decide to write this up, exp..." />
 	
 </head>
 
@@ -84,9 +84,9 @@
 
 
 
-<div class="featured-image" style="background-image:url('/dist/uploads/photo-1432691301971-c8b920198bd7.jpg')">
+<div class="featured-image" style="background-image:url('https://source.unsplash.com/category/nature/2000x1000')">
 	<div class="featured-image-caption">
-		<h1 class="page-title">Has WP_Query Abstracted To Much?</h1>
+		<h1 class="page-title">WordPress Development Environment Setup</h1>
 	</div>
 </div>
 
@@ -95,10 +95,12 @@
 				<div class="post">
 	<header class="post-header">
 		
+		<h1 class="post-title">WordPress Development Environment Setup</h1>
+		
 		<div class="post-meta">
 			<img src="//www.gravatar.com/avatar/beea2174d2076aa60e679c19f2aee1bf?s=36" with="36" height="36" class="post-author-avatar" alt="Dan Holloran avatar">
 			<span class="post-author">Dan Holloran</span><br>
-			<time datetime="2015-08-18 19:53:00 -0500" class="post-date">18 Aug 2015</time>
+			<time datetime="2015-08-14 08:09:00 -0500" class="post-date">14 Aug 2015</time>
 			<!-- <span class="post-reading-time" title="Estimated read time">
   
   &nbsp;-&nbsp;3 min read
@@ -109,23 +111,118 @@
 	</header>
 
 	<article class="post-content">
-		<p>I was working on a project recently where I ran into a situation where <code>WP_Query</code>, well actually it was <code>WP_User_Query</code>, just would not work. So I feel back to raw SQL through <code>wpdb</code> and to my astonishment PHPCS with WordPress coding standards discourages the use of <code>wpdb</code>. I know it is not a total outright do not use but still. It got me to thinking maybe <code>WP_Query</code> abstracts too much away from the developer.</p>
+		<h3 id="ideas">Ideas</h3>
+<ul>
+  <li>Overcomming fear of commandline would fix a good chunk of this</li>
+  <li>We have been looking into ways of streamlining</li>
+  <li>Why did I decide to write this up, experiences at work.</li>
+  <li>Explain more about the tools we use</li>
+  <li>Explain some alternatives</li>
+  <li>Maybe break out into a series like Jekyll install</li>
+</ul>
 
-<p>I am definitely not advocating writing MySQL you should use some layer of abstraction primarily for security reasons. Not because MySQL is insecure, but you are human it is safer if the tool you use forces you to be secure. Which <code>WP_Query</code> definitely makes your code more secure but it can make it harder to understand what is going on under the hood. This can be an issue with performance if you are not careful. WordPress can be somewhat of a black box that can hurt you just as much as it helps.</p>
+<h3 id="explanation-of-terms">Explanation of terms</h3>
+<ul>
+  <li><a href="http://beanstalkapp.com/">Beanstalk (Hosted Git/Deployment)</a></li>
+  <li><a href="http://wpengine.com/">WP Engine (Managed WordPress Hosting)</a></li>
+  <li>Remote: Beanstalk or WP-Engine repository</li>
+  <li>Branch: The current fork of the code base ex: master</li>
+  <li>Local master: A branch on your computer</li>
+  <li>Remote master: A branch on a remote</li>
+  <li>Head: Your current branch</li>
+  <li><a href="http://www.git-tower.com/">Tower: Mac OSX Git GUI</a></li>
+</ul>
 
-<p>If you are not already using <a href="https://wordpress.org/plugins/query-monitor/">Query Monitor</a> go download it right now and run it on one of your sites. Preferably on a page that is rather complex with many queries you may be surprised what you find. It helps to open the black box up a little so you can see the actual queries that run on every page. This is somewhat eye-opening since you look at <code>WP_Query</code> as how retrieve posts. However, you never may actually see how <code>WP_Query</code> actually retrieves posts.</p>
+<h3 id="wordpress-setup">WordPress Setup</h3>
+<ol>
+  <li><a href="https://wordpress.org/latest.zip">Download WordPress</a></li>
+  <li>Put WordPress into <code>/Applications/MAMP/htdocs/sitename.com</code>.</li>
+  <li>Add empty database <code>wp_sitename_com</code></li>
+</ol>
 
-<p>Granted in the majority of cases <code>WP_Query</code> is probably more efficient than you writing the queries yourself. It definitely makes it easier to retrieve data than writing your own MySQL. Which is the primary reason why I think it abstracts a little too much since you are removed from the database in almost every situation. If something is easy everyone will be able to do it even if they do not understand the consequences which are why WordPress sometimes gets a bad wrap for being slow. Between slow MySQL queries and plugins loading more resources then they need these are the primary issues, I have seen on WordPress page speed.</p>
+<h3 id="vhost-setup">Vhost Setup</h3>
+<p>#### Quick tips
+- In terminal <code>open /path/to/directory/.</code> will open the directory of the parent file you want to edit.
+- <a href="https://www.sublimetext.com/docs/3/osx_command_line.html">Sublime Text 3</a> and <a href="https://atom.io/docs/v0.186.0/getting-started#working-with-files">Atom</a> can be accessed via the commandline.</p>
 
-<p>The one thing I would love to see abstracted which <code>WP_Query</code> does not is to allow for different database drivers. This could definitely improve performance depending on what type of data you are storing. Granted WordPress is an older project and I know a few releases back everything was migrated from the MySQL extension to MySQLi. However, I would love to see WordPress migrate to using <a href="http://php.net/manual/en/book.pdo.php">PDO</a> which you actually interact with much like you would have with <code>$wpdb</code>. I know this is just a wish and being an older project it would be a monumental task to migrate I would guess. However, this is one of the main reasons why you abstract things like database access. If you have to update it at a later date it’s much easier to update a few classes instead of many random files.</p>
+<ol>
+  <li>Open <code>/Applications/MAMP/conf/apache/vhosts.conf</code> in text editor of choice.</li>
+  <li>Add a new virtual host.
+```
+&lt;VirtualHost *:80&gt;
+ServerName sitename.dev
+DocumentRoot /Applications/MAMP/htdocs/sitename.com
+&lt;Directory /Applications/MAMP/htdocs/sitename.com&gt;
+Options Indexes FollowSymLinks MultiViews
+AllowOverride All
+Order allow,deny
+allow from all</li>
+</ol>
+<p>&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+```
+1. Open <code>/private/etc/hosts</code> in text editor of choice.
+1. Add <code>127.0.0.1 sitename.dev</code> to the <code>/private/etc/hosts</code> file.
+1. Restart MAMP</p>
 
-<p>I think it is just something to ponder. It is definitely an issue I have seen with a lot of tools that seem like a black box. Unfortunately in those situations it almost seems like there is an aversion to peer inside. You do not need to know everything about the tools you use but you should at least know why you are using them. This will help you make an informed decision next time you need to use the black box tool.</p>
+<h3 id="wordpress-install-codex-documentationhttpscodexwordpressorginstallingwordpress">WordPress Install (<a href="https://codex.wordpress.org/Installing_WordPress">Codex documentation</a>)</h3>
+<ol>
+  <li>Navigate to <code>sitename.dev</code> in your browser.</li>
+  <li>Choose the WordPress language.</li>
+  <li>Input the database credentials.</li>
+  <li>Fill out the site information and adminstrator user account</li>
+  <li>Log into WordPress</li>
+</ol>
+
+<h3 id="wordpress-migrate-db-pro-wp-migrate-db-pro-documentationhttpsdeliciousbrainscomwp-migrate-db-prodocs">WordPress Migrate DB Pro (<a href="https://deliciousbrains.com/wp-migrate-db-pro/docs/">WP Migrate DB Pro Documentation</a>)</h3>
+<ol>
+  <li>Install WP Migrate DB Pro.</li>
+  <li>Go to administrator page <code>Tools &gt; WP Migrate DB Pro</code>.</li>
+  <li>Enter in serial for WP Migrate DB Pro on Settings tab.</li>
+  <li>Install the Media Addon from the Addons tab.</li>
+  <li>Retrieve the Connection Info from the production/staging site’s Settings tab.</li>
+  <li>On the Migrate Tab click on add a new migration.</li>
+  <li>Choose Pull and enter the Connection Info from the production/staging site</li>
+  <li>Under Advanced Options
+    <ul>
+      <li>Check all of the options. <strong>Make sure you know what you are checking in case there has been a change.</strong></li>
+    </ul>
+  </li>
+  <li>Check Backup the local database before replacing it and to backup all tables</li>
+  <li>Check Media Files
+    <ul>
+      <li>Select Compare remote…</li>
+      <li>Check Remove local media…</li>
+    </ul>
+  </li>
+  <li>Check Save Migration Profile</li>
+  <li>Click Migrate &amp; Save Profile</li>
+</ol>
+
+<h3 id="git-setup-tower">Git Setup (Tower)</h3>
+<ol>
+  <li>If repository is on Beanstalk check what directory the Git root. In Beanstalk go to repo then choose the browse tab.</li>
+  <li>Delete all files in the git root or make new directory. You will need a file to make an inital commit with so you can leave the <code>index.php</code> or just use the <code>.DS_Store</code>.</li>
+  <li>Add new repository in Tower.</li>
+  <li>Rename repository to your site name.</li>
+  <li>Go into repository and make an inital commit, this will be deleted in a minute so do not worry about what is in it.</li>
+  <li>Add a remote to the repository.
+    <ul>
+      <li>Remote URL for Beanstalk is on beanstalk repository page.</li>
+      <li>Remote URL for WP-Engine production git@git.wpengine.com:production/sitename.git and for staging git@git.wpengine.com:staging/sitename.git</li>
+    </ul>
+  </li>
+  <li>Pull remote develop branch to your local branches</li>
+  <li>Change local branches from master to develop</li>
+  <li>Delete local master branch</li>
+  <li>Pull remote master onto your local branches.</li>
+</ol>
 
 	</article>
 	<ul class="share-list">
 	<li>Share:</li>
 	<li class="share-facebook">
-		<a href="https://www.facebook.com/sharer/sharer.php?u=//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/" title="Facebook" target="_blank">
+		<a href="https://www.facebook.com/sharer/sharer.php?u=//danholloran.me/2015/08/14/wordpress-development-environment-setup/" title="Facebook" target="_blank">
 			<span class="icon  icon--facebook">
 				<svg viewBox="0 0 512 512">
 					<path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/>
@@ -135,7 +232,7 @@
 		</a>
 	</li>
 	<li class="share-twitter">
-		<a href="https://twitter.com/intent/tweet?text=Has%20WP_Query%20Abstracted%20To%20Much?&url=//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/&via=dholloran" title="Twitter" target="_blank">
+		<a href="https://twitter.com/intent/tweet?text=WordPress%20Development%20Environment%20Setup&url=//danholloran.me/2015/08/14/wordpress-development-environment-setup/&via=dholloran" title="Twitter" target="_blank">
 			<span class="icon  icon--twitter">
 				<svg viewBox="0 0 512 512">
 					<path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/>
@@ -145,7 +242,7 @@
 		</a>
 	</li>
 	<li class="share-google-plus">
-		<a href="https://plus.google.com/share?url=//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/" title="Google+" target="_blank">
+		<a href="https://plus.google.com/share?url=//danholloran.me/2015/08/14/wordpress-development-environment-setup/" title="Google+" target="_blank">
 			<span class="icon  icon--share-google-plus">
 				<svg viewBox="0 0 512 512">
 					<path d="M416.6 179.9h-41.5v41.5h-20.8v-41.5h-41.5v-20.8h41.5v-41.5h20.8v41.5h41.5V179.9zM299.2 351.6c0 31.1-28.4 69-99.9 69 -52.3 0-95.9-22.5-95.9-60.5 0-29.3 18.5-67.3 105.1-67.3 -12.9-10.5-16-25.1-8.2-41 -50.7 0-76.7-29.8-76.7-67.7 0-37 27.5-70.7 83.7-70.7 14.2 0 90 0 90 0l-20.1 21.1h-23.6c16.7 9.5 25.5 29.2 25.5 50.9 0 19.9-11 36-26.6 48.1 -27.7 21.4-20.6 33.4 8.4 54.6C289.7 309.6 299.2 326.2 299.2 351.6zM243.1 186.8c-4.2-31.8-24.9-58-49.2-58.7 -24.3-0.7-40.5 23.7-36.3 55.5 4.2 31.8 27.2 54.1 51.5 54.8C233.3 239.1 247.3 218.6 243.1 186.8zM268.1 354.8c0-26.2-23.9-51.2-64-51.2 -36.1-0.4-66.8 22.8-66.8 49.8 0 27.5 26.1 50.4 62.2 50.4C245.8 403.7 268.1 382.2 268.1 354.8z"/>
@@ -155,7 +252,7 @@
 		</a>
 	</li>
 	<li class="share-linkedin">
-		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/&title=Has%20WP_Query%20Abstracted%20To%20Much?&summary=I%20was%20working%20on%20a%20project%20recently%20where%20I%20ran%20into%20a%20situation%20where%20WP_Query,%20well%20actually%20it%20was%20WP_User_Query,%20just%20would%20not%20work.%20So%20I%20feel%20back%20to%20raw%20SQL%20through%20wpdb%20and%20to%20my%20astonishment%20PHPCS%20with%20WordPress%20coding%20standards%20discourages%20the%20use%20of%20wpdb.%20I%20know%20it%20is%20not%20a%20total%20outright%20do%20not%20use%20but%20still.%20It%20got%20me%20to%20thinking%20maybe%20WP_Query%20abstracts%20too%20much%20away%20from%20the%20developer.&source=//danholloran.me" title="LinkedIn" target="_blank">
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/08/14/wordpress-development-environment-setup/&title=WordPress%20Development%20Environment%20Setup&summary=Ideas%20%20Overcomming%20fear%20of%20commandline%20would%20fix%20a%20good%20chunk%20of%20this%20%20We%20have%20been%20looking%20into%20ways%20of%20streamlining%20%20Why%20did%20I%20decide%20to%20write%20this%20up,%20experiences%20at%20work.%20%20Explain%20more%20about%20the%20tools%20we%20use%20%20Explain%20some%20alternatives%20%20Maybe%20break%20out%20into%20a%20series%20like%20Jekyll%20install&source=//danholloran.me" title="LinkedIn" target="_blank">
 			<span class="icon  icon--linkedin">
 				<svg viewBox="0 0 512 512">
 					<path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>
@@ -165,7 +262,7 @@
 		</a>
 	</li>
 	<li class="share-buffer">
-		<a href="https://bufferapp.com/add?id=14b2d6de0d159823&url=//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/&text=Has%20WP_Query%20Abstracted%20To%20Much?&via=dholloran&picture=photo-1432691301971-c8b920198bd7.jpg&placement=button&utm_source=https%3A%2F%2Fbuffer.com%2Fextras%2Fbutton&utm_medium=buffer_button&utm_campaign=buffer&source=button" title="Buffer" target="_blank">
+		<a href="https://bufferapp.com/add?id=14b2d6de0d159823&url=//danholloran.me/2015/08/14/wordpress-development-environment-setup/&text=WordPress%20Development%20Environment%20Setup&via=dholloran&placement=button&utm_source=https%3A%2F%2Fbuffer.com%2Fextras%2Fbutton&utm_medium=buffer_button&utm_campaign=buffer&source=button" title="Buffer" target="_blank">
 			<span class="icon  icon--buffer">
 				<svg width="100%" height="100%" x="0px" y="0px" viewBox="0 0 313.3 321.4" style="enable-background:new 0 0 313.3 321.4;" xml:space="preserve">
 				  <path class="layer layer1" d="M157.1,0c3.8,0,7.9,1.5,11.4,3.2c45.6,21.1,91.2,42.4,136.7,63.8c3.3,1.5,8,2.1,8.1,7c0.1,5-4.7,5.6-7.9,7.1
@@ -186,10 +283,10 @@
 </ul>
 
 	<div class="page-navigation has-back">
-		<a href="/2015/08/26/base-environment-setup/" class="previous">Previous</a>
+		<a href="/2015/08/14/wordpress-production-deployment/" class="previous">Previous</a>
 		<a href="/" class="back">Back</a>
 		
-		<a href="/2015/08/14/wordpress-production-deployment/" class="next">Next</a>
+		<a href="/2015/08/10/setting-up-a-jekyll-blog-part-5/" class="next">Next</a>
 		
 	</div>
 </div>

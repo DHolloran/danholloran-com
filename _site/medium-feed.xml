@@ -6,9 +6,65 @@
 </description>
 		<link>//danholloran.me/</link>
 		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Fri, 01 Jul 2016 09:41:16 -0500</pubDate>
-		<lastBuildDate>Fri, 01 Jul 2016 09:41:16 -0500</lastBuildDate>
+		<pubDate>Sun, 03 Jul 2016 11:09:38 -0500</pubDate>
+		<lastBuildDate>Sun, 03 Jul 2016 11:09:38 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Setting Up Your Shell Configuration and OHMyZSH</title>
+				<description>
+					<![CDATA[
+					<p>A while ago I wrote  a post on <a href="/2015/09/29/setting-up-your-shell/">Setting Up Your Shell</a>. I wanted to follow up with more information about ZShell and OHMyZSH. Since both have really made using the terminal a lot easier and more enjoyable. So check out <a href="/2015/09/29/setting-up-your-shell/">Setting Up Your Shell</a> to get up to speed. This will be a very high overview of configuring ZSHell and OHMyZSH.</p>
+
+<h2 id="zshrc">.ZSHRC</h2>
+<p>First up is the .zshrc if you have used Bash before you may be familiar with the .bashrc. This is the file where all of your configuration will be stored. I use mine primarily for aliases to make some common commands easier to type. To an alias basically looks like this <code>aliasname="command"</code> so a quick alias for <a href="http://docs.behat.org/">Behat</a>, a BDD testing framework, would look like this <code>alias behat="vendor/bin/behat"</code>. You can edit your .zshrc with your code editor. I personally use Sublime Text with an <code>st</code> command setup that makes opening files from the terminal easier. You can find more information about setting up the <code>st</code> command <a href="https://www.sublimetext.com/docs/3/osx_command_line.html">here</a>. Once you have made any edits you need to make sure to either open a new tab or run <code>source ~/.zshrc</code> in your current tab.</p>
+
+<h2 id="path">$PATH</h2>
+<p>Since command line tools may be installed in many different places your shell needs to know where too look for possible matches. This is where your <code>$PATH</code> comes in. It allows you to tell ZShell in what directories on your system to look in when trying to execute a command. Below is a list of directories added to my path. Many tools will tell you if there needs to be a special directory added such as  <code>~/.composer/vendor/bin</code> used for <a href="https://getcomposer.org/">Composer</a>. Where you see <code>${PATH}:</code> that is basically saying I want to append this new item to my current path. Zshell will try to look in my <code>/usr/local/bin</code> for a command and the move on to <code>~/.bin</code> and on down the list until it finds the correct tool. The <code>$USER</code> variable is used to get the current users directory name which is interchangeable with <code>~/</code>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/usr/local/bin:$PATH&quot;</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:~/.bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/local/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/sbin:/sbin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/sbin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/X11/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/local/git/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/Users/<span class="nv">$USER</span>/.rvm
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/Users/<span class="nv">$USER</span>/.wp-cli/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/local/share/npm/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/usr/local/bin/node
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:/Applications/MAMP/Library/bin
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span>:~/.composer/vendor/bin</code></pre></div>
+
+<h2 id="installing-and-configuring-ohmyzsh">Installing and Configuring OHMyZSH</h2>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh">OHMyZSH</a> is a great companion for ZShell. It allows for a large amount of configuration of your shell with plugins and themes. It comes preset with a large amount of plugins and themes. ss well as allowing you to edit and create your own so you can customize your sehll to your hearts content  You can find the <a href="https://github.com/robbyrussell/oh-my-zsh#basic-installation">install instructions here</a>. You can find the full <a href="http://ohmyz.sh/">documentation here</a> and below is a screenshot of my shell while I am writing this post.</p>
+
+<p><img src="/dist/uploads/setting-up-your-shell-configuration-and-ohmyzsh-shell-example.png" alt="Example screenshot of my shell" /></p>
+
+<h2 id="ohmyzsh-plugins">OHMyZSH Plugins</h2>
+<p>OHMyZSH has a large amount of plugins that you can use to add functionality to your shell. You can checkout the full list of <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins">OHMyZSH plugins here</a>. Here is a list of the plugins I have installed git, osx, bower, brew, Composer, last-working-dir, npm, atom, sublime, gem, git-extras, git-flow, sudo, laravel5, and vagrant. They mainly revolve around the different tools, package managers and editors that I use. One of my favorites in the list is last-working-dir which basically just opens your terminal to your last working directory when opening a new tab or window.</p>
+
+<p>Adding plugins is fairly easy you just need to add the name of the plugin to the OHMyZSH plugins list in your .zshrc. When OHMyZSH is installed it will add a bit of configuration to your .zshrc. You just need to find the <code>plugins=()</code> section and edit the list. The following example will add git, brew and Composer.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)</span>
+<span class="c"># Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/</span>
+<span class="c"># Example format: plugins=(rails git textmate ruby lighthouse)</span>
+<span class="c"># Add wisely, as too many plugins slow down shell startup.</span>
+<span class="nv">plugins</span><span class="o">=(</span>git brew Composer<span class="o">)</span></code></pre></div>
+
+<h2 id="ohmyzsh-themes">OHMyZSH Themes</h2>
+<p>OHMyZSH comes preinstalled with many themes you can see the <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">full list here</a>. You can even create your own themes if you like. It is pretty simple but it does take some shell scripting to complete.  I would suggest finding a them you like and possibly customizing it to your needs.</p>
+
+					]]>
+				</description>
+				<pubDate>Sun, 03 Jul 2016 00:00:00 -0500</pubDate>
+				<link>//danholloran.me/2016/07/03/setting-up-your-shell-configuration-and-ohmyzsh/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/07/03/setting-up-your-shell-configuration-and-ohmyzsh/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Setting up Mailhog on MAMP</title>
@@ -301,6 +357,30 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 			</item>
 		
 			<item>
+				<title>Maintaining an Open Source Plugin</title>
+				<description>
+					<![CDATA[
+					<p>I have a few WordPress plugins in the WordPress plugin repository all in a similar state of disrepair.  Honestly building plugins are awesome and open source software is really important.  However maintaining these things is tough it’s amazing how much work it takes to handle the support.  I love knowing people are actively using my work its amazing.  I just wish it was easier to find help to maintain it and keep you motivated. I am sure all open source projects big and small run into this road block.</p>
+
+<p>The biggest thing I have learned from my different projects is it helps to have a clear vision from the start. If you just start writting code with out any sort of plan you can code yoursefl into a corner. The project may still work fine but adding features and fixing bugs can be a pain. My main experience is in the WordPress plugin space which adds its own set of issues when using SVN. I have no real experience with SVN since I use Git as my VC. Granted SVN is not difficult but it just seems to add another road block to maintenance. There are some new projects that seem to help you get around this somewhat which I will try on my next update. I hope to get back into maintianing my plugins since some of the personal road blocks seem to be getting out of the way.</p>
+
+<h3 id="ideas">Ideas</h3>
+<ul>
+  <li>What could be imporved</li>
+  <li>How to ask for help</li>
+  <li>How to find someone to take over the plugin</li>
+</ul>
+
+					]]>
+				</description>
+				<pubDate>Tue, 10 May 2016 19:12:21 -0500</pubDate>
+				<link>//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</guid>
+				
+				
+			</item>
+		
+			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
 					<![CDATA[
@@ -575,88 +655,6 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
 				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
 				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Why Would You Use a Fixed Header?</title>
-				<description>
-					<![CDATA[
-					<p>It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.</p>
-
-<p>I understand why you would want to fix your sites header when you have a single page and you are using it to navigate on the same page. I do think this would be the only valid use case I could see. A fixed sidebar navigation would also be valid in this case on larger screens. However this does not happen often so why are there a lot of fixed headers.</p>
-
-<p>I see this trend more on mobile sites than on desktop which begs the question why is your logo so important that it is taking up 10% of my screen space? I say your logo when I landed on the page and if you have a back to top arrow instead I can use that to get to your navigation. The weirdest place I have seen this is on news sites. So you are telling me half way through your article I should go to another page. I have a better idea how about I go to another site.</p>
-
-<p>I do somewhat agree with the sites that use a fixed header when you scroll up the page. Since if you are headed up the page there is a better chance that you are trying to get to the navigation. However, this is not a license to fix the header when you scroll up and down no matter what you do it just seems to misbehave. I think sometimes we forget that the two most important parts of the site are not the designers, developers, and owners. However, they are the content and the users that make the site great. So why would we cover our content and frustrate our users just because we think something looks cool.</p>
-
-<p>I am not sure where this trend comes from maybe trying to make it more like a mobile application. Well in that situation build a mobile application where the navigation is primarily constrained to views in your application. Sure they can link out to the web using web views and links to the devices browser. Most of the navigation in an application is from many smaller views instead of larger form content. So in this situation, a fixed navigation makes more sense since you are spending more time navigating around the application.</p>
-
-<p>This is a trend that I would like to see less of in the next year I doubt I will. If not, I hope to see more reasoning behind why we would cover up part of our content and frustrate our users. Decisions at the cost of usability even a small amount are the wrong decisions to make. Just remember there is an exception to every rule.</p>
-
-					]]>
-				</description>
-				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
-				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
-				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Vue.js Component Messaging Continued</title>
-				<description>
-					<![CDATA[
-					<p>So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “<a href="/2015/12/07/vues-js-component-messaging/">Vue.js Component Messaging</a>”. </p>
-
-<p>I had suggested that firing an event off of a common element wether that is the body or the main Vue.js instance really does not matter. However I kind of got to thinking more about it and that would work but there may be a problem if there are multiple instances of the same component on the same page. In the example of an Alert component if for some reason there was one Alert component in the header and one in the footer an alert message would be added to both.</p>
-
-<p>I did have an idea I thought may solve that issue allow for something like an event component property. Wether you pass it the full value or maybe just a suffix. It could be <code>event-name</code> by default and if you pass it <code>event-name-2</code> then that event would fire while passing the same data as <code>event-name</code>. As a suffix maybe you could pass <code>my-custom-suffix</code> and then the event that would be fired would be something like <code>event-name/my-custom-suffix</code>.</p>
-
-<div class="highlight"><pre><code class="language-html" data-lang="html">// Full event
-<span class="nt">&lt;alert</span> 
-	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
-	<span class="na">:event=</span><span class="s">&quot;event-name-2&quot;</span>
-<span class="nt">&gt;&lt;/alert&gt;</span>
-
-// Event suffix
-<span class="nt">&lt;alert</span> 
-	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
-	<span class="na">:event-suffix=</span><span class="s">&quot;event-name-2&quot;</span>
-<span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
-
-<p>Then you could listen for the event following the example I used in the previous post using the proposed helper functions. Feel free to listen to these events however since there is nothing magical happening here.</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// In component 1 (full event)</span>
-<span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name-2&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
-
-<span class="c1">// In component 2 (full event)</span>
-<span class="c1">// this.even = &#39;event-name-2&#39;</span>
-<span class="nx">componentSubscribe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
-	<span class="c1">// Do whatever you need to do now.</span>
-<span class="p">});</span>
-
-<span class="c1">// In component 1 (event suffix)</span>
-<span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name-2&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
-
-<span class="c1">// In component 2 (event suffix)</span>
-<span class="c1">// this.even = &#39;event-name-2&#39;</span>
-<span class="nx">componentSubscribe</span><span class="p">(</span><span class="s1">&#39;event-name/&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
-	<span class="c1">// Do whatever you need to do now.</span>
-<span class="p">});</span></code></pre></div>
-
-<p>So you may want to be a little more descriptive when naming your properties however, this basically outlines how it could work. Then in the case of the Alert I am using I wouldn’t need the property since there really shouldn’t be more than one on a page. However this use case may evolve and then I could use this strategy. </p>
-
-<p>After all this I still cannot shake the feeling I am missing something. That there is some where that this problem has been solved. Maybe it has been solved in another Javascript framework like Vue.js. Still I think this is a pretty solid solution and short of making sure you document the possibilities for the event names. That should be easy your a developer you document everything with amazing precision right…right?</p>
-
-<p>I could possibly envision a situation where your component has more than a few events and this may not scale really well. However, in that situation it may be more of an issue with how the component is built. This is definitely an interesting problem I have never encountered before.</p>
-
-					]]>
-				</description>
-				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
-				<link>//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
-				<guid isPermaLink="true">//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
 				
 				
 			</item>

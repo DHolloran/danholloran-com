@@ -6,9 +6,27 @@
 </description>
 		<link>//danholloran.me/</link>
 		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Fri, 01 Jul 2016 09:41:16 -0500</pubDate>
-		<lastBuildDate>Fri, 01 Jul 2016 09:41:16 -0500</lastBuildDate>
+		<pubDate>Sun, 03 Jul 2016 11:09:38 -0500</pubDate>
+		<lastBuildDate>Sun, 03 Jul 2016 11:09:38 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Setting Up Your Shell Configuration and OHMyZSH</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jul 3, 2016.
+					<br><br><br>
+					A while ago I wrote  a post on Setting Up Your Shell. I wanted to follow up with more information about ZShell and OHMyZSH. Since both have really made using the terminal a lot easier and more enjoyable. So check out Setting Up Your Shell to get up to speed. This will be a very high overview of configuring ZSHell and OHMyZSH.
+					<br><br>
+					<a href="//danholloran.me/2016/07/03/setting-up-your-shell-configuration-and-ohmyzsh/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sun, 03 Jul 2016 00:00:00 -0500</pubDate>
+				<link>//danholloran.me/2016/07/03/setting-up-your-shell-configuration-and-ohmyzsh/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/07/03/setting-up-your-shell-configuration-and-ohmyzsh/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Setting up Mailhog on MAMP</title>
@@ -83,6 +101,24 @@
 			</item>
 		
 			<item>
+				<title>Maintaining an Open Source Plugin</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> May 10, 2016.
+					<br><br><br>
+					I have a few WordPress plugins in the WordPress plugin repository all in a similar state of disrepair.  Honestly building plugins are awesome and open source software is really important.  However maintaining these things is tough it’s amazing how much work it takes to handle the support.  I love knowing people are actively using my work its amazing.  I just wish it was easier to find help to maintain it and keep you motivated. I am sure all open source projects big and small run into this road block.
+					<br><br>
+					<a href="//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Tue, 10 May 2016 19:12:21 -0500</pubDate>
+				<link>//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</guid>
+				
+				
+			</item>
+		
+			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
 					<![CDATA[
@@ -150,42 +186,6 @@
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
 				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
 				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Why Would You Use a Fixed Header?</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Dec 24, 2015.
-					<br><br><br>
-					It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.
-					<br><br>
-					<a href="//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
-				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
-				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Vue.js Component Messaging Continued</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Dec 8, 2015.
-					<br><br><br>
-					So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”. 
-					<br><br>
-					<a href="//danholloran.me/2015/12/08/vues-js-component-messaging-continued/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Tue, 08 Dec 2015 18:16:00 -0600</pubDate>
-				<link>//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</link>
-				<guid isPermaLink="true">//danholloran.me/2015/12/08/vues-js-component-messaging-continued/</guid>
 				
 				
 			</item>

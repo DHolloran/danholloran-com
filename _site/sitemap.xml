@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>//danholloran.me/2016/07/03/setting-up-your-shell-configuration-and-ohmyzsh/</loc>
+<lastmod>2016-07-03T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>//danholloran.me/2016/06/26/setting-up-mailhog-on-mamp/</loc>
 <lastmod>2016-06-26T00:00:00-05:00</lastmod>
 </url>
@@ -15,6 +19,10 @@
 <url>
 <loc>//danholloran.me/2016/05/16/st-louis-wordcamp-2016/</loc>
 <lastmod>2016-05-16T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</loc>
+<lastmod>2016-05-10T19:12:21-05:00</lastmod>
 </url>
 <url>
 <loc>//danholloran.me/2016/03/05/laravel-forge-digital-ocean-and-websockets/</loc>
@@ -75,6 +83,14 @@
 <url>
 <loc>//danholloran.me/2015/08/18/has-wp-query-abstracted-to-much/</loc>
 <lastmod>2015-08-18T19:53:00-05:00</lastmod>
+</url>
+<url>
+<loc>//danholloran.me/2015/08/14/wordpress-production-deployment/</loc>
+<lastmod>2015-08-14T08:24:00-05:00</lastmod>
+</url>
+<url>
+<loc>//danholloran.me/2015/08/14/wordpress-development-environment-setup/</loc>
+<lastmod>2015-08-14T08:09:00-05:00</lastmod>
 </url>
 <url>
 <loc>//danholloran.me/2015/08/10/setting-up-a-jekyll-blog-part-5/</loc>
