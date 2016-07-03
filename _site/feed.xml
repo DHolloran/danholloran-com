@@ -6,8 +6,8 @@
 </description>
 		<link>//danholloran.me/</link>
 		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 03 Jul 2016 11:09:38 -0500</pubDate>
-		<lastBuildDate>Sun, 03 Jul 2016 11:09:38 -0500</lastBuildDate>
+		<pubDate>Sun, 03 Jul 2016 11:11:09 -0500</pubDate>
+		<lastBuildDate>Sun, 03 Jul 2016 11:11:09 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
 		
 			<item>
@@ -101,24 +101,6 @@
 			</item>
 		
 			<item>
-				<title>Maintaining an Open Source Plugin</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="//danholloran.me">//danholloran.me</a> May 10, 2016.
-					<br><br><br>
-					I have a few WordPress plugins in the WordPress plugin repository all in a similar state of disrepair.  Honestly building plugins are awesome and open source software is really important.  However maintaining these things is tough it’s amazing how much work it takes to handle the support.  I love knowing people are actively using my work its amazing.  I just wish it was easier to find help to maintain it and keep you motivated. I am sure all open source projects big and small run into this road block.
-					<br><br>
-					<a href="//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Tue, 10 May 2016 19:12:21 -0500</pubDate>
-				<link>//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</link>
-				<guid isPermaLink="true">//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</guid>
-				
-				
-			</item>
-		
-			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
 					<![CDATA[
@@ -186,6 +168,24 @@
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
 				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
 				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Why Would You Use a Fixed Header?</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Dec 24, 2015.
+					<br><br><br>
+					It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.
+					<br><br>
+					<a href="//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
+				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
+				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
 				
 				
 			</item>

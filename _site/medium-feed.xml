@@ -6,8 +6,8 @@
 </description>
 		<link>//danholloran.me/</link>
 		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 03 Jul 2016 11:09:38 -0500</pubDate>
-		<lastBuildDate>Sun, 03 Jul 2016 11:09:38 -0500</lastBuildDate>
+		<pubDate>Sun, 03 Jul 2016 11:11:09 -0500</pubDate>
+		<lastBuildDate>Sun, 03 Jul 2016 11:11:09 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
 		
 			<item>
@@ -357,30 +357,6 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 			</item>
 		
 			<item>
-				<title>Maintaining an Open Source Plugin</title>
-				<description>
-					<![CDATA[
-					<p>I have a few WordPress plugins in the WordPress plugin repository all in a similar state of disrepair.  Honestly building plugins are awesome and open source software is really important.  However maintaining these things is tough it’s amazing how much work it takes to handle the support.  I love knowing people are actively using my work its amazing.  I just wish it was easier to find help to maintain it and keep you motivated. I am sure all open source projects big and small run into this road block.</p>
-
-<p>The biggest thing I have learned from my different projects is it helps to have a clear vision from the start. If you just start writting code with out any sort of plan you can code yoursefl into a corner. The project may still work fine but adding features and fixing bugs can be a pain. My main experience is in the WordPress plugin space which adds its own set of issues when using SVN. I have no real experience with SVN since I use Git as my VC. Granted SVN is not difficult but it just seems to add another road block to maintenance. There are some new projects that seem to help you get around this somewhat which I will try on my next update. I hope to get back into maintianing my plugins since some of the personal road blocks seem to be getting out of the way.</p>
-
-<h3 id="ideas">Ideas</h3>
-<ul>
-  <li>What could be imporved</li>
-  <li>How to ask for help</li>
-  <li>How to find someone to take over the plugin</li>
-</ul>
-
-					]]>
-				</description>
-				<pubDate>Tue, 10 May 2016 19:12:21 -0500</pubDate>
-				<link>//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</link>
-				<guid isPermaLink="true">//danholloran.me/2016/05/10/maintaining-an-open-source-plugin/</guid>
-				
-				
-			</item>
-		
-			<item>
 				<title>Laravel Forge, Digital Ocean and WebSockets</title>
 				<description>
 					<![CDATA[
@@ -655,6 +631,31 @@ Plugin header placeholder tokens (Like handlebars <code>{value}</code>)</li>
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
 				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
 				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
+				
+				
+			</item>
+		
+			<item>
+				<title>Why Would You Use a Fixed Header?</title>
+				<description>
+					<![CDATA[
+					<p>It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.</p>
+
+<p>I understand why you would want to fix your sites header when you have a single page and you are using it to navigate on the same page. I do think this would be the only valid use case I could see. A fixed sidebar navigation would also be valid in this case on larger screens. However this does not happen often so why are there a lot of fixed headers.</p>
+
+<p>I see this trend more on mobile sites than on desktop which begs the question why is your logo so important that it is taking up 10% of my screen space? I say your logo when I landed on the page and if you have a back to top arrow instead I can use that to get to your navigation. The weirdest place I have seen this is on news sites. So you are telling me half way through your article I should go to another page. I have a better idea how about I go to another site.</p>
+
+<p>I do somewhat agree with the sites that use a fixed header when you scroll up the page. Since if you are headed up the page there is a better chance that you are trying to get to the navigation. However, this is not a license to fix the header when you scroll up and down no matter what you do it just seems to misbehave. I think sometimes we forget that the two most important parts of the site are not the designers, developers, and owners. However, they are the content and the users that make the site great. So why would we cover our content and frustrate our users just because we think something looks cool.</p>
+
+<p>I am not sure where this trend comes from maybe trying to make it more like a mobile application. Well in that situation build a mobile application where the navigation is primarily constrained to views in your application. Sure they can link out to the web using web views and links to the devices browser. Most of the navigation in an application is from many smaller views instead of larger form content. So in this situation, a fixed navigation makes more sense since you are spending more time navigating around the application.</p>
+
+<p>This is a trend that I would like to see less of in the next year I doubt I will. If not, I hope to see more reasoning behind why we would cover up part of our content and frustrate our users. Decisions at the cost of usability even a small amount are the wrong decisions to make. Just remember there is an exception to every rule.</p>
+
+					]]>
+				</description>
+				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
+				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
+				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
 				
 				
 			</item>
