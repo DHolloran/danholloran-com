@@ -6,9 +6,27 @@
 </description>
 		<link>//danholloran.me/</link>
 		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 03 Jul 2016 11:11:09 -0500</pubDate>
-		<lastBuildDate>Sun, 03 Jul 2016 11:11:09 -0500</lastBuildDate>
+		<pubDate>Sun, 30 Oct 2016 09:44:08 -0500</pubDate>
+		<lastBuildDate>Sun, 30 Oct 2016 09:44:08 -0500</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Introducing Press CLI: A Configurable WordPress Installer</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Oct 30, 2016.
+					<br><br><br>
+					So I have been wanting to build a WordPress installer for a while now. It is a lot of effort setting up multiple WordPress installs in the same basic configuration to start a project. I admit it I am extremely lazy but thats okay. I also wanted an excuse to build something with the Symfony Console component which makes building a CLI tool fairly easy.
+					<br><br>
+					<a href="//danholloran.me/2016/10/30/introducing-press-cli-a-configurable-wordpress-installer/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Sun, 30 Oct 2016 00:00:00 -0500</pubDate>
+				<link>//danholloran.me/2016/10/30/introducing-press-cli-a-configurable-wordpress-installer/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/10/30/introducing-press-cli-a-configurable-wordpress-installer/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Setting Up Your Shell Configuration and OHMyZSH</title>
@@ -168,24 +186,6 @@
 				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
 				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
 				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Why Would You Use a Fixed Header?</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Dec 24, 2015.
-					<br><br><br>
-					It seems like I receive a request for a fixed header fairly regularly more than I should. I don’t really understand why you would want to fix the header of your site. So I figured I would layout some of my opinions on the matter I may be wrong but this is just my point of view. Full disclosure this sites header is sticky on Firefox purely to use the sticky CSS property since I use my site to try things out on I believe this is okay. So yes there is an exception to every rule and opinion.
-					<br><br>
-					<a href="//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Thu, 24 Dec 2015 00:00:00 -0600</pubDate>
-				<link>//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</link>
-				<guid isPermaLink="true">//danholloran.me/2015/12/24/why-would-you-use-a-fixed-header/</guid>
 				
 				
 			</item>
