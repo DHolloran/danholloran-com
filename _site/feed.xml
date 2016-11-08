@@ -6,9 +6,27 @@
 </description>
 		<link>//danholloran.me/</link>
 		<atom:link href="//danholloran.me/feed.xml" rel="self" type="application/rss+xml"/>
-		<pubDate>Sun, 30 Oct 2016 09:44:08 -0500</pubDate>
-		<lastBuildDate>Sun, 30 Oct 2016 09:44:08 -0500</lastBuildDate>
+		<pubDate>Tue, 08 Nov 2016 08:21:36 -0600</pubDate>
+		<lastBuildDate>Tue, 08 Nov 2016 08:21:36 -0600</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
+		
+			<item>
+				<title>Check Out Down Them All Extension for Firefox</title>
+				<description>
+					<![CDATA[
+					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Nov 8, 2016.
+					<br><br><br>
+					Quick tip I figured I would share. If you ever need to download a larger amount of images and you do not have FTP access and you know the URLs. Down Them All extension for Firefox is great.
+					<br><br>
+					<a href="//danholloran.me/2016/11/08/check-out-down-them-all-extension-for-firefox/">Continue reading...</a>
+					]]>
+				</description>
+				<pubDate>Tue, 08 Nov 2016 00:00:00 -0600</pubDate>
+				<link>//danholloran.me/2016/11/08/check-out-down-them-all-extension-for-firefox/</link>
+				<guid isPermaLink="true">//danholloran.me/2016/11/08/check-out-down-them-all-extension-for-firefox/</guid>
+				
+				
+			</item>
 		
 			<item>
 				<title>Introducing Press CLI: A Configurable WordPress Installer</title>
@@ -168,24 +186,6 @@
 				<pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
 				<link>//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</link>
 				<guid isPermaLink="true">//danholloran.me/2016/01/16/why-does-expressionengine-save-templates-in-the-database/</guid>
-				
-				
-			</item>
-		
-			<item>
-				<title>Quickly Install Applications on Your Mac With Homebrew and Cask</title>
-				<description>
-					<![CDATA[
-					Originally posted on <a href="//danholloran.me">//danholloran.me</a> Jan 12, 2016.
-					<br><br><br>
-					I have been having some issues with my work Macbook and I needed to reinstall Mac OS X. I like to do a complete restore every so often any way since I like to hack and play with things so there is quite a bit of junk that accumulates. I figured this time I would document some of the helpful things you can do with a few tools and a little scripting. 
-					<br><br>
-					<a href="//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/">Continue reading...</a>
-					]]>
-				</description>
-				<pubDate>Tue, 12 Jan 2016 00:00:00 -0600</pubDate>
-				<link>//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</link>
-				<guid isPermaLink="true">//danholloran.me/2016/01/12/quickly-install-applications-on-your-mac-with-homebrew-and-cask/</guid>
 				
 				
 			</item>
