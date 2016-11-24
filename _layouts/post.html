@@ -21,7 +21,7 @@ layout: default
 	<div class="page-navigation has-back">
 		<a href="{{ page.next.url }}" class="previous">Previous</a>
 		<a href="/" class="back">Back</a>
-		{% if page.series.url && page.series.label %}
+		{% if page.series.url and page.series.label %}
 		<a href="{{ page.series.url | uri_escape}}" class="next">{{ page.series.label }}</a>
 		{% else if page.previous.url %}
 		<a href="{{ page.previous.url }}" class="next">Next</a>

@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1430598825529-927d770c194f.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Shortcode API You're Doing It Wrong</h1>
@@ -115,11 +113,11 @@
 
 <p>In the use cases outlined in the post they seem kind of weird that this is even a big issue. Would you put a <code>&lt;span&gt;</code> in  a style attribute or any other attribute for that matter?</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- This doesn&#39;t feel right... --&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- This doesn&#39;t feel right... --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;background-image: url(&#39;&lt;span&gt;&lt;/span&gt;&#39;);&quot;</span><span class="nt">&gt;</span>
 
 <span class="c">&lt;!-- So why would this ? --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;background-image: url(&#39;[shortcode]&#39;);&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;background-image: url(&#39;[shortcode]&#39;);&quot;</span><span class="nt">&gt;</span></code></pre></figure>
 
 <p>Yes, I know the shortcode would output an images URL but still… maybe I am wrong and you should be allowed to do this? Hopefully not then why would you put a shortcode in an HTML attribute granted. I get it you want access to a URL not easily accessible in the editor. Wouldn’t it be a better experience just to tack on the attributes to the wrapping element to the shortcode? Maybe not in certain cases I could be wrong but I think in the vast majority of cases using a shortcode in an HTML attribute would be an error.</p>
 

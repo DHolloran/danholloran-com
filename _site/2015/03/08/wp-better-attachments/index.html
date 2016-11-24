@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/iFJ5qQylTD2POC68qBgh_Uluru.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">WP Better Attachments</h1>
@@ -101,7 +99,7 @@
 			<time datetime="2015-03-08 17:00:54 -0500" class="post-date">08 Mar 2015</time>
 			<!-- <span class="post-reading-time" title="Estimated read time">
   
-  &nbsp;-&nbsp;2 min read
+  &nbsp;-&nbsp;3 min read
 </span>
  -->
 
@@ -123,31 +121,29 @@
 
 <p><em>If your project is included and I do not have you added please let me know, thank you.</em></p>
 
-<p>If you have any issues please submit an <a href="https://github.com/DHolloran/wp-better-attachments/issues/new">issue</a> or fix it/submit a pull request I will try to handle it ASAP. You an also contact me at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#100;&#116;&#104;&#111;&#108;&#108;&#111;&#114;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">DTHolloran@gmail.com</a>.</p>
+<p>If you have any issues please submit an <a href="https://github.com/DHolloran/wp-better-attachments/issues/new">issue</a> or fix it/submit a pull request I will try to handle it ASAP. You an also contact me at <a href="mailto:dtholloran@gmail.com">DTHolloran@gmail.com</a>.</p>
 
 <p><a href="http://www.pledgie.com/campaigns/20476"><img src="http://www.pledgie.com/campaigns/20476.png?skin_name=chrome" alt="Click here to lend your support to: WP Better Attachments and make a donation at www.pledgie.com !" /></a></p>
 
 <hr />
 
 <h3 id="wpba-attachments-exist">WPBA Attachments Exist</h3>
-<p><code>
-/** @returns boolean */
+<pre><code>/** @returns boolean */
 wpba_attachments_exist(array(
     'post_id'             =&gt; current_post_id,
     'show_post_thumbnail' =&gt; true
 ));
-</code></p>
+</code></pre>
 
 <h3 id="wpba-get-attachments">WPBA Get Attachments</h3>
 
-<p><code>
-/** @return array $attachments The retrieved attachments, respects all settings. */
+<pre><code>/** @return array $attachments The retrieved attachments, respects all settings. */
 wpba_get_attachments(array(
     'post_id'             =&gt; current_post_id,
     'show_post_thumbnail' =&gt; true
 ));
-</code>
-* * *</p>
+</code></pre>
+<hr />
 
 <h3 id="wpba-attachment-list">WPBA Attachment List</h3>
 
@@ -155,8 +151,7 @@ wpba_get_attachments(array(
 
 <h4 id="shortcode">Shortcode</h4>
 
-<p><code>
-[wpba-attachment-list
+<pre><code>[wpba-attachment-list
  post_id="current_post_id"
  show_icon="false"
  file_type_categories="image,file,audio,video"
@@ -176,11 +171,10 @@ wpba_get_attachments(array(
  list_item_class="wpba-list-item pull-left"
  link_class="wpba-link pull-left"
  icon_class="wpba-icon pull-left"]
-</code>
-#### Function</p>
+</code></pre>
+<h4 id="function">Function</h4>
 
-<p><code>
-wpba_attachment_list( array(
+<pre><code>wpba_attachment_list( array(
     'post_id'              =&gt; current_post_id,
     'show_icon'            =&gt; false,
     'file_type_categories' =&gt; array( 'image', 'file', 'audio', 'video' ),
@@ -201,7 +195,7 @@ wpba_attachment_list( array(
     'link_class'           =&gt; 'wpba-link pull-left'
     'icon_class'           =&gt; 'wpba-icon pull-left'
 ));
-</code></p>
+</code></pre>
 
 <h2 id="screenshots">Screenshots</h2>
 

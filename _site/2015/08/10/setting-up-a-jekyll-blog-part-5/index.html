@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1432234525151-015bc7937f1c.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Setting Up a Jekyll Blog - Part 5</h1>
@@ -113,7 +111,7 @@
 
 <p>For the purpose of this post I am assuming you have at least some familiarity with Git. If not it should still be fairly easy but it may help to do a little reading about Git there are plenty of resources around the web.</p>
 
-<h3 id="creating-your-github-pages-site">Creating Your Github Pages Site</h3>
+<p>###Creating Your Github Pages Site</p>
 
 <p>So the first thing you will need is a Github account if you do not already have one you can <a href="https://github.com/join">get one here</a>. The next thing you will need to do once you have signed/signed up is to create a new repository that is {username}.github.io this will also be the URL you will access your site from.</p>
 
@@ -121,11 +119,11 @@
 
 <p>While you are creating the repository you might as well add a Jekyll .gitignore and a license file. Github requires you to ignore the <code>_sites</code> directory since it will handle building that each time you push changes. Now you will either need to add the Github remote with <code>git remote add origin https://github.com/user/{username}.github.io.git</code> if you have been tracking your changes with Git already. If not you should run <code>git init</code> in the Jekyll directory then stage all of your files with <code>git add .</code>.  After that you can add your initial commit <code>git commit -m "Initial commit"</code> then you can run <code>git remote add origin https://github.com/user/{username}.github.io.git</code>.  From here on out every time you push something to your master branch with <code>git push origin master</code> Github Pages will build your site and then deploy it. Now you should be able to access you site at http://{username}.github.io/ it is usually pretty fast but give it a minute if it is not instantly up.</p>
 
-<h3 id="that-was-simple-wasnt-it">That was simple wasn’t it?</h3>
+<p>###That was simple wasn’t it?</p>
 
 <p>This is actually all there really is to deploying a Jekyll site with Github Pages. Well at least if you are ok with accessing your site at http://{username}.github.io/ which changing that is extremely easy. You can either setup a subdomain or an apex domain you can find more information about the two<a href="https://help.github.com/articles/about-custom-domains-for-github-pages-sites/"> here</a>. The main benefit you get from a custom domain is access to the Github Pages Content Delivery Network and Denial Of Service attack mitigation. As well as you get to choose your own awesome domain name or be boring like me choose your name.</p>
 
-<h3 id="adding-a-custom-domain">Adding A Custom Domain</h3>
+<p>###Adding A Custom Domain</p>
 
 <p>To add a custom domain first you need to create a <code>CNAME</code> file to your repository the file should be all capitals and no extension. In this file all you need to add the name of your domain <code>myawesomedomain.com</code> do not include the <code>http://</code> or <code>www</code> only the domain name. The you just need to commit and push the <code>CNAME</code> file to Github. You can confirm that the previous step was successful by going to your repository sidebar and choosing the settings page. In there under Github Pages you should see your domain name.</p>
 

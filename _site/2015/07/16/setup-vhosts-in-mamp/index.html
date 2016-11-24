@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1428959249159-5706303ea703.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Setup Vhosts in MAMP</h1>
@@ -113,14 +111,14 @@
 
 <p>The first thing you will need to do is create a new file in <code>/Applications/MAMP/conf/apache/</code> and name it <code>vhosts.conf</code>. We will come back to this file in just a second so you can go ahead and keep it open. Next up you will want to include <code>vhosts.conf</code> in <code>/Applications/MAMP/conf/apache/http.conf</code>. I usually just add it at the end of the file.</p>
 
-<div class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="nb">NameVirtualHost</span> *:80
-<span class="nb">Include</span> <span class="sx">/Applications/MAMP/conf/apache/vhosts.conf</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="nb">NameVirtualHost</span> *:80
+<span class="nb">Include</span> <span class="sx">/Applications/MAMP/conf/apache/vhosts.conf</span></code></pre></figure>
 
 <p><strong>Note:</strong> You will want to change the <code>*:80</code> to <code>*:8888</code> if you are using the MAMP defaults I prefer to set MAMP to the Apache defaults.</p>
 
 <p>Next you need to add a new Vhost to the <code>vhosts.conf</code> you created earlier. Just like when we included the <code>vhosts.conf</code> you will need to change the <code>*:80</code> to <code>*:8888</code>. You will need to update <code>myawesomesite</code> to the name of your awesome site.</p>
 
-<div class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="c"># My Awesome Site</span>
+<figure class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="c"># My Awesome Site</span>
 <span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
 <span class="nb">ServerName</span> myawesomesite.dev
 <span class="nb">DocumentRoot</span> <span class="sx">/Applications/MAMP/htdocs/myawesomesite.com/</span>
@@ -130,13 +128,13 @@
 <span class="nb">Order</span> allow,deny
 <span class="nb">allow</span> from <span class="k">all</span>
 <span class="nt">&lt;/Directory&gt;</span>
-<span class="nt">&lt;/VirtualHost&gt;</span></code></pre></div>
+<span class="nt">&lt;/VirtualHost&gt;</span></code></pre></figure>
 
 <p>I prefer to follow the convention of using the production sites URL for a base to my sites folder directory and the local URL. So if your live site is <code>myawesomesite.com</code> then your domain would be <code>myawesomesite.dev</code> using the TLD of <code>.dev</code> is definitely optional but it makes it easy to be consistent. I also set my site directory to <code>myawesomesite.com</code> so 6 months down the road it is easy to match the site up to the production site.</p>
 
 <p>Also while we are at it you can add a localhost Vhost so you can add things like an <code>index.php</code> of all your sites and a <code>phpinfo.php</code> among other things.</p>
 
-<div class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="c"># Localhost</span>
+<figure class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="c"># Localhost</span>
 <span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
 <span class="nb">ServerName</span> localhost
 <span class="nb">DocumentRoot</span> <span class="sx">/Applications/MAMP/htdocs/</span>
@@ -146,12 +144,12 @@
 <span class="nb">Order</span> allow,deny
 <span class="nb">allow</span> from <span class="k">all</span>
 <span class="nt">&lt;/Directory&gt;</span>
-<span class="nt">&lt;/VirtualHost&gt;</span></code></pre></div>
+<span class="nt">&lt;/VirtualHost&gt;</span></code></pre></figure>
 
 <p>Now we will need to edit your hosts file at <code>/private/etc/hosts</code> with an editor such as Vim, Nano, Sublime Text 3, Atom or any other text editor. Even though the <code>hosts</code> does not have an extension it is still a file. In there you can add the following.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># Vhosts</span>
-127.0.0.1 myawesomesite.dev</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># Vhosts</span>
+127.0.0.1 myawesomesite.dev</code></pre></figure>
 
 <p>You will need to add this for every Vhost that you add. You won’t have to worry about the localhost since that is already defined by default.</p>
 

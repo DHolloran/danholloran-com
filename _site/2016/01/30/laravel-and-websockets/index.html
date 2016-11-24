@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1436772414296-de1960161901.jpeg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Laravel and WebSockets</h1>
@@ -101,7 +99,7 @@
 			<time datetime="2016-01-30 00:00:00 -0600" class="post-date">30 Jan 2016</time>
 			<!-- <span class="post-reading-time" title="Estimated read time">
   
-  &nbsp;-&nbsp;5 min read
+  &nbsp;-&nbsp;7 min read
 </span>
  -->
 
@@ -114,28 +112,28 @@
 <h2 id="dependencies-and-configuration">Dependencies and Configuration</h2>
 <p>So lets get started with installing the required dependencies.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>composer require predis/predis
-<span class="nv">$ </span>npm install express ioredis socket.io --save</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>composer require predis/predis
+<span class="nv">$ </span>npm install express ioredis socket.io --save</code></pre></figure>
 
 <p>We will then need to update our <code>.env</code> with <code>BROADCAST_DRIVER=redis</code>.</p>
 
 <h2 id="event-class">Event Class</h2>
 <p>Now we will need to create a new event.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>php artisan make:event EventName</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>php artisan make:event EventName</code></pre></figure>
 
 <p>Go ahead open the new event <code>app/Events/EventName.php</code>.</p>
 
 <p>You need to make sure that your event <code>implements ShouldBroadcast</code> by default it does not.</p>
 
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 <span class="c1">// ...</span>
 <span class="k">class</span> <span class="nc">EventName</span> <span class="k">extends</span> <span class="nx">Event</span> <span class="k">implements</span> <span class="nx">ShouldBroadcast</span>
-<span class="c1">// ...</span></code></pre></div>
+<span class="c1">// ...</span></code></pre></figure>
 
 <p>For this example we will use a <code>$data</code> property to pass information to socket.io however by default you will have access to any public property.</p>
 
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 <span class="c1">// ...</span>
 <span class="k">public</span> <span class="nv">$data</span><span class="p">;</span>
 <span class="c1">// ...</span>
@@ -143,21 +141,21 @@
 <span class="p">{</span>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">data</span> <span class="o">=</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;some_data&#39;</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="c1">// ...</span></code></pre></div>
+<span class="c1">// ...</span></code></pre></figure>
 
 <p>Then you will need to set the channel you are going to broadcast the events on. We will use this later with Socket.io to listen for the events.</p>
 
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 <span class="c1">// ...</span>
 <span class="k">public</span> <span class="k">function</span> <span class="nf">broadcastOn</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;event-example&#39;</span><span class="p">];</span>
 <span class="p">}</span>
-<span class="c1">// ...</span></code></pre></div>
+<span class="c1">// ...</span></code></pre></figure>
 
 <p>Our whole event class should now look like this.</p>
 
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 
 <span class="k">namespace</span> <span class="nx">App\Events</span><span class="p">;</span>
 
@@ -190,12 +188,12 @@
     <span class="p">{</span>
         <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;event-example&#39;</span><span class="p">];</span>
     <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <h2 id="socketio">Socket.io</h2>
 <p>Now we will need to make a <code>socket.js</code> file in the root of our Laravel installation and place the following into it.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">)();</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">)();</span>
 <span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">).</span><span class="nx">Server</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">io</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;socket.io&#39;</span><span class="p">)(</span><span class="nx">http</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">Redis</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ioredis&#39;</span><span class="p">);</span>
@@ -209,22 +207,22 @@
 <span class="p">});</span>
 <span class="nx">http</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Listening on Port 3000&#39;</span><span class="p">);</span>
-<span class="p">});</span></code></pre></div>
+<span class="p">});</span></code></pre></figure>
 
 <p>If you want to update the channel you will need to change <code>event-example</code> in <code>redis.subscribe('event-example', function(err, count) {
 });</code>.</p>
 
 <p>Now we are ready to run the <code>socket.js</code> file and Redis in <strong>separate tabs on your server</strong> run the following.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>node socket.js
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>node socket.js
 <span class="c"># You should see Listening on Port 3000</span>
 <span class="nv">$ </span>redis-server --port 3001
-<span class="c"># You should see a whole bunch of output</span></code></pre></div>
+<span class="c"># You should see a whole bunch of output</span></code></pre></figure>
 
 <h2 id="event-listener">Event listener</h2>
 <p>Now for simplicity you can add the following to your main view template. This basically listens for an event on the <code>event-example</code> we have setup that as fired by the <code>EventName</code> class. You will want to move this into is own separate JS file.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.socket.io/socket.io-1.4.5.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.socket.io/socket.io-1.4.5.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 <span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
 <span class="kd">var</span> <span class="nx">socketURL</span> <span class="o">=</span> <span class="s1">&#39;http://192.168.10.10:3000&#39;</span><span class="p">;</span> <span class="c1">// 192.168.10.10 can be replaced with the IP address of your server.</span>
 
@@ -237,18 +235,18 @@
 <span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;event-example:App\\Events\\EventName&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">alert</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">some_data</span><span class="p">);</span>
 <span class="p">});</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></figure>
 
 <h2 id="event-testing">Event testing</h2>
 <p>For simplicity sake when testing we can just add a route to fire the event. In reality this will happen elsewhere possibly in a controller. The main thing to take away is <code>Event::fire(new EventName('Some data about the event.'));</code> will be how you can fire the event.</p>
 
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">Route::group([&#39;middleware&#39; =&gt; &#39;web&#39;], function () {</span>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">Route::group([&#39;middleware&#39; =&gt; &#39;web&#39;], function () {</span>
 <span class="x">    Route::get(&#39;/fire&#39;, function () {</span>
 <span class="x">        Event::fire(new EventName(&#39;Event data&#39;));</span>
 
 <span class="x">        return &#39;Event Fired&#39;;</span>
 <span class="x">    });</span>
-<span class="x">});</span></code></pre></div>
+<span class="x">});</span></code></pre></figure>
 
 <p>Now if you open your site in one tab and go to <code>/fire</code> in the other. Then in the first tab you should see an alert with the text <code>Event data</code>. Now you have a fully functional setup with Laravel and WebSockets!</p>
 
@@ -261,40 +259,40 @@
 
 <p>Now we need to set the configuration file for <code>socket.js</code>	via <code>sudo nano /etc/supervisor/conf.d/socket.conf</code>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># socket.conf content</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># socket.conf content</span>
 <span class="o">[</span>program:socket<span class="o">]</span>
 <span class="nb">command</span><span class="o">=</span>node /path/to/install/socket.js <span class="c"># IMPOTANT: Update /path/to/install</span>
 <span class="nv">autostart</span><span class="o">=</span><span class="nb">true</span>
 <span class="nv">autorestart</span><span class="o">=</span><span class="nb">true</span>
 <span class="nv">stderr_logfile</span><span class="o">=</span>/var/log/socket.err.log
-<span class="nv">stdout_logfile</span><span class="o">=</span>/var/log/socket.out.log</code></pre></div>
+<span class="nv">stdout_logfile</span><span class="o">=</span>/var/log/socket.out.log</code></pre></figure>
 
 <p>Then we will need to setup the configuration for Redis <code>sudo nano /etc/supervisor/conf.d/redis.conf</code></p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># redis.conf content</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># redis.conf content</span>
 <span class="o">[</span>program:redis<span class="o">]</span>
 <span class="nb">command</span><span class="o">=</span>redis-server --port 3001
 <span class="nv">autostart</span><span class="o">=</span><span class="nb">true</span>
 <span class="nv">autorestart</span><span class="o">=</span><span class="nb">true</span>
 <span class="nv">stderr_logfile</span><span class="o">=</span>/var/log/redis.err.log
-<span class="nv">stdout_logfile</span><span class="o">=</span>/var/log/redis.out.log</code></pre></div>
+<span class="nv">stdout_logfile</span><span class="o">=</span>/var/log/redis.out.log</code></pre></figure>
 
 <p>Now we need to tell Supervisor about our new configuration.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo supervisorctl reread
-<span class="nv">$ </span>sudo supervisorctl update</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo supervisorctl reread
+<span class="nv">$ </span>sudo supervisorctl update</code></pre></figure>
 
 <p>You can verify everything went ok by the following</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tail /var/log/socket.out.log
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tail /var/log/socket.out.log
 <span class="c"># You should see Listening on Port 3000</span>
 <span class="nv">$ </span>tail /var/log/redis.out.log
-<span class="c"># You should see a whole bunch of output</span></code></pre></div>
+<span class="c"># You should see a whole bunch of output</span></code></pre></figure>
 
 <p>If something does not seem to work correctly you can check the error logs via the following.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tail /var/log/socket.err.log
-<span class="nv">$ </span>tail /var/log/redis.err.log</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tail /var/log/socket.err.log
+<span class="nv">$ </span>tail /var/log/redis.err.log</code></pre></figure>
 
 <p>So thats all there basically is now go out and build something awesome!</p>
 

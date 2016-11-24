@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1421757295538-9c80958e75b0.jpeg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">How I (Almost...) Setup My Ghost Pro Custom Domain Name</h1>
@@ -109,14 +107,14 @@
 	</header>
 
 	<article class="post-content">
-		<p>I was going to do a writeup about how I setup a Ghost Pro custom domain the details below almost worked.  I just love how DNS and the internetz works, you change something it changes something and everything works just nicely.  Then you go and check it the next day and the whole world has exploded. So long story short I gave up and decided to just forward the domain but I wanted to post this for fun. Feel free to post a solution or ideas in the comments below.  </p>
+		<p>I was going to do a writeup about how I setup a Ghost Pro custom domain the details below almost worked.  I just love how DNS and the internetz works, you change something it changes something and everything works just nicely.  Then you go and check it the next day and the whole world has exploded. So long story short I gave up and decided to just forward the domain but I wanted to post this for fun. Feel free to post a solution or ideas in the comments below.</p>
 
 <h3 id="how-i-almost-setup-my-domain">How I almost setup my domain…</h3>
-<p>I just setup my Ghost pro account and had some issues getting the domain to work without the www I tried following option B in the <a href="https://ghost.org/blogs/domains/#setup">Docs</a> by using <a href="https://www.cloudflare.com/">CloudFlare</a> as somewhat of a middle man.  </p>
+<p>I just setup my Ghost pro account and had some issues getting the domain to work without the www I tried following option B in the <a href="https://ghost.org/blogs/domains/#setup">Docs</a> by using <a href="https://www.cloudflare.com/">CloudFlare</a> as somewhat of a middle man.</p>
 
-<p>This didn’t work for me not sure if I messed up the setup or what but no matter what the DNS wouldn’t change. I tried forwarding the domain with no luck maybe I am just bad at this DNS/Server stuff, I am a developer not Dev Ops luckily.  </p>
+<p>This didn’t work for me not sure if I messed up the setup or what but no matter what the DNS wouldn’t change. I tried forwarding the domain with no luck maybe I am just bad at this DNS/Server stuff, I am a developer not Dev Ops luckily.</p>
 
-<p>So I was able to update my main A Records through <a href="https://www.hover.com/">Hover</a>  to point to my IP Address.  I got that by running <code>ping danholloran.ghost.io</code> in the terminal, sure there are other ways to get it. Then I set up a CNAME record pointing @ to danholloran.ghost.io.  Then I set a forward to http://danholloran.ghost.io then finally added danholloran.com to my Ghost blog.  </p>
+<p>So I was able to update my main A Records through <a href="https://www.hover.com/">Hover</a>  to point to my IP Address.  I got that by running <code>ping danholloran.ghost.io</code> in the terminal, sure there are other ways to get it. Then I set up a CNAME record pointing @ to danholloran.ghost.io.  Then I set a forward to http://danholloran.ghost.io then finally added danholloran.com to my Ghost blog.</p>
 
 <p>Not sure if this is the correct way to do it but it seems to <em>(almost)</em> work yay!!!  I so hate setting up DNS and servers I just want write code all night and push changes every day.</p>
 
@@ -154,7 +152,7 @@
 		</a>
 	</li>
 	<li class="share-linkedin">
-		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/03/20/setup-ghost-pro-custom-domain-name/&title=How%20I%20(Almost...)%20Setup%20My%20Ghost%20Pro%20Custom%20Domain%20Name&summary=I%20was%20going%20to%20do%20a%20writeup%20about%20how%20I%20setup%20a%20Ghost%20Pro%20custom%20domain%20the%20details%20below%20almost%20worked.%20%20I%20just%20love%20how%20DNS%20and%20the%20internetz%20works,%20you%20change%20something%20it%20changes%20something%20and%20everything%20works%20just%20nicely.%20%20Then%20you%20go%20and%20check%20it%20the%20next%20day%20and%20the%20whole%20world%20has%20exploded.%20So%20long%20story%20short%20I%20gave%20up%20and%20decided%20to%20just%20forward%20the%20domain%20but%20I%20wanted%20to%20post%20this%20for%20fun.%20Feel%20free%20to%20post%20a%20solution%20or%20ideas%20in%20the%20comments%20below.%20%20&source=//danholloran.me" title="LinkedIn" target="_blank">
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/03/20/setup-ghost-pro-custom-domain-name/&title=How%20I%20(Almost...)%20Setup%20My%20Ghost%20Pro%20Custom%20Domain%20Name&summary=I%20was%20going%20to%20do%20a%20writeup%20about%20how%20I%20setup%20a%20Ghost%20Pro%20custom%20domain%20the%20details%20below%20almost%20worked.%20%20I%20just%20love%20how%20DNS%20and%20the%20internetz%20works,%20you%20change%20something%20it%20changes%20something%20and%20everything%20works%20just%20nicely.%20%20Then%20you%20go%20and%20check%20it%20the%20next%20day%20and%20the%20whole%20world%20has%20exploded.%20So%20long%20story%20short%20I%20gave%20up%20and%20decided%20to%20just%20forward%20the%20domain%20but%20I%20wanted%20to%20post%20this%20for%20fun.%20Feel%20free%20to%20post%20a%20solution%20or%20ideas%20in%20the%20comments%20below.&source=//danholloran.me" title="LinkedIn" target="_blank">
 			<span class="icon  icon--linkedin">
 				<svg viewBox="0 0 512 512">
 					<path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Vue.js Component Messaging Continued</title>
-	<meta name="description" content="So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”. ">
+	<meta name="description" content="So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”.">
 
 	
 
@@ -52,7 +52,7 @@
 	
 	<meta property="og:image" content="//danholloran.me/dist/uploads/photo-1434394673726-e8232a5903b4.jpg" />
 	
-	<meta property="og:description" content="So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”. " />
+	<meta property="og:description" content="So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”." />
 	<meta property="og:type" content="website" />
 	
 
@@ -64,7 +64,7 @@
 	
 	<meta name="twitter:image" content="//danholloran.me/dist/uploads/photo-1434394673726-e8232a5903b4.jpg" />
 	
-	<meta name="twitter:description" content="So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”. " />
+	<meta name="twitter:description" content="So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “Vue.js Component Messaging”." />
 	
 </head>
 
@@ -80,8 +80,6 @@
 
 		<div id="page_content" class="page-content m-scene">
 			
-
-
 
 
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1434394673726-e8232a5903b4.jpg')">
@@ -101,7 +99,7 @@
 			<time datetime="2015-12-08 18:16:00 -0600" class="post-date">08 Dec 2015</time>
 			<!-- <span class="post-reading-time" title="Estimated read time">
   
-  &nbsp;-&nbsp;2 min read
+  &nbsp;-&nbsp;3 min read
 </span>
  -->
 
@@ -109,13 +107,13 @@
 	</header>
 
 	<article class="post-content">
-		<p>So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “<a href="/2015/12/07/vues-js-component-messaging/">Vue.js Component Messaging</a>”. </p>
+		<p>So yesterday I posted about Vue.js component messaging. This is in a way a continuation so you will want to read that first “<a href="/2015/12/07/vues-js-component-messaging/">Vue.js Component Messaging</a>”.</p>
 
 <p>I had suggested that firing an event off of a common element wether that is the body or the main Vue.js instance really does not matter. However I kind of got to thinking more about it and that would work but there may be a problem if there are multiple instances of the same component on the same page. In the example of an Alert component if for some reason there was one Alert component in the header and one in the footer an alert message would be added to both.</p>
 
 <p>I did have an idea I thought may solve that issue allow for something like an event component property. Wether you pass it the full value or maybe just a suffix. It could be <code>event-name</code> by default and if you pass it <code>event-name-2</code> then that event would fire while passing the same data as <code>event-name</code>. As a suffix maybe you could pass <code>my-custom-suffix</code> and then the event that would be fired would be something like <code>event-name/my-custom-suffix</code>.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">// Full event
+<figure class="highlight"><pre><code class="language-html" data-lang="html">// Full event
 <span class="nt">&lt;alert</span> 
 	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
 	<span class="na">:event=</span><span class="s">&quot;event-name-2&quot;</span>
@@ -125,11 +123,11 @@
 <span class="nt">&lt;alert</span> 
 	<span class="na">:messages</span><span class="err">.</span><span class="na">sync=</span><span class="s">&quot;messages&quot;</span>
 	<span class="na">:event-suffix=</span><span class="s">&quot;event-name-2&quot;</span>
-<span class="nt">&gt;&lt;/alert&gt;</span></code></pre></div>
+<span class="nt">&gt;&lt;/alert&gt;</span></code></pre></figure>
 
 <p>Then you could listen for the event following the example I used in the previous post using the proposed helper functions. Feel free to listen to these events however since there is nothing magical happening here.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// In component 1 (full event)</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// In component 1 (full event)</span>
 <span class="nx">componentFireEvent</span><span class="p">(</span><span class="s1">&#39;event-name-2&#39;</span><span class="p">,</span> <span class="s1">&#39;event-details&#39;</span><span class="p">);</span>
 
 <span class="c1">// In component 2 (full event)</span>
@@ -145,9 +143,9 @@
 <span class="c1">// this.even = &#39;event-name-2&#39;</span>
 <span class="nx">componentSubscribe</span><span class="p">(</span><span class="s1">&#39;event-name/&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">eventDetails</span> <span class="p">)</span> <span class="p">{</span>
 	<span class="c1">// Do whatever you need to do now.</span>
-<span class="p">});</span></code></pre></div>
+<span class="p">});</span></code></pre></figure>
 
-<p>So you may want to be a little more descriptive when naming your properties however, this basically outlines how it could work. Then in the case of the Alert I am using I wouldn’t need the property since there really shouldn’t be more than one on a page. However this use case may evolve and then I could use this strategy. </p>
+<p>So you may want to be a little more descriptive when naming your properties however, this basically outlines how it could work. Then in the case of the Alert I am using I wouldn’t need the property since there really shouldn’t be more than one on a page. However this use case may evolve and then I could use this strategy.</p>
 
 <p>After all this I still cannot shake the feeling I am missing something. That there is some where that this problem has been solved. Maybe it has been solved in another Javascript framework like Vue.js. Still I think this is a pretty solid solution and short of making sure you document the possibilities for the event names. That should be easy your a developer you document everything with amazing precision right…right?</p>
 
@@ -187,7 +185,7 @@
 		</a>
 	</li>
 	<li class="share-linkedin">
-		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/12/08/vues-js-component-messaging-continued/&title=Vue.js%20Component%20Messaging%20Continued&summary=So%20yesterday%20I%20posted%20about%20Vue.js%20component%20messaging.%20This%20is%20in%20a%20way%20a%20continuation%20so%20you%20will%20want%20to%20read%20that%20first%20%E2%80%9CVue.js%20Component%20Messaging%E2%80%9D.%20&source=//danholloran.me" title="LinkedIn" target="_blank">
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/12/08/vues-js-component-messaging-continued/&title=Vue.js%20Component%20Messaging%20Continued&summary=So%20yesterday%20I%20posted%20about%20Vue.js%20component%20messaging.%20This%20is%20in%20a%20way%20a%20continuation%20so%20you%20will%20want%20to%20read%20that%20first%20%E2%80%9CVue.js%20Component%20Messaging%E2%80%9D.&source=//danholloran.me" title="LinkedIn" target="_blank">
 			<span class="icon  icon--linkedin">
 				<svg viewBox="0 0 512 512">
 					<path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>

@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1428908684367-2fe456a630bb.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Setting Up a Jekyll Blog - Part 1</h1>
@@ -114,24 +112,26 @@
 <h3 id="initial-setup">Initial Setup</h3>
 <p>We first have to setup a few dependencies such as Ruby and Jeykll.</p>
 
-<p>I prefer to install Ruby via RVM but any other method is fine more options can be found <a href="https://www.ruby-lang.org/en/documentation/installation/">here</a>  </p>
+<p>I prefer to install Ruby via RVM but any other method is fine more options can be found <a href="https://www.ruby-lang.org/en/documentation/installation/">here</a></p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable --ruby</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable --ruby</code></pre></figure>
 
-<p>Once you have Ruby installed you can install Jeykll  </p>
+<p>Once you have Ruby installed you can install Jeykll</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">gem install jekyll</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">gem install jekyll</code></pre></figure>
 
 <p>Now we are ready to create a new Jeykll blog.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">jekyll new my-blog</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">jekyll new my-blog</code></pre></figure>
 
 <h3 id="optional-github-pages-setup">(Optional) Github Pages setup</h3>
 <p>Since your already using Git and Github you might as well host your blog there. Hey its free and simple don’t have to worry about hosting.
-If you are planning on deploying to <a href="https://pages.github.com/">Github Pages</a> you can install the <a href="https://github.com/github/pages-gem">Github Pages Gem</a> via <a href="http://bundler.io/">Bundler</a>.
-1. Install bundler</p>
+If you are planning on deploying to <a href="https://pages.github.com/">Github Pages</a> you can install the <a href="https://github.com/github/pages-gem">Github Pages Gem</a> via <a href="http://bundler.io/">Bundler</a>.</p>
+<ol>
+  <li>Install bundler</li>
+</ol>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">gem install bundler<span class="p">;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">gem install bundler<span class="p">;</span></code></pre></figure>
 
 <ol>
   <li>Create a new Gemfile in the <code>my-blog</code> directory.</li>
@@ -139,10 +139,10 @@ If you are planning on deploying to <a href="https://pages.github.com/">Github P
   <li>Run <code>bundle install</code> in the <code>my-blog</code> directory.</li>
 </ol>
 
-<h3 id="setting-up-configyml">Setting up _config.yml</h3>
+<h3 id="setting-up-_configyml">Setting up _config.yml</h3>
 <p>Here is some of the main configuration I did granted there are way more things you can do. I am currently just using the default theme I hope to update it soon. You can find a list of all the options <a href="http://jekyllrb.com/docs/configuration/">here</a>.</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Site settings</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Site settings</span>
 <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Your Site Name</span>
 <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">youremail@provider.com</span>
 <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="p-Indicator">&gt;</span> <span class="c1"># this means to ignore newlines until &quot;baseurl:&quot;</span>
@@ -169,7 +169,7 @@ If you are planning on deploying to <a href="https://pages.github.com/">Github P
 <span class="l-Scalar-Plain">highlighter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">pygments</span> <span class="c1"># Requires python to be installed</span>
 
 <span class="c1"># Build settings</span>
-<span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">kramdown</span></code></pre></div>
+<span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">kramdown</span></code></pre></figure>
 
 <h3 id="wrapping-up">Wrapping up</h3>
 <p>Ok we now have a Jeykll blog setup and ready to go!  That was not to hard was it? Next up we will add our first post and some <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> which is where Jeykll becomes really powerful.</p>

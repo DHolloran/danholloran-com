@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1433424007598-bd5d102e8597.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Linting Your Code: Installing the Linters</h1>
@@ -127,46 +125,46 @@
 
 <p><em>Installing PHPCS is the hardest of the linters the rest should be fairly simple.</em></p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew install php-code-sniffer</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew install php-code-sniffer</code></pre></figure>
 
 <p>Make sure linter is in your $PATH (It should return the path to the executable)</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># /usr/local/bin/phpcs</span>
-<span class="nv">$ </span>which phpcs</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># /usr/local/bin/phpcs</span>
+<span class="nv">$ </span>which phpcs</code></pre></figure>
 
 <p>Go to the PHPCS directory</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Make sure to change {PHPCS_VERSION} to the installed PHPCS version 2.3.2 is the current version as of this post.</span>
-<span class="nv">$ </span><span class="nb">cd</span> /usr/local/Cellar/php-code-sniffer/<span class="o">{</span>PHPCS_VERSION<span class="o">}</span>/CodeSniffer/Standards</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Make sure to change {PHPCS_VERSION} to the installed PHPCS version 2.3.2 is the current version as of this post.</span>
+<span class="nv">$ </span><span class="nb">cd</span> /usr/local/Cellar/php-code-sniffer/<span class="o">{</span>PHPCS_VERSION<span class="o">}</span>/CodeSniffer/Standards</code></pre></figure>
 
 <p>Install WordPress PHPCS standards</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git clone -b master<span class="sb">`</span> https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git wpcs</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git clone -b master<span class="sb">`</span> https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git wpcs</code></pre></figure>
 
-<p>Add WordPress standards to PHPCS configuration.  </p>
+<p>Add WordPress standards to PHPCS configuration.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Make sure to change {PHPCS_VERSION} to the installed PHPCS version 2.3.2 is the current version as of this post.</span>
-<span class="nv">$ </span>phpcs --config-set installed_paths /usr/local/Cellar/php-code-sniffer/<span class="o">{</span>PHPCS_VERSION<span class="o">}</span>/CodeSniffer/Standards/wpcs</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Make sure to change {PHPCS_VERSION} to the installed PHPCS version 2.3.2 is the current version as of this post.</span>
+<span class="nv">$ </span>phpcs --config-set installed_paths /usr/local/Cellar/php-code-sniffer/<span class="o">{</span>PHPCS_VERSION<span class="o">}</span>/CodeSniffer/Standards/wpcs</code></pre></figure>
 
 <p>Check the installed standards, make sure one is WordPress.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>phpcs -i</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>phpcs -i</code></pre></figure>
 
 <p>Set the default standard.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>phpcs --config-set default_standard WordPress</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>phpcs --config-set default_standard WordPress</code></pre></figure>
 
 <p><br /></p>
 
 <h3 id="jscs-installation">JSCS Installation</h3>
 <p>Install JSCS</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm install -g jscs</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm install -g jscs</code></pre></figure>
 
 <p>Make sure linter is in your $PATH (It should return the path to the executable)</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># /usr/local/bin/jshint</span>
-<span class="nv">$ </span>which jscs</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># /usr/local/bin/jshint</span>
+<span class="nv">$ </span>which jscs</code></pre></figure>
 
 <p>Configuration is handled via the <a href="http://jscs.info/overview.html#-config-c">.jscs.json</a> you can read more about the available configuration options <a href="http://jscs.info/rules.html">in the docs</a>.</p>
 
@@ -177,11 +175,11 @@
 <h3 id="jshint-installation">JSHint Installation</h3>
 <p>Install JSHint</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install -g jshint</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install -g jshint</code></pre></figure>
 
 <p>Make sure linter is in your $PATH (It should return the path to the executable)</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>which jshint</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>which jshint</code></pre></figure>
 
 <p>Configuration is handled via the <a href="http://jshint.com/docs/">.jshintrc</a> you can read more about the available configuration options <a href="http://jshint.com/docs/options/">in the docs</a>.</p>
 
@@ -192,13 +190,13 @@
 <h3 id="scss-lint-installation">SCSS-Lint Installation</h3>
 <p>Install SCSS Lint</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>gem install scss_lint</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>gem install scss_lint</code></pre></figure>
 
 <ol>
   <li>Make sure linter is in your $PATH (It should return the path to the executable)</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>which scss-lint</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>which scss-lint</code></pre></figure>
 
 <p>Note: Configuration is handled via the<br />
 Configuration is handled via the <a href="https://github.com/brigade/scss-lint#configuration">.scss-lint.yml</a> you can read more about the available configuration options <a href="https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md">in the docs</a>.</p>

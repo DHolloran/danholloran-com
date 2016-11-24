@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1429000263672-1b8b4008d2f7.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Setting Up a Jekyll Blog - Part 2</h1>
@@ -114,13 +112,12 @@
 
 <p>So lets say the title of our first blog post is “My First Jekyll Blog Post” then the name of the post would be <code>2015-07-14-my-first-jekyll-blog-post.md</code> or if it is a draft then it would just be <code>my-first-jekyll-blog-post.md</code>.</p>
 
-<p>Then you need to add the <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> which is a way to tell Jekyll a little more about what this file is. At the top of your newly created file you can add this.
-<code>
----
+<p>Then you need to add the <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> which is a way to tell Jekyll a little more about what this file is. At the top of your newly created file you can add this.</p>
+<pre><code>---
 layout: post
 title: My First Jekyll Blog Post
 ---
-</code></p>
+</code></pre>
 
 <p>By default Jekyll supports <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> but you can add formatters for <a href="http://jekyllrb.com/docs/plugins/#converters-1">many different formats</a>. You can also access media assets in a folder such as assets using the {{ site.url }} /assets/screenshot.jpg variable in the post.<br />
 <code>![My helpful screenshot](/dist/uploads/screenshot.jpg)</code></p>
@@ -128,7 +125,7 @@ title: My First Jekyll Blog Post
 <h3 id="building-your-blog">Building Your Blog.</h3>
 <p>There are a couple options depending on if you are planning on hosting through <a href="https://pages.github.com/">Github Pages</a> or somewhere else. Either way there is a build command that just builds the required files for the blog. Then there is a server command that builds the site and then servers it up on http://127.0.0.1:4000/ while watching for changes. Both the build and server command have a –drafts flag that will also build/serve your drafts as your latest posts. Which makes it easy for writing your draft posts just make sure not to deploy the sites directory right after building with the –drafts flag.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># Default Jekyll build.</span>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># Default Jekyll build.</span>
 jekyll build<span class="p">;</span>
 <span class="c"># Jekyll serve on http://127.0.0.1:4000/.</span>
 jekyll serve<span class="p">;</span>
@@ -144,20 +141,20 @@ bundle <span class="nb">exec </span>jekyll serve<span class="p">;</span>
 <span class="c"># Github Pages Jekyll build drafts.</span>
 bundle <span class="nb">exec </span>jekyll build --drafts<span class="p">;</span>
 <span class="c"># Github Pages Jekyll serve on http://127.0.0.1:4000/ drafts.</span>
-bundle <span class="nb">exec </span>jekyll serve --drafts<span class="p">;</span></code></pre></div>
+bundle <span class="nb">exec </span>jekyll serve --drafts<span class="p">;</span></code></pre></figure>
 
 <p>The main difference between the default Jekyll and Github Pages is that with Github Pages you use Bundler as well. This way you have the same environment as Github Pages.</p>
 
 <h3 id="front-matter">Front matter</h3>
 <p>So I am still learning about front matter my self. However I just view it as meta you add to the post. I come from the WordPress world and it would be the equivalent of custom meta. Without the having to add form fields, save, sanitize, retrieve, and display the data. You can find more information about <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> in the docs. The built in types of Front Matter are layout, permalink, published, category, categories and tags. You are free to add anything you want so you can use it in your templates. You can even set defaults in your <code>_config.yaml</code> so you do not have to repeat yourself. An example of what I include in mine right now is below and you can find more in the <a href="http://jekyllrb.com/docs/configuration/#front-matter-defaults">documentation</a></p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">defaults</span><span class="p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">defaults</span><span class="p-Indicator">:</span>
   <span class="p-Indicator">-</span>
     <span class="l-Scalar-Plain">scope</span><span class="p-Indicator">:</span>
       <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span> <span class="s">&quot;&quot;</span> <span class="c1"># an empty string here means all files in the project</span>
     <span class="l-Scalar-Plain">values</span><span class="p-Indicator">:</span>
       <span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="s">&quot;default&quot;</span>
-      <span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="s">&quot;Dan</span><span class="nv"> </span><span class="s">Holloran&quot;</span></code></pre></div>
+      <span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="s">&quot;Dan</span><span class="nv"> </span><span class="s">Holloran&quot;</span></code></pre></figure>
 
 <p>So now we can get started sharing all of our knowledge with the world one post at a time. Up next I will be diving more into editing the different templates in Jeykll. Jeykll uses a templating language called <a href="http://liquidmarkup.org/">Liquid</a> developed at <a href="http://www.shopify.com/">Shopify</a>. If you have used any other templating language such as <a href="https://mustache.github.io/">Mustache</a>, <a href="http://handlebarsjs.com/">Handlebars</a>, <a href="http://twig.sensiolabs.org/">Twig</a>, etc. it should be fairly easy to pickup.</p>
 

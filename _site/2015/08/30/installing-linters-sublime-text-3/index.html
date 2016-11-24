@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1433785124354-92116416b870.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Installing Linters Sublime Text 3</h1>
@@ -109,7 +107,7 @@
 	</header>
 
 	<article class="post-content">
-		<p>Sublime Text is one of my favorite editors I have ever used and it has excellent support for linting. This will cover Sublime Text 3 only since the plugin used SublimeLinter went through a major shift from Sublime text 2 to 3. The biggest difference is in ST2 the linters where bundled with the plugin now in ST3 they are created as plugins. </p>
+		<p>Sublime Text is one of my favorite editors I have ever used and it has excellent support for linting. This will cover Sublime Text 3 only since the plugin used SublimeLinter went through a major shift from Sublime text 2 to 3. The biggest difference is in ST2 the linters where bundled with the plugin now in ST3 they are created as plugins.</p>
 
 <p>So we will go through the steps to get them setup and configured for Sublime Text 3. The linter plugins all have some requirements you can check out <a href="/2015/08/27/linting-your-code-installing-the-linters/">Linting Your Code: Installing the Linters</a> to get all of the requirements installed.</p>
 
@@ -161,11 +159,11 @@
 
 <p>One last thing you may want to edit is to set WordPress as the default PHPCS standard this so far has been the only linter I had to manually configure. In <code>Preferences &gt; Package Settings &gt; SublimeLinter &gt; Settings - User</code> under linters you just need to set <code>phpcs.standard</code> to WordPress.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="s2">&quot;linters&quot;</span><span class="o">:</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="s2">&quot;linters&quot;</span><span class="o">:</span> <span class="p">{</span>
 	<span class="s2">&quot;phpcs&quot;</span><span class="o">:</span> <span class="p">{</span>
 		<span class="s2">&quot;standard&quot;</span><span class="o">:</span> <span class="s2">&quot;WordPress&quot;</span>
 	<span class="p">},</span>
-<span class="p">},</span></code></pre></div>
+<span class="p">},</span></code></pre></figure>
 
 <p><br /></p>
 
@@ -206,7 +204,7 @@
 		</a>
 	</li>
 	<li class="share-linkedin">
-		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/08/30/installing-linters-sublime-text-3/&title=Installing%20Linters%20Sublime%20Text%203&summary=Sublime%20Text%20is%20one%20of%20my%20favorite%20editors%20I%20have%20ever%20used%20and%20it%20has%20excellent%20support%20for%20linting.%20This%20will%20cover%20Sublime%20Text%203%20only%20since%20the%20plugin%20used%20SublimeLinter%20went%20through%20a%20major%20shift%20from%20Sublime%20text%202%20to%203.%20The%20biggest%20difference%20is%20in%20ST2%20the%20linters%20where%20bundled%20with%20the%20plugin%20now%20in%20ST3%20they%20are%20created%20as%20plugins.%20&source=//danholloran.me" title="LinkedIn" target="_blank">
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=//danholloran.me/2015/08/30/installing-linters-sublime-text-3/&title=Installing%20Linters%20Sublime%20Text%203&summary=Sublime%20Text%20is%20one%20of%20my%20favorite%20editors%20I%20have%20ever%20used%20and%20it%20has%20excellent%20support%20for%20linting.%20This%20will%20cover%20Sublime%20Text%203%20only%20since%20the%20plugin%20used%20SublimeLinter%20went%20through%20a%20major%20shift%20from%20Sublime%20text%202%20to%203.%20The%20biggest%20difference%20is%20in%20ST2%20the%20linters%20where%20bundled%20with%20the%20plugin%20now%20in%20ST3%20they%20are%20created%20as%20plugins.&source=//danholloran.me" title="LinkedIn" target="_blank">
 			<span class="icon  icon--linkedin">
 				<svg viewBox="0 0 512 512">
 					<path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>

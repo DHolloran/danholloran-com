@@ -82,8 +82,6 @@
 			
 
 
-
-
 <div class="featured-image" style="background-image:url('/dist/uploads/photo-1433354359170-23a4ae7338c6.jpg')">
 	<div class="featured-image-caption">
 		<h1 class="page-title">Base Environment Setup</h1>
@@ -118,17 +116,17 @@
 
 <p>Install <a href="https://nodejs.org/">Node.js</a>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Verify Node is installed</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Verify Node is installed</span>
 <span class="nv">$ </span>node -v
 
 <span class="c"># Verify NPM is installed</span>
-<span class="nv">$ </span>npm -v</code></pre></div>
+<span class="nv">$ </span>npm -v</code></pre></figure>
 
 <h3 id="ruby">Ruby</h3>
 
 <p>Ruby should be already installed in Mac OS X you can check Ruby</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>ruby -v</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>ruby -v</code></pre></figure>
 
 <p>At the time of this writing 2.x.x is fine if not you can install Ruby via <a href="https://rvm.io/">RVM</a> by following the instructions on the <a href="https://rvm.io/">RVM website</a>.</p>
 
@@ -142,7 +140,7 @@
   <li>Once installed you should accept the Xcode license agreement.</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo xcodebuild -license</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo xcodebuild -license</code></pre></figure>
 
 <h3 id="git">Git</h3>
 
@@ -154,39 +152,39 @@
   <li>Check if Git has been installed correctly.</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git --version</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git --version</code></pre></figure>
 
 <h3 id="homebrew">Homebrew</h3>
 
 <p>Install <a href="http://brew.sh/">Homebrew</a>.
 You can view the install <a href="http://brew.sh/#install">instructions here</a>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># As of 8/24/2015</span>
-<span class="nv">$ </span>ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># As of 8/24/2015</span>
+<span class="nv">$ </span>ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span></code></pre></figure>
 
 <h3 id="homebrew-php">Homebrew PHP</h3>
 
 <p>Tap <a href="https://github.com/Homebrew/homebrew-php">Homebrew PHP</a> to install helpful PHP Tools easily.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew tap homebrew/dupes
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew tap homebrew/dupes
 <span class="nv">$ </span>brew tap homebrew/versions
-<span class="nv">$ </span>brew tap homebrew/homebrew-php</code></pre></div>
+<span class="nv">$ </span>brew tap homebrew/homebrew-php</code></pre></figure>
 
 <h3 id="php">PHP</h3>
 <p>Install PHP as of this writing the current stable version is 5.6.11 but you should install the <a href="http://php.net/releases/">current version</a>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># php 5.6.x === php56</span>
-<span class="nv">$ </span>brew install php56</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># php 5.6.x === php56</span>
+<span class="nv">$ </span>brew install php56</code></pre></figure>
 
 <p>Add this to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or other <code>~/.shellrc</code></p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$(brew --prefix php56)/bin:$PATH&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$(brew --prefix php56)/bin:$PATH&quot;</span></code></pre></figure>
 
 <h3 id="composer">Composer</h3>
 
 <p><em>Composer allows you to install PHP packages with ease. Much like <code>npm</code> for Node.js and <code>gem</code> for Ruby.</em></p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew install composer</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew install composer</code></pre></figure>
 
 <h3 id="wrapping-up">Wrapping Up</h3>
 

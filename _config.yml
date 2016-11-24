@@ -37,6 +37,8 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
 
 # Front matter defaults
 defaults:
