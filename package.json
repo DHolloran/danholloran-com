@@ -12,6 +12,7 @@
     "gulp-changed": "^1.2.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^1.1.0",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-jshint": "^1.11.2",
     "gulp-load-plugins": "^1.0.0-rc.1",
@@ -26,8 +27,7 @@
     "node-sass": "^3.4.2",
     "postcss-import": "^6.1.1",
     "postcss-single-charset": "^0.3.0",
-    "request": "^2.58.0",
-    "gulp-htmlmin": "^2.0.0"
+    "request": "^2.58.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,5 +1,6 @@
 // Require all the things!!!!
 var gulp    = require( 'gulp' );
+var util    = require('gulp-util');
 var del     = require( 'del' );
 var request = require( 'request' );
 var $       = require( 'gulp-load-plugins' )( {
