@@ -7,6 +7,9 @@ var $       = require( 'gulp-load-plugins' )( {
 } );
 var exec = require('child_process').exec;
 
+// Setup some things.
+var production = !!util.env.production;
+
 // Set Directories.
 var distSrc            = './dist';
 var assetsSrc          = './_assets';
@@ -25,6 +28,12 @@ var imageAssetDistSrc  = distSrc + '/img/';
 var siteURL            = '//danholloran.me';
 var sitemapURL         = siteURL + '/sitemap.xml';
 var stylish            = require( 'jshint-stylish' );
+
+var handleNotify = function(message) {
+	if ( production ) {
+		return $.notify( message );
+	}
+}
 
 // Clean task.
 gulp.task( 'clean', function( cb ) {
@@ -66,7 +75,7 @@ gulp.task( 'scripts', function() {
 		.pipe( $.sourcemaps.write( mapsSrc ) )
 		.pipe( gulp.dest( jsDistSrc ) )
 		.pipe( gulp.dest( './_site/dist/js/' ) )
-		.pipe( $.notify( 'Scripts task complete!' ) );
+		.pipe( handleNotify( 'Scripts task complete!' ) );
 } );
 
 // Image uploads task.
