@@ -75,8 +75,7 @@ gulp.task( 'scripts', function() {
 		.pipe( $.uglify() )
 		.pipe( $.sourcemaps.write( mapsSrc ) )
 		.pipe( gulp.dest( jsDistSrc ) )
-		.pipe( gulp.dest( './_site/dist/js/' ) )
-		.pipe( handleNotify( 'Scripts task complete!' ) );
+		.pipe( gulp.dest( './_site/dist/js/' ) );
 } );
 
 // Image uploads task.
@@ -88,8 +87,7 @@ gulp.task( 'images:uploads', function() {
 				progressive       : true,
 				interlaced        : true
 		} ) )
-		.pipe( gulp.dest( imageUploadDistSrc ) )
-		.pipe( $.notify( 'Image uploads task complete!' ) );
+		.pipe( gulp.dest( imageUploadDistSrc ) );
 } );
 
 // Image assets task.
@@ -101,8 +99,7 @@ gulp.task( 'images:assets', function() {
 				progressive       : true,
 				interlaced        : true
 		} ) )
-		.pipe( gulp.dest( imageAssetDistSrc ) )
-		.pipe( $.notify( 'Images assets task complete!' ) );
+		.pipe( gulp.dest( imageAssetDistSrc ) );
 } );
 
 // Images task
@@ -112,8 +109,7 @@ gulp.task( 'images', [ 'images:uploads', 'images:assets' ] );
 gulp.task( 'lint:styles', function() {
 	gulp.src( scssSrc )
 		.pipe( $.scssLint() )
-		.pipe( $.scssLint.failReporter( 'E' ) )
-		.pipe( $.notify( 'Lint Styles task complete!' ) );
+		.pipe( $.scssLint.failReporter( 'E' ) );
 } );
 
 // Styles Task
@@ -134,8 +130,7 @@ gulp.task( 'styles', function() {
 		.pipe( $.postcss( processors ) )
 		.pipe( $.cssnano() )
 		.pipe( $.sourcemaps.write( mapsSrc ) )
-		.pipe( gulp.dest( cssDistSrc ) )
-		.pipe( $.notify( 'Styles task complete!' ) );
+		.pipe( gulp.dest( cssDistSrc ) );
 } );
 
 // Build task.
